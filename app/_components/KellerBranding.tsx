@@ -222,7 +222,8 @@ export default function KellerBranding() {
             "Inability to self-regulate in public spaces",
             "Lack of safe sensory decompression rooms",
           ],
-          image: "/assets/products/calmcave.jpg",
+          image: "/assets/problem-cards/calmcave_blue1.jpg",
+          hoverImage: "/assets/products/calmcave.jpg",
           alt: "Sensory Overload - CalmCave Sensory Pod",
         },
         {
@@ -235,7 +236,8 @@ export default function KellerBranding() {
             "Essential home therapy tools out of reach",
             "Zero insurance coverage for assistive equipment",
           ],
-          image: "/assets/products/flowstate.jpg",
+          image: "/assets/problem-cards/card2_equipment_cost.jpg",
+          hoverImage: "/assets/products/flowstate.jpg",
           alt: "Equipment Costs - SafeSpace Inflatable Pod",
         },
         {
@@ -248,7 +250,8 @@ export default function KellerBranding() {
             "Fewer than 10 domestic Indian manufacturers",
             "Tier 2 & 3 communities cut off from care",
           ],
-          image: "/assets/products/groupflow.jpg",
+          image: "/assets/problem-cards/card3_school_shortfall.jpg",
+          hoverImage: "/assets/products/groupflow.jpg",
           alt: "Access Barriers - FlowSwing Movement Therapy",
         },
         {
@@ -261,7 +264,8 @@ export default function KellerBranding() {
             "Chronic sleep deprivation & family strain",
             "Barriers to everyday childhood independence",
           ],
-          image: "/assets/products/grouphug.jpg",
+          image: "/assets/problem-cards/card4_emotional_strain.jpg",
+          hoverImage: "/assets/products/grouphug.jpg",
           alt: "Caregiver Burnout - GroupHug Deep Compression",
         },
       ]
@@ -299,7 +303,8 @@ export default function KellerBranding() {
 
           // 4 Cards across desktop and responsive variants using EXACT keller-full card design
           const cards = section.querySelectorAll(".framer-GrZJh, [data-framer-name='Desktop']")
-          cards.forEach((card, idx) => {
+          cards.forEach((cardEl, idx) => {
+            const card = cardEl as HTMLElement
             const pillar = problemPillars[idx % problemPillars.length]
             if (!pillar) return
 
@@ -330,7 +335,7 @@ export default function KellerBranding() {
               }
             })
 
-            // 4. Card Image (Exact keller-full 450px x 500px right pane presentation)
+            // 4. Card Image with Authentic WebGL Liquid Hover Mask Shader
             const imgContainer = card.querySelector(".framer-1gn68gi, [data-framer-name='Image']") as HTMLElement | null
             if (imgContainer) {
               imgContainer.style.setProperty("width", "450px", "important")
@@ -338,33 +343,49 @@ export default function KellerBranding() {
               imgContainer.style.setProperty("min-height", "500px", "important")
               imgContainer.style.setProperty("border-radius", "0 16px 16px 0", "important")
               imgContainer.style.setProperty("overflow", "hidden", "important")
+              imgContainer.style.setProperty("position", "relative", "important")
 
-              const canvas = imgContainer.querySelector("canvas")
-              if (canvas) canvas.style.display = "none"
-
-              const existingImg = imgContainer.querySelector("img") as HTMLImageElement | null
-              if (existingImg) {
-                if (existingImg.getAttribute("src") !== pillar.image) {
-                  existingImg.src = pillar.image
-                  existingImg.alt = pillar.alt
-                  existingImg.removeAttribute("srcset")
-                  existingImg.removeAttribute("sizes")
-                  existingImg.style.display = "block"
-                  existingImg.style.width = "100%"
-                  existingImg.style.height = "100%"
-                  existingImg.style.objectFit = "cover"
-                  existingImg.style.borderRadius = "0 16px 16px 0"
-                }
-              } else {
+              if (!imgContainer.getAttribute("data-keller-shader-mounted")) {
+                imgContainer.setAttribute("data-keller-shader-mounted", "true")
                 imgContainer.innerHTML = `
-                  <div class="framer-nq0b34-container" data-framer-name="Image (Desktop) Hover" name="Image (Desktop) Hover" style="width:100%;height:100%;min-height:100%;display:flex;position:relative">
-                    <div style="width:100%;height:100%;position:relative;display:flex;align-items:center;justify-content:center;border-radius:0 16px 16px 0;overflow:hidden">
-                      <figure style="position:absolute;inset:0;margin:0;padding:0;z-index:1;width:100%;height:100%">
-                        <img src="${pillar.image}" alt="${pillar.alt}" draggable="false" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%;margin:0;padding:0;border-radius:0 16px 16px 0;user-select:none;pointer-events:none;display:block" />
-                      </figure>
-                    </div>
+                  <div class="keller-problem-hover-wrapper" style="width:100%;height:100%;min-height:100%;position:relative;display:flex;align-items:center;justify-content:center;border-radius:0 16px 16px 0;overflow:hidden">
+                    <figure style="position:absolute;inset:0;margin:0;padding:0;z-index:1;width:100%;height:100%">
+                      <img class="keller-base-img" src="${pillar.image}" alt="${pillar.alt}" draggable="false" style="width:100%;height:100%;object-fit:cover;object-position:50% 50%;margin:0;padding:0;border-radius:0 16px 16px 0;user-select:none;pointer-events:none;display:block" />
+                    </figure>
+                    <canvas class="keller-problem-stage-canvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none;background:transparent;border-radius:0 16px 16px 0"></canvas>
                   </div>
                 `
+
+                const wrapper = imgContainer.querySelector(".keller-problem-hover-wrapper") as HTMLElement | null
+                const canvas = imgContainer.querySelector(".keller-problem-stage-canvas") as HTMLCanvasElement | null
+                if (canvas && wrapper) {
+                  initHoverMaskRevealThree({
+                    container: wrapper,
+                    canvas: canvas,
+                    baseSrc: pillar.image,
+                    hoverSrc: pillar.hoverImage,
+                    circleBoost: 0.55,
+                    curl: 20,
+                    parallax: true,
+                    parallaxAmount: 5,
+                    parallaxSmoothing: 0.25,
+                    shrinkTimeSeconds: 1.5,
+                    splatRadius: 0.1,
+                    texture: 0.4,
+                    radius: 100,
+                    blur: 0.5,
+                    timeSpeed: 5,
+                    velocityDissipation: 0.99,
+                    pressureIterations: 25,
+                    onHoverChange: (isHovered) => {
+                      if (isHovered) {
+                        card.classList.add("is-hovered")
+                      } else {
+                        card.classList.remove("is-hovered")
+                      }
+                    }
+                  })
+                }
               }
             }
           })

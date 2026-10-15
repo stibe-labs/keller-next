@@ -966,6 +966,40 @@ img[src*="Joyful Girl"] {
   color: rgba(12, 24, 86, 0.95) !important;
 }
 
+/* Problem Cards Hover Lift & Fluid Image Canvas */
+.framer-GrZJh,
+[data-framer-name='Desktop'] {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer;
+}
+
+.framer-GrZJh:hover,
+.framer-GrZJh.is-hovered,
+[data-framer-name='Desktop']:hover,
+[data-framer-name='Desktop'].is-hovered {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 24px 48px -12px rgba(12, 24, 86, 0.16) !important;
+}
+
+.keller-problem-hover-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0 16px 16px 0;
+}
+
+.keller-problem-stage-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 3;
+  pointer-events: none;
+  border-radius: 0 16px 16px 0;
+}
+
+
 
 
 
