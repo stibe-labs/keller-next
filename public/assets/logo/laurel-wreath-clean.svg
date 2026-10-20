@@ -1,0 +1,26 @@
+<svg width="72" height="64" viewBox="0 0 72 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#EA5338">
+    <!-- Left Branch -->
+    <g>
+    <ellipse cx="29.27" cy="57.11" rx="3.2" ry="7.5" transform="rotate(15.0 29.27 57.11)" fill="currentColor" />
+    <ellipse cx="19.29" cy="51.92" rx="3.2" ry="7.5" transform="rotate(-10.0 19.29 51.92)" fill="currentColor" />
+    <ellipse cx="12.44" cy="42.99" rx="3.2" ry="7.5" transform="rotate(-35.0 12.44 42.99)" fill="currentColor" />
+    <ellipse cx="10.00" cy="32.00" rx="3.2" ry="7.5" transform="rotate(-60.0 10.00 32.00)" fill="currentColor" />
+    <ellipse cx="12.44" cy="21.01" rx="3.2" ry="7.5" transform="rotate(-85.0 12.44 21.01)" fill="currentColor" />
+    <ellipse cx="19.29" cy="12.08" rx="3.2" ry="7.5" transform="rotate(-110.0 19.29 12.08)" fill="currentColor" />
+    <ellipse cx="29.27" cy="6.89" rx="3.2" ry="7.5" transform="rotate(-135.0 29.27 6.89)" fill="currentColor" />
+    <ellipse cx="40.51" cy="6.39" rx="3.2" ry="7.5" transform="rotate(200.0 40.51 6.39)" fill="currentColor" />
+    </g>
+    <!-- Right Branch (Mirrored) -->
+    <g transform="translate(72, 0) scale(-1, 1)">
+    <ellipse cx="29.27" cy="57.11" rx="3.2" ry="7.5" transform="rotate(15.0 29.27 57.11)" fill="currentColor" />
+    <ellipse cx="19.29" cy="51.92" rx="3.2" ry="7.5" transform="rotate(-10.0 19.29 51.92)" fill="currentColor" />
+    <ellipse cx="12.44" cy="42.99" rx="3.2" ry="7.5" transform="rotate(-35.0 12.44 42.99)" fill="currentColor" />
+    <ellipse cx="10.00" cy="32.00" rx="3.2" ry="7.5" transform="rotate(-60.0 10.00 32.00)" fill="currentColor" />
+    <ellipse cx="12.44" cy="21.01" rx="3.2" ry="7.5" transform="rotate(-85.0 12.44 21.01)" fill="currentColor" />
+    <ellipse cx="19.29" cy="12.08" rx="3.2" ry="7.5" transform="rotate(-110.0 19.29 12.08)" fill="currentColor" />
+    <ellipse cx="29.27" cy="6.89" rx="3.2" ry="7.5" transform="rotate(-135.0 29.27 6.89)" fill="currentColor" />
+    <ellipse cx="40.51" cy="6.39" rx="3.2" ry="7.5" transform="rotate(200.0 40.51 6.39)" fill="currentColor" />
+    </g>
+  </g>
+</svg>

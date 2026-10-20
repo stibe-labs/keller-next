@@ -1,0 +1,44 @@
+<svg width="72" height="64" viewBox="0 0 72 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#EA5338">
+    <!-- Left Branch -->
+    <g>
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(33.42,50.80) rotate(-254.4) scale(0.86)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(30.11,54.55) rotate(-202.8) scale(0.74)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(26.67,44.89) rotate(-253.5) scale(0.98)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(23.31,48.59) rotate(-202.0) scale(0.84)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(21.11,39.43) rotate(-247.6) scale(1.08)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(17.38,42.76) rotate(-196.0) scale(0.93)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(17.21,34.32) rotate(-236.0) scale(1.14)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(12.89,36.83) rotate(-184.4) scale(0.98)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(15.27,29.65) rotate(-217.2) scale(1.15)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(10.37,30.64) rotate(-165.6) scale(0.99)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(15.18,25.28) rotate(-194.1) scale(1.12)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(10.29,24.27) rotate(-142.5) scale(0.96)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(16.96,20.76) rotate(-174.6) scale(1.04)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(12.68,18.17) rotate(-123.1) scale(0.90)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(20.69,15.91) rotate(-162.2) scale(0.94)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(17.07,12.47) rotate(-110.7) scale(0.80)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(27.00,10.00) rotate(-35.0) scale(0.90)" fill="currentColor" />
+    </g>
+    <!-- Right Branch (Mirrored) -->
+    <g transform="translate(72, 0) scale(-1, 1)">
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(33.42,50.80) rotate(-254.4) scale(0.86)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(30.11,54.55) rotate(-202.8) scale(0.74)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(26.67,44.89) rotate(-253.5) scale(0.98)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(23.31,48.59) rotate(-202.0) scale(0.84)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(21.11,39.43) rotate(-247.6) scale(1.08)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(17.38,42.76) rotate(-196.0) scale(0.93)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(17.21,34.32) rotate(-236.0) scale(1.14)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(12.89,36.83) rotate(-184.4) scale(0.98)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(15.27,29.65) rotate(-217.2) scale(1.15)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(10.37,30.64) rotate(-165.6) scale(0.99)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(15.18,25.28) rotate(-194.1) scale(1.12)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(10.29,24.27) rotate(-142.5) scale(0.96)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(16.96,20.76) rotate(-174.6) scale(1.04)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(12.68,18.17) rotate(-123.1) scale(0.90)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(20.69,15.91) rotate(-162.2) scale(0.94)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(17.07,12.47) rotate(-110.7) scale(0.80)" fill="currentColor" />
+    <path d="M0,0 C-2.5,-4 -2,-9 2,-11 C5,-8 4.5,-3 0,0 Z" transform="translate(27.00,10.00) rotate(-35.0) scale(0.90)" fill="currentColor" />
+    </g>
+  </g>
+</svg>
