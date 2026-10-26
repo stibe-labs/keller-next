@@ -1,62 +1,164 @@
 import React from 'react';
 import Image from 'next/image';
 
-const PILLARS = [
+interface CraftPillar {
+  index: string;
+  category: string;
+  title: string;
+  description: string;
+  specLabel: string;
+  specValue: string;
+}
+
+const PILLARS: CraftPillar[] = [
   {
-    num: '01',
-    title: 'Customisation',
-    subtitle: 'Engineered for Unique Needs',
-    desc: 'Every child’s sensory profile and facility space is unique. We provide bespoke dimensional adjustments, fabric resistance ratings, and switch interfaces tailored to individual therapy plans.',
-    image: '/assets/products/SafeSpace.png'
+    index: '01',
+    category: 'Custom Engineering',
+    title: 'Precision Customisation',
+    description:
+      'Dimensions, fabric resistance, acoustic dampening, and switch sensitivity calibrated to individual therapy targets or specific room footprints.',
+    specLabel: 'Calibration',
+    specValue: 'Tailored dimensions · Custom resistance',
   },
   {
-    num: '02',
-    title: 'Purpose-Led Design',
-    subtitle: 'Co-Developed with Clinicians',
-    desc: 'Every product is co-designed with certified pediatric occupational therapists. We prioritize clinical sensory integration thresholds, non-toxic organic materials, and intuitive ergonomics.',
-    image: '/assets/sensory_rooms/19 (1).jpg'
+    index: '02',
+    category: 'Clinical OT',
+    title: 'Purpose-Led Clinical Design',
+    description:
+      'Shaped alongside pediatric occupational therapists to deliver verified vestibular balance, proprioceptive input, and daily emotional regulation.',
+    specLabel: 'Clinical Standard',
+    specValue: 'Therapist co-designed · Evidence-based',
   },
   {
-    num: '03',
-    title: '100% Made in India',
-    subtitle: 'Crafted in Kerala, Shipped Worldwide',
-    desc: 'From FSC-certified sustainable timber to medical-grade precision stitching, our end-to-end manufacturing in Kochi delivers world-class quality at 60–80% lower cost than imported equivalents.',
-    image: '/assets/unboxing/layernest.jpg'
-  }
+    index: '03',
+    category: 'Kerala Workshop',
+    title: 'Handcrafted in Kerala, India',
+    description:
+      'Cut, stitched, assembled, and safety-tested at our Kochi workshop, shipped to clinics, schools, and families worldwide at 60–80% below imported alternatives.',
+    specLabel: 'Fabrication',
+    specValue: '100% domestic craft · Worldwide shipping',
+  },
 ];
 
 export default function WhyKeller() {
   return (
-    <section className="why-section">
+    <section id="why-keller" className="why-section board-section board-rule">
       <div className="keller-container">
-        <div className="section-header">
-          <span className="section-tag">Competitive Differentiation</span>
-          <h2 className="section-title">More Than Products. A Considered Approach to Inclusion.</h2>
-          <p className="section-subtitle">
-            Three foundational pillars define why institutions and families choose Keller Adapt over generic or imported equipment.
+        {/* Section Header */}
+        <div className="why-header">
+          <p className="board-kicker">Craft & Clinical Purpose</p>
+          <h2 className="board-title">More than products. Engineered for a better future.</h2>
+          <div className="mission-title-bar" aria-hidden="true" />
+          <p className="board-lead">
+            Sensory differences call for more than one-size-fits-all furniture. At our workshop in Kochi,
+            industrial designers and pediatric occupational therapists co-create adaptable therapy tools
+            calibrated to individual regulation needs — making clinical-grade care accessible to every
+            school, clinic, and home.
           </p>
         </div>
 
-        <div className="why-bento-grid">
-          {PILLARS.map((pillar) => (
-            <div key={pillar.num} className="why-pillar-card">
-              <div className="why-pillar-num">{pillar.num}</div>
-              <h3 className="why-pillar-title">{pillar.title}</h3>
-              <div style={{ fontSize: '13px', fontWeight: 700, color: 'var(--color-primary)', marginBottom: '14px' }}>
-                {pillar.subtitle}
+        {/* Editorial Visual Craft Story */}
+        <div className="why-gallery-grid">
+          {/* Main Hero Card (Left) */}
+          <article className="why-gallery-card why-card-primary">
+            <div className="why-gallery-frame">
+              <Image
+                src="/assets/sensory_rooms/19 (1).jpg"
+                alt="Children in a Keller Adapt sensory therapy room"
+                fill
+                sizes="(max-width: 900px) 100vw, 420px"
+                className="why-gallery-img"
+              />
+              <div className="why-gallery-gradient" />
+              <div className="why-gallery-badge">
+                <span>Clinical Environment</span>
               </div>
-              <p className="why-pillar-desc" style={{ marginBottom: '24px' }}>
-                {pillar.desc}
-              </p>
-              <div style={{ position: 'relative', width: '100%', height: '180px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--color-border)', marginTop: 'auto' }}>
-                <Image
-                  src={pillar.image}
-                  alt={pillar.title}
-                  fill
-                  style={{ objectFit: 'cover' }}
-                />
+              <div className="why-gallery-caption">
+                <span className="why-gallery-meta">Turnkey Sensory Architecture</span>
+                <h3>Classrooms and therapy rooms engineered for self-regulation</h3>
               </div>
             </div>
+          </article>
+
+          {/* Center Column: 2 Stacked Visuals */}
+          <div className="why-gallery-col">
+            <article className="why-gallery-card why-card-interactive">
+              <div className="why-gallery-frame">
+                <Image
+                  src="/assets/products/Joyful Girl Playing Musical Sensory Panels.png"
+                  alt="Child playing with musical sensory panels"
+                  fill
+                  sizes="(max-width: 900px) 100vw, 380px"
+                  className="why-gallery-img"
+                />
+                <div className="why-gallery-gradient" />
+                <div className="why-gallery-badge">
+                  <span>Sensory Engagement</span>
+                </div>
+                <div className="why-gallery-caption">
+                  <span className="why-gallery-meta">Switch-Adapted Agency</span>
+                  <h4>Interactive multi-sensory feedback</h4>
+                </div>
+              </div>
+            </article>
+
+            <article className="why-gallery-card why-card-product">
+              <div className="why-gallery-frame why-frame-soft">
+                <Image
+                  src="/assets/products/balance-bench-clean.png"
+                  alt="Keller Adapt custom balance bench"
+                  fill
+                  sizes="(max-width: 900px) 100vw, 380px"
+                  className="why-gallery-img is-contain"
+                />
+                <div className="why-gallery-badge why-badge-dark">
+                  <span>Pediatric Ergonomics</span>
+                </div>
+                <div className="why-gallery-caption why-caption-light">
+                  <span className="why-gallery-meta">Therapeutic Seating</span>
+                  <h4>Solid wood craft with child-safe curves</h4>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          {/* Right Column: Fiber-Optic & De-escalation Card */}
+          <article className="why-gallery-card why-card-ambient">
+            <div className="why-gallery-frame">
+              <Image
+                src="/assets/sensory_rooms/22 (1).jpg"
+                alt="Fiber optic calming sensory installation"
+                fill
+                sizes="(max-width: 900px) 100vw, 420px"
+                className="why-gallery-img"
+              />
+              <div className="why-gallery-gradient" />
+              <div className="why-gallery-badge">
+                <span>De-escalation Pods</span>
+              </div>
+              <div className="why-gallery-caption">
+                <span className="why-gallery-meta">Fiber-Optic Zoning</span>
+                <h3>Calibrated ambient lighting for deep sensory de-escalation</h3>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        {/* 3 Bespoke Craft Pillars */}
+        <div className="why-pillars-grid">
+          {PILLARS.map((pillar) => (
+            <article key={pillar.index} className="why-pillar-card">
+              <div className="why-pillar-meta">
+                <span className="why-pillar-num">{pillar.index}</span>
+                <span className="why-pillar-cat">{pillar.category}</span>
+              </div>
+              <h3>{pillar.title}</h3>
+              <p>{pillar.description}</p>
+              <div className="why-pillar-foot">
+                <span className="why-pillar-foot-label">{pillar.specLabel}</span>
+                <span className="why-pillar-foot-val">{pillar.specValue}</span>
+              </div>
+            </article>
           ))}
         </div>
       </div>

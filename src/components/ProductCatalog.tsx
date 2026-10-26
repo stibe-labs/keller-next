@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { PRODUCTS, Product } from '@/data/kellerData';
 
@@ -8,18 +8,33 @@ export default function ProductCatalog() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [activeModalProduct, setActiveModalProduct] = useState<Product | null>(null);
 
+  useEffect(() => {
+    const apply = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (!hash.startsWith('products-')) return;
+      const category = hash.slice('products-'.length);
+      const known = ['sensory-tech', 'movement', 'textiles', 'sensory-rooms'];
+      if (!known.includes(category)) return;
+      setSelectedCategory(category);
+      document.getElementById('products')?.scrollIntoView();
+    };
+    apply();
+    window.addEventListener('hashchange', apply);
+    return () => window.removeEventListener('hashchange', apply);
+  }, []);
+
   const filteredProducts = selectedCategory === 'all'
     ? PRODUCTS
     : PRODUCTS.filter((p) => p.category === selectedCategory);
 
   return (
-    <section id="products" className="catalog-section">
+    <section id="products" className="catalog-section board-section board-rule">
       <div className="keller-container">
         <div className="section-header">
-          <span className="section-tag">Complete Catalog</span>
-          <h2 className="section-title">Explore Our Products.</h2>
-          <p className="section-subtitle">
-            Co-developed with occupational therapy professionals, precision-crafted in Kerala, and trusted by clinics and families worldwide.
+          <p className="board-kicker">The catalog</p>
+          <h2 className="board-title">Explore our products.</h2>
+          <p className="board-lead">
+            Hammocks, glow swings, balance benches, and rooms. Co-developed with occupational therapists and made in Kerala.
           </p>
         </div>
 

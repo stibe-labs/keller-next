@@ -9,13 +9,13 @@ export default function ProductDeepDive() {
   const activeMode = LUMASWING_MODES[activeModeIndex];
 
   return (
-    <section id="deep-dive" className="deep-dive-section">
+    <section id="deep-dive" className="deep-dive-section board-section board-rule">
       <div className="keller-container">
         <div className="section-header">
-          <span className="section-tag">Flagship Engineering</span>
-          <h2 className="section-title">Solutions for Different Spaces.</h2>
-          <p className="section-subtitle">
-            Engineered with pediatric occupational therapists to bridge clinical therapy protocols and joyful sensory exploration.
+          <p className="board-kicker">Flagship</p>
+          <h2 className="board-title">Solutions for different spaces.</h2>
+          <p className="board-lead">
+            LumaSwing, built with pediatric occupational therapists so a therapy protocol can still feel like play.
           </p>
         </div>
 

@@ -11,17 +11,13 @@ const ROADMAP_STEPS = [
 
 export default function InvestorMetrics() {
   return (
-    <section className="metrics-section">
+    <section id="investor" className="metrics-section board-section board-rule">
       <div className="keller-container">
         <div style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto 50px auto' }}>
-          <span style={{ display: 'inline-block', background: 'rgba(255, 255, 255, 0.15)', color: '#FFFFFF', padding: '4px 14px', borderRadius: '9999px', fontSize: '12px', fontWeight: 800, textTransform: 'uppercase', marginBottom: '14px', letterSpacing: '0.05em' }}>
-            Verified Proof Points
-          </span>
-          <h2 style={{ fontSize: '2.4rem', fontWeight: 800, color: '#FFFFFF', marginBottom: '12px', letterSpacing: '-0.02em' }}>
-            From Proven Products to Scalable Solutions.
-          </h2>
-          <p style={{ color: '#D1FAE5', fontSize: '1.05rem', lineHeight: '1.6' }}>
-            Data-backed commercial traction, clinically certified effectiveness, and rapid institutional adoption.
+          <p className="board-kicker board-kicker-center">Verified proof</p>
+          <h2 className="board-title">From proven products to scalable solutions.</h2>
+          <p className="board-lead" style={{ marginLeft: 'auto', marginRight: 'auto' }}>
+            Commercial traction, clinical use, and the institutions already putting these rooms to work.
           </p>
         </div>
 
@@ -37,24 +33,15 @@ export default function InvestorMetrics() {
         </div>
 
         {/* Growth Roadmap */}
-        <div style={{ marginTop: '70px', paddingTop: '50px', borderTop: '1px solid rgba(255, 255, 255, 0.15)' }}>
-          <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: '#FFFFFF', textAlign: 'center', marginBottom: '36px' }}>
-            Milestones of Purposeful Growth
-          </h3>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '18px' }}>
-            {ROADMAP_STEPS.map((step, idx) => (
-              <div key={idx} style={{ background: 'rgba(255, 255, 255, 0.08)', borderRadius: '14px', padding: '20px', border: '1px solid rgba(255, 255, 255, 0.12)' }}>
-                <div style={{ fontSize: '1.5rem', fontWeight: 800, color: '#34D399', marginBottom: '6px' }}>
-                  {step.year}
-                </div>
-                <div style={{ fontSize: '14px', fontWeight: 700, color: '#FFFFFF', marginBottom: '6px' }}>
-                  {step.title}
-                </div>
-                <div style={{ fontSize: '12px', color: '#A7F3D0', lineHeight: '1.5' }}>
-                  {step.desc}
-                </div>
-              </div>
+        <div className="board-roadmap">
+          <h3>Milestones</h3>
+          <div className="board-roadmap-grid">
+            {ROADMAP_STEPS.map((step) => (
+              <article key={step.year}>
+                <div className="board-roadmap-year">{step.year}</div>
+                <h4>{step.title}</h4>
+                <p>{step.desc}</p>
+              </article>
             ))}
           </div>
         </div>

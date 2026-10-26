@@ -1,0 +1,31 @@
+WHAT WE CREATE - COLLAGE IMAGE SIZES
+
+1. Sensory Technology
+   - File: /assets/rough/sensory product webp.webp
+   - Image Resolution: 1800 x 1456 px
+   - Aspect Ratio: 1.24 : 1
+   - Desktop Layout Size: 535 x 431 px
+
+2. Custom Manufacture
+   - File: /assets/rough/Custom Manufacture webp.webp
+   - Image Resolution: 1800 x 1200 px
+   - Aspect Ratio: 1.50 : 1
+   - Desktop Layout Size: 647 x 431 px
+
+3. Therapy Textiles
+   - File: /assets/rough/therapy textiles webp.webp
+   - Image Resolution: 1800 x 1800 px
+   - Aspect Ratio: 1.00 : 1
+   - Desktop Layout Size: 349 x 349 px
+
+4. Sensory Rooms
+   - File: /assets/rough/Sensory Rooms.webp
+   - Image Resolution: 1800 x 1174 px
+   - Aspect Ratio: 1.53 : 1
+   - Desktop Layout Size: 534 x 349 px
+
+5. Movement & Balance
+   - File: /assets/rough/Movement & Balance.webp
+   - Image Resolution: 1321 x 1600 px
+   - Aspect Ratio: 0.83 : 1
+   - Desktop Layout Size: 290 x 349 px

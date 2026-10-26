@@ -33,6 +33,8 @@ export interface Review {
   source: string;
   verified: boolean;
   highlight: string;
+  images?: string[];
+  detail?: string;
 }
 
 export interface EarlyBuyer {
@@ -345,49 +347,63 @@ export const TEAM: TeamMember[] = [
     role: 'Founder & CEO',
     bio: 'Pioneered Keller Adapt with a vision to build a world-class Indian pediatric assistive technology brand. Leading product strategy, clinical partnerships, and domestic manufacturing.',
     image: '/assets/team/jaleel.png',
-    department: 'Executive Leadership'
+    department: 'Founder & CEO'
   },
   {
     name: 'George Fleming',
-    role: 'Chief Technology Officer (CTO)',
+    role: 'CTO',
     bio: 'Oversees engineering innovation, switch-adapted interactive electronics, and firmware architecture for LightLoops and LumaSwing therapy systems.',
     image: '/assets/team/George Fleming.png',
-    department: 'Engineering & Technology'
+    department: 'CTO'
   },
   {
     name: 'Insam Jamal',
-    role: 'Chief Financial Officer (CFO)',
+    role: 'CFO',
     bio: 'Steers global supply chain economics, strategic expansion, and institutional procurement to ensure our products remain 60-80% more affordable than imports.',
     image: '/assets/team/Insam.png',
-    department: 'Operations & Finance'
+    department: 'CFO'
   },
   {
-    name: 'Suneera',
-    role: 'Lead Textile Engineering',
-    bio: 'Specializes in therapeutic compression textiles, medical-grade lycra tolerances, and ergonomic sensory swaddles including LayerNest and Hugmate.',
-    image: '/assets/team/Suneera.png',
-    department: 'Textile Manufacturing'
-  },
-  {
-    name: 'Pandian',
-    role: 'Senior Textile Production Engineer',
-    bio: 'Drives high-precision fabric cutting, multi-layer seam reinforcement, and durability testing for all swing and compression systems.',
-    image: '/assets/team/Pandian.png',
-    department: 'Textile Manufacturing'
+    name: 'Stephano Saji',
+    role: 'Product Manufacturing',
+    bio: 'Leads product manufacturing for the pieces Keller Adapt builds in-house.',
+    image: '/assets/team/stephano-saji.jpg',
+    department: 'Product Manufacturing'
   },
   {
     name: 'Abhijith',
     role: 'Creative Design & Visual Communication',
     bio: 'Crafts the tactile aesthetic, packaging experiences, and inclusive visual communication across all physical products and manuals.',
     image: '/assets/team/Abhi 1.jpg',
-    department: 'Design & Experience'
+    department: 'Creative Design & Visual Communication'
   },
   {
-    name: 'Nizam',
-    role: 'Product Manufacturing & Operations',
-    bio: 'Manages Kerala workshop operations, FSC-wood timber craftsmanship, quality assurance, and international fulfillment workflows.',
-    image: '/assets/team/Nizam.png',
-    department: 'Operations & Quality'
+    name: 'Amar Gangadhar',
+    role: 'Embedded Systems Engineering',
+    bio: 'Embedded systems engineering for Keller Adapt’s interactive therapy tools.',
+    image: '/assets/team/amar-gangadhar.jpg',
+    department: 'Embedded Systems Engineering'
+  },
+  {
+    name: 'Suneera',
+    role: 'Textile Engineering & Production',
+    bio: 'Specializes in therapeutic compression textiles, medical-grade lycra tolerances, and ergonomic sensory swaddles including LayerNest and Hugmate.',
+    image: '/assets/team/Suneera.png',
+    department: 'Textile Engineering & Production'
+  },
+  {
+    name: 'Sophiya',
+    role: 'Textile Engineering & Production',
+    bio: 'Textile engineering and production for Keller Adapt’s sensory fabrics.',
+    image: '/assets/team/sophiya.jpg',
+    department: 'Textile Engineering & Production'
+  },
+  {
+    name: 'Pandian',
+    role: 'Textile Engineering & Production',
+    bio: 'Drives high-precision fabric cutting, multi-layer seam reinforcement, and durability testing for all swing and compression systems.',
+    image: '/assets/team/Pandian.png',
+    department: 'Textile Engineering & Production'
   }
 ];
 
@@ -435,6 +451,7 @@ export const REVIEWS: Review[] = [
     source: 'Verified Etsy Star Seller Purchase',
     verified: true,
     highlight: 'All three boys immediately used it in the way that feels natural to them.',
+    images: ['/assets/reviews/kate-1.jpg', '/assets/reviews/kate-2.jpg'],
     content: 'I bought this because I homeschool three sons with ADHD and am always looking for ways to encourage movement at home. It exceeded my expectations. The fabric is beautiful, and I love its versatility. All three boys immediately used it differently: one climbed inside to escape and find calm. Another used the bungee bounce function to release energy, and the third made it a jungle hammock! It arrived carefully and intentionally packaged with a beautiful instruction booklet.'
   },
   {
@@ -445,6 +462,7 @@ export const REVIEWS: Review[] = [
     source: 'Verified Etsy Purchase',
     verified: true,
     highlight: 'The lycra is BEAUTIFUL and comes with a gorgeous bag!',
+    images: ['/assets/reviews/valeria-1.jpg'],
     content: 'It took a while to arrive because it was held up in customs, but it was worth the whole process! The lycra is BEAUTIFUL, it comes super well packaged and it even includes a gorgeous bag! I really, really liked it.'
   },
   {
@@ -456,6 +474,48 @@ export const REVIEWS: Review[] = [
     verified: true,
     highlight: 'The seller went above and beyond throughout the entire process.',
     content: 'The product is of excellent quality and exactly as described. I had some issues with customs clearance process but the seller went above and beyond to help resolve the situation and was incredibly attentive throughout the entire process. I highly recommend both the product and the seller!'
+  },
+  {
+    reviewer: 'Alim Saeed Jaffer Siyad',
+    date: '15 April, 2022',
+    location: 'India',
+    rating: 5,
+    source: 'Verified Amazon Purchase',
+    verified: true,
+    highlight: 'Good Quality Soft Hugs',
+    detail: 'Alice Blue · 8–10 years',
+    content: 'We bought this for my 8 year old son who has been diagnosed with ASD. He is extremely high functioning. At first he hesitated to use this product. But now he loves it. It is very soft and makes him calm. We used blankets before and it was very difficult. After this purchase the OT sessions are easy and the product looks cool. The duffel bag also looks nice. The hardest part of the velcro came into contact with the fabric and it scratched the area, especially the pillow velcro. A cover for the hard velcro on the pillow would be good. Worth the buy.'
+  },
+  {
+    reviewer: 'Centre for Holistic Development',
+    date: '1 March, 2023',
+    location: 'Sai Prayag Hospital, India',
+    rating: 5,
+    source: 'Verified Amazon Purchase',
+    verified: true,
+    highlight: 'Sensory wrap',
+    content: 'It has been many months since we have been using this sensory wrap for our special kids and it gives amazing results in managing sensory dysfunction. Since we can modulate the pressure applied on various areas, the proprioceptive dysfunction is also being helped. It is difficult to use with a severe hyperactive child. It is highly recommended for all kids with a sensory processing disorder. A therapeutic wrap like a wet wrap is an additional bonus for the future.'
+  },
+  {
+    reviewer: 'Arshad R.',
+    date: '24 May, 2023',
+    location: 'India',
+    rating: 5,
+    source: 'Verified Amazon Purchase',
+    verified: true,
+    highlight: 'Good product, I recommend it',
+    detail: 'Jade Green · 8–10 years',
+    content: 'Good product, easy to use. I recommend it to everyone who is in need. I love it. Best for my daughter.'
+  },
+  {
+    reviewer: 'Amazon Customer',
+    date: '25 July, 2026',
+    location: 'India',
+    rating: 5,
+    source: 'Verified Amazon Purchase',
+    verified: true,
+    highlight: 'Premium Quality Super Useful Tool',
+    content: 'Our therapist recommended adding more proprioceptive activities at home, and this tunnel has been perfect. Quality is good. The fabric feels premium. The stitching is neat. The tunnel stretches evenly. The see-through fabric in the middle is a cool addition. The tunnel is very lengthy. You need a big room or hall to use it at full length. It takes two people to hold both ends. Since my child wants to use it several times a day, it would have been nice to add something to attach one end of the tunnel to a sturdy object. Overall a good product.'
   }
 ];
 

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
+import ClayIcon from '@/components/ClayIcon';
 
 interface DropdownItem {
   label: string;
@@ -44,7 +45,7 @@ const MENU_SECTIONS: MenuSection[] = [
     ctaText: 'Discover our founding journey',
     ctaLink: '#about',
     items: [
-      { label: 'Our Mission & Clinical Purpose', href: '#about' },
+      { label: 'Our Mission & Clinical Purpose', href: '#mission' },
       { label: 'Who We Serve (Ecosystem & Global Reach)', href: '#who-we-serve' },
       { label: 'Leadership Team & OT Advisors', href: '#team' },
       { label: '100% Domestic Kerala Manufacturing', href: '#why-keller' },
@@ -115,8 +116,46 @@ const MENU_SECTIONS: MenuSection[] = [
 export default function Navbar() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
 
   const headerRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    let lastY = window.scrollY;
+    let accum = 0;
+
+    const onScroll = () => {
+      const y = window.scrollY;
+      const delta = y - lastY;
+      lastY = y;
+      setScrolled(y > 12);
+
+      if (y <= 16) {
+        accum = 0;
+        setHidden(false);
+        return;
+      }
+
+      if ((accum > 0 && delta < 0) || (accum < 0 && delta > 0)) {
+        accum = 0;
+      }
+      accum += delta;
+
+      if (accum > 40) {
+        accum = 0;
+        setHidden(true);
+        setActiveMenu(null);
+      } else if (accum < -8) {
+        accum = 0;
+        setHidden(false);
+      }
+    };
+
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   // Close menus on outside click
   useEffect(() => {
@@ -141,7 +180,11 @@ export default function Navbar() {
   const currentMenu = MENU_SECTIONS.find((m) => m.id === activeMenu);
 
   return (
-    <header className="tcs-header" ref={headerRef} onMouseLeave={() => setActiveMenu(null)}>
+    <header
+      className={`tcs-header${scrolled || mobileMenuOpen ? ' is-solid' : ''}${hidden && !mobileMenuOpen ? ' is-hidden' : ''}`}
+      ref={headerRef}
+      onMouseLeave={() => setActiveMenu(null)}
+    >
       <div className="tcs-nav">
         {/* Left: Brand Lockup */}
         <div className="tcs-brand-lockup">
@@ -202,8 +245,8 @@ export default function Navbar() {
         {/* Right: Contact Us & Mobile Hamburger */}
         <div className="tcs-right-group">
           {/* Contact us Direct Jump Link */}
-          <a href="#contact" onClick={closeAll} className="tcs-contact-link">
-            Contact us
+          <a href="#contact" onClick={closeAll} className="tcs-quote-btn">
+            Request a quote
           </a>
 
           {/* Mobile Hamburger Button */}
@@ -231,7 +274,7 @@ export default function Navbar() {
                 <div className="tcs-store-left">
                   <div className="tcs-store-soon-badge">
                     <span className="tcs-soon-dot"></span>
-                    <span>DIRECT PORTAL • LAUNCHING 2027</span>
+                    <span>Store opening soon</span>
                   </div>
 
                   <h3 className="tcs-store-head">Official Keller Store</h3>
@@ -247,9 +290,9 @@ export default function Navbar() {
                   {/* Walmart US Expansion Card */}
                   <div className="tcs-store-walmart-card">
                     <div className="tcs-store-market-logo">
-                      <div style={{ position: 'relative', width: '76px', height: '24px' }}>
+                      <div className="tcs-store-market-logo-img tcs-logo-walmart">
                         <Image
-                          src="/assets/logo/norm-Walmart-Logo-2008.png"
+                          src="/assets/logo/mark-walmart.png"
                           alt="Walmart"
                           fill
                           style={{ objectFit: 'contain' }}
@@ -269,7 +312,7 @@ export default function Navbar() {
                 {/* Right Column: Active Marketplaces */}
                 <div className="tcs-store-right">
                   <div className="tcs-store-subhead-bar">
-                    <span>CURRENTLY BUY ON VERIFIED MARKETPLACES</span>
+                    <span>Currently available on these</span>
                   </div>
 
                   <div className="tcs-store-marketplaces-stack">
@@ -282,9 +325,9 @@ export default function Navbar() {
                       onClick={closeAll}
                     >
                       <div className="tcs-store-market-logo">
-                        <div style={{ position: 'relative', width: '76px', height: '24px' }}>
+                        <div className="tcs-store-market-logo-img tcs-logo-amazon">
                           <Image
-                            src="/assets/logo/norm-Amazon-Logo.png"
+                            src="/assets/logo/mark-amazon.png"
                             alt="Amazon"
                             fill
                             style={{ objectFit: 'contain' }}
@@ -307,9 +350,9 @@ export default function Navbar() {
                       onClick={closeAll}
                     >
                       <div className="tcs-store-market-logo">
-                        <div style={{ position: 'relative', width: '76px', height: '24px' }}>
+                        <div className="tcs-store-market-logo-img tcs-logo-etsy">
                           <Image
-                            src="/assets/logo/norm-Etsy_logo_lg_rgb.png"
+                            src="/assets/logo/mark-etsy.png"
                             alt="Etsy"
                             fill
                             style={{ objectFit: 'contain' }}
@@ -345,9 +388,9 @@ export default function Navbar() {
                       onClick={closeAll}
                     >
                       <div className="tcs-store-market-logo">
-                        <div style={{ position: 'relative', width: '76px', height: '24px' }}>
+                        <div className="tcs-store-market-logo-img tcs-logo-flipkart">
                           <Image
-                            src="/assets/logo/norm-Flipkart-Logo.png"
+                            src="/assets/logo/mark-flipkart.png"
                             alt="Flipkart"
                             fill
                             style={{ objectFit: 'contain' }}
@@ -367,7 +410,7 @@ export default function Navbar() {
               {/* Worldwide Shipping Strip */}
               <div className="tcs-store-shipping-bar">
                 <div className="tcs-store-shipping-left">
-                  <div className="tcs-store-shipping-icon">✈️</div>
+                  <div className="tcs-store-shipping-icon"><ClayIcon name="plane" size={44} /></div>
                   <div>
                     <div className="tcs-store-shipping-text-title">
                       <span>NOW AVAILABLE • SHIPPING WORLDWIDE</span>
@@ -423,32 +466,32 @@ export default function Navbar() {
             <div style={{ background: '#1E1E1E', padding: '16px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
                 <span style={{ fontSize: '15px', fontWeight: 700, color: '#FFFFFF' }}>Store</span>
-                <span style={{ background: 'rgba(234, 83, 56, 0.18)', color: '#EA5338', fontSize: '10.5px', fontWeight: 800, padding: '2px 8px', borderRadius: '9999px' }}>
-                  LAUNCHING SOON
+                <span style={{ background: 'rgba(226, 75, 50, 0.22)', color: '#F6E4DC', fontSize: '11px', fontWeight: 700, padding: '4px 10px', borderRadius: '9999px', border: '1px solid rgba(226, 75, 50, 0.55)' }}>
+                  Store opening soon
                 </span>
               </div>
-              <p style={{ fontSize: '12px', color: '#94A3B8', marginBottom: '12px' }}>
-                Verified Channels & Invitations:
+              <p style={{ fontSize: '12px', color: '#F6E4DC', fontWeight: 700, marginBottom: '12px' }}>
+                Currently available on these
               </p>
               <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-                <a href="https://www.amazon.in/Keller-ADAPT-Processing-Occupational-Equipment/dp/B09TW84X2P?th=1" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', background: '#FFFFFF', padding: '6px 12px', borderRadius: '8px', textDecoration: 'none' }}>
-                  <div style={{ position: 'relative', width: '60px', height: '18px' }}>
-                    <Image src="/assets/logo/norm-Amazon-Logo.png" alt="Amazon" fill style={{ objectFit: 'contain' }} />
+                <a href="https://www.amazon.in/Keller-ADAPT-Processing-Occupational-Equipment/dp/B09TW84X2P?th=1" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', background: '#FFFFFF', padding: '2px 3px', borderRadius: '6px', textDecoration: 'none' }}>
+                  <div style={{ position: 'relative', width: '78px', height: '28px' }}>
+                    <Image src="/assets/logo/mark-amazon.png" alt="Amazon" fill style={{ objectFit: 'contain' }} />
                   </div>
                 </a>
-                <a href="https://www.etsy.com/listing/4519472296/sensory-compression-hammock-propriotex" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', background: '#FFFFFF', padding: '6px 12px', borderRadius: '8px', textDecoration: 'none' }}>
-                  <div style={{ position: 'relative', width: '60px', height: '18px' }}>
-                    <Image src="/assets/logo/norm-Etsy_logo_lg_rgb.png" alt="Etsy" fill style={{ objectFit: 'contain' }} />
+                <a href="https://www.etsy.com/listing/4519472296/sensory-compression-hammock-propriotex" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', background: '#FFFFFF', padding: '2px 3px', borderRadius: '6px', textDecoration: 'none' }}>
+                  <div style={{ position: 'relative', width: '56px', height: '28px' }}>
+                    <Image src="/assets/logo/mark-etsy.png" alt="Etsy" fill style={{ objectFit: 'contain' }} />
                   </div>
                 </a>
-                <a href="https://www.flipkart.com/keller-adapt-deep-pressure-memory-foam-sensory-input-occupational-therapy-aid-autism-sleeping-bag/p/itme587d611de753" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', background: '#FFFFFF', padding: '6px 12px', borderRadius: '8px', textDecoration: 'none' }}>
-                  <div style={{ position: 'relative', width: '60px', height: '18px' }}>
-                    <Image src="/assets/logo/norm-Flipkart-Logo.png" alt="Flipkart" fill style={{ objectFit: 'contain' }} />
+                <a href="https://www.flipkart.com/keller-adapt-deep-pressure-memory-foam-sensory-input-occupational-therapy-aid-autism-sleeping-bag/p/itme587d611de753" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', background: '#FFFFFF', padding: '2px 3px', borderRadius: '6px', textDecoration: 'none' }}>
+                  <div style={{ position: 'relative', width: '99px', height: '28px' }}>
+                    <Image src="/assets/logo/mark-flipkart.png" alt="Flipkart" fill style={{ objectFit: 'contain' }} />
                   </div>
                 </a>
-                <div style={{ display: 'inline-flex', alignItems: 'center', background: '#FFFFFF', padding: '6px 12px', borderRadius: '8px', gap: '6px' }}>
-                  <div style={{ position: 'relative', width: '60px', height: '18px' }}>
-                    <Image src="/assets/logo/norm-Walmart-Logo-2008.png" alt="Walmart" fill style={{ objectFit: 'contain' }} />
+                <div style={{ display: 'inline-flex', alignItems: 'center', background: '#FFFFFF', padding: '2px 3px', borderRadius: '6px', gap: '6px' }}>
+                  <div style={{ position: 'relative', width: '106px', height: '28px' }}>
+                    <Image src="/assets/logo/mark-walmart.png" alt="Walmart" fill style={{ objectFit: 'contain' }} />
                   </div>
                   <span style={{ fontSize: '9px', fontWeight: 800, color: '#0071CE' }}>INVITATION</span>
                 </div>
@@ -493,10 +536,10 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={closeAll}
-                className="btn-primary"
+                className="btn btn-primary"
                 style={{ textAlign: 'center', textDecoration: 'none', padding: '12px 24px' }}
               >
-                Contact Headquarters
+                Request a quote
               </a>
             </div>
           </div>

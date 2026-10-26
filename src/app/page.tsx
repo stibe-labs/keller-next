@@ -1,6 +1,5 @@
 'use client';
-
-import React, { useState } from 'react';
+import React, { useSyncExternalStore } from 'react';
 import { SITE_CONFIG } from '@/config/siteConfig';
 import ComingSoon from '@/components/ComingSoon';
 import SplashScreen from '@/components/SplashScreen';
@@ -20,18 +19,23 @@ import GlobalReach from '@/components/GlobalReach';
 import InvestorMetrics from '@/components/InvestorMetrics';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import Reveal from '@/components/Reveal';
+
+const noopSubscribe = () => () => {};
 
 export default function Home() {
-  // Boolean toggle driven by SITE_CONFIG.comingSoon
-  // Also supports ?preview=full or ?preview=coming-soon for instant browser testing
-  const [isComingSoon] = useState<boolean>(() => {
-    if (typeof window !== 'undefined') {
-      const params = new URLSearchParams(window.location.search);
-      if (params.get('preview') === 'full') return false;
-      if (params.get('preview') === 'coming-soon') return true;
-    }
-    return SITE_CONFIG.comingSoon;
-  });
+  const isComingSoon = useSyncExternalStore(
+    noopSubscribe,
+    () => {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('preview') === 'full') return false;
+        if (params.get('preview') === 'coming-soon') return true;
+      } catch {}
+      return SITE_CONFIG.comingSoon;
+    },
+    () => SITE_CONFIG.comingSoon
+  );
 
   // When comingSoon is true, render the minimal Coming Soon page
   if (isComingSoon) {
@@ -41,57 +45,25 @@ export default function Home() {
   // Full production website
   return (
     <>
-      {/* Brand Splash Screen with slow reveal */}
       <SplashScreen />
-
-      {/* Main Landing Page */}
       <div>
         {/* 00. Global Navigation Header */}
         <Navbar />
 
-        {/* 01. HERO — BRAND INTRODUCTION */}
-        <Hero />
-
-        {/* 02. WHAT WE CREATE */}
-        <WhatWeCreate />
-
-        {/* 05. MARKETPLACE RECOGNITION */}
-        <Marketplaces />
-
-        {/* 03. PRODUCT DISPLAY */}
-        <ProductCatalog />
-
-        {/* 04. PRODUCT PORTFOLIO & APPLICATIONS */}
-        <ProductDeepDive />
-
-        {/* 08. THE PROBLEM WE SOLVE */}
-        <ProblemWeSolve />
-
-        {/* 09. WHO WE SERVE */}
-        <WhoWeServe />
-
-        {/* 10. WHY KELLER ADAPT */}
-        <WhyKeller />
-
-        {/* 06. FIRST BUYERS */}
-        <ClinicalImpact />
-
-        {/* 07. CUSTOMER REVIEWS */}
-        <Reviews />
-
-        {/* 11. OUR STORY & TEAM INTRODUCTION */}
-        <Team />
-
-        {/* 12. GLOBAL REACH & SHIPPING */}
-        <GlobalReach />
-
-        {/* 13. GROWTH ROADMAP & INVESTOR PROOF POINTS */}
-        <InvestorMetrics />
-
-        {/* 14. FINAL CALL TO ACTION & CONTACT */}
-        <ContactSection />
-
-        {/* Brand Footer */}
+        <Reveal><Hero /></Reveal>
+        <Reveal><WhatWeCreate /></Reveal>
+        <Reveal><Reviews /></Reveal>
+        <Reveal><ProblemWeSolve /></Reveal>
+        <Reveal><WhoWeServe /></Reveal>
+        <Reveal><WhyKeller /></Reveal>
+        <Reveal><ClinicalImpact /></Reveal>
+        <Reveal><Team /></Reveal>
+        <Reveal><Marketplaces /></Reveal>
+        <Reveal><GlobalReach /></Reveal>
+        <Reveal><ContactSection /></Reveal>
+        <Reveal><ProductCatalog /></Reveal>
+        <Reveal><ProductDeepDive /></Reveal>
+        <Reveal><InvestorMetrics /></Reveal>
         <Footer />
       </div>
     </>

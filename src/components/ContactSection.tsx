@@ -1,6 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
+import ClayIcon from '@/components/ClayIcon';
 
 export default function ContactSection() {
   const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
@@ -15,19 +17,36 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const form = (e.currentTarget as HTMLButtonElement).form;
+    if (form && !form.reportValidity()) return;
     setFormSubmitted(true);
   };
 
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact" className="contact-section board-section board-rule">
       <div className="keller-container">
-        <div className="section-header">
-          <span className="section-tag">Partner With Us</span>
-          <h2 className="section-title">Let’s Build More Inclusive Spaces Together.</h2>
-          <p className="section-subtitle">
-            Whether you represent a therapy clinic, special school, hospital, airport, or are a parent seeking custom advice, our team is ready to assist.
-          </p>
+        <div className="board-together">
+          <div>
+            <h2 className="board-title board-title-stack">
+              <span>Let’s build</span>
+              <span>more inclusive spaces</span>
+              <span>Together</span>
+            </h2>
+            <p className="board-lead">
+              A therapy clinic, a special school, a hospital, an airport, or a parent with a specific child in mind. Tell us the space. We will help shape it.
+            </p>
+          </div>
+          <div className="board-frame board-together-photo">
+            <Image
+              src="/assets/sensory_rooms/10 (1).jpg"
+              alt="A Keller Adapt sensory room"
+              fill
+              sizes="(max-width: 800px) 100vw, 520px"
+            />
+          </div>
         </div>
+
+        <h2 className="board-contact-label">Contact.</h2>
 
         <div className="contact-grid">
           {/* Contact Details & Direct Actions */}
@@ -41,7 +60,7 @@ export default function ContactSection() {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '18px', marginBottom: '32px' }}>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '14px' }}>
-                <span style={{ fontSize: '20px' }}>📍</span>
+                <ClayIcon name="pin" size={48} />
                 <div>
                   <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--color-text-light)', textTransform: 'uppercase' }}>Manufacturing & R&D Hub</div>
                   <div style={{ fontSize: '14.5px', fontWeight: 600, color: 'var(--color-text-main)' }}>Kochi, Kerala, India — 682021</div>
@@ -49,7 +68,7 @@ export default function ContactSection() {
               </div>
 
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '14px' }}>
-                <span style={{ fontSize: '20px' }}>✉️</span>
+                <ClayIcon name="mail" size={48} />
                 <div>
                   <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--color-text-light)', textTransform: 'uppercase' }}>Direct Email</div>
                   <a href="mailto:hello@kelleradapt.com" style={{ fontSize: '14.5px', fontWeight: 600, color: 'var(--color-primary)' }}>
@@ -59,7 +78,7 @@ export default function ContactSection() {
               </div>
 
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '14px' }}>
-                <span style={{ fontSize: '20px' }}>📞</span>
+                <ClayIcon name="phone" size={48} />
                 <div>
                   <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--color-text-light)', textTransform: 'uppercase' }}>Direct Consultation Lines</div>
                   <div style={{ fontSize: '14.5px', fontWeight: 600, color: 'var(--color-text-main)' }}>
@@ -121,7 +140,7 @@ export default function ContactSection() {
                   />
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+                <div className="form-split">
                   <div className="form-group">
                     <label className="form-label">Email Address *</label>
                     <input
@@ -173,9 +192,10 @@ export default function ContactSection() {
                   ></textarea>
                 </div>
 
-                <button type="submit" className="btn btn-primary" style={{ width: '100%', padding: '14px' }}>
-                  Submit Consultation Request →
+                <button type="button" onClick={handleSubmit} className="btn btn-primary" style={{ width: '100%', padding: '14px' }}>
+                  Request a clinic quote
                 </button>
+                <p className="cta-micro">A specialist in Kochi replies within one working day. No payment to enquire.</p>
               </form>
             )}
           </div>

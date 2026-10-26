@@ -31,7 +31,7 @@ export interface SiteConfig {
 
 export const SITE_CONFIG: SiteConfig = {
   // Toggle this boolean to turn the Coming Soon mode on (true) or off (false)
-  comingSoon: true,
+  comingSoon: false,
 
   statusLabel: "Launching Soon",
 

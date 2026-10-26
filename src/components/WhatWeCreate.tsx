@@ -3,95 +3,135 @@ import Image from 'next/image';
 
 const PILLARS = [
   {
-    num: '01',
-    category: 'Therapeutic Hardware',
-    title: 'Sensory Products',
-    desc: 'Proprietary compression hammocks, tactile musical walls, and interactive glow swings engineered for deep pressure and vestibular regulation.',
-    tags: ['Compression Hammocks', 'Tactile Walls', 'Glow Swings'],
-    image: '/assets/products/solonest_1.png',
-    link: '#products',
-    cta: 'Explore Products'
+    title: 'Sensory Technology',
+    image: '/assets/rough/sensory product webp.webp',
+    link: '/create/sensory-technology',
+    layout: 'is-tech',
   },
   {
-    num: '02',
-    category: 'Clinical Environments',
+    title: 'Movement & Balance',
+    image: '/assets/rough/Movement & Balance.webp',
+    link: '/create/movement-balance',
+    layout: 'is-move',
+  },
+  {
+    title: 'Therapy Textiles',
+    image: '/assets/rough/therapy textiles webp.webp',
+    link: '/create/therapy-textiles',
+    layout: 'is-textile',
+  },
+  {
     title: 'Sensory Rooms',
-    desc: 'Turnkey multi-sensory installations for special education schools, therapy centers, and clinics with ambient fiber optics, acoustic padding, and interactive projection.',
-    tags: ['Turnkey Rooms', 'Fiber Optics', 'Bubble Columns'],
-    image: '/assets/sensory_rooms/12 (1).jpg',
-    link: '#products',
-    cta: 'View Installations'
+    image: '/assets/rough/Sensory Rooms.webp',
+    link: '/create/sensory-rooms',
+    layout: 'is-rooms',
   },
   {
-    num: '03',
-    category: 'Precision Fabrication',
-    title: 'Custom Manufacturing',
-    desc: 'In-house engineering, adaptive woodcraft, and rapid prototyping in Kerala, fabricating custom balance benches, positioning aids, and switch-adapted devices.',
-    tags: ['Kerala Facility', 'Adaptive Woodcraft', 'Custom Prototyping'],
-    image: '/assets/products/balance-bench-clean.png',
-    link: '#contact',
-    cta: 'Custom Requests'
+    title: 'Custom manufacture',
+    image: '/assets/rough/Custom Manufacture webp.webp',
+    link: '/create/custom-manufacture',
+    layout: 'is-custom',
   },
-  {
-    num: '04',
-    category: 'Universal Architecture',
-    title: 'Inclusive Spaces',
-    desc: 'Designing and consulting on sensory-friendly architecture for airports, transit hubs, and public institutions to ensure universal cognitive accessibility.',
-    tags: ['Airport Lounges', 'Transit Hubs', 'Accessibility Consulting'],
-    image: '/assets/sensory_rooms/20 (1).jpg',
-    link: '#contact',
-    cta: 'Consult With Us'
-  }
 ];
 
 export default function WhatWeCreate() {
   return (
-    <section id="what-we-create" className="what-we-create-section">
+    <section id="what-we-create" className="what-we-create-section board-section">
       <div className="keller-container">
-        <div className="section-header">
-          <span className="section-tag">Core Offerings</span>
-          <h2 className="section-title">
-            Designed Around <span style={{ color: 'var(--color-primary)' }}>Different Needs.</span>
-          </h2>
-          <p className="section-subtitle">
-            We introduce four distinct solution pillars engineered to make therapy engaging, spaces accessible, and families supported.
-          </p>
+        <p className="board-kicker">What we create</p>
+        <h2 className="board-title">Designed Around Different Needs</h2>
+        <p className="board-lead">
+          Sensory technology, movement pieces, therapy textiles, sensory rooms, and custom workshop pieces.
+        </p>
+
+        <div className="board-tiles">
+          <div className="board-collage-row is-lead">
+            {[PILLARS[0], PILLARS[4]].map((pillar) => (
+              <article key={pillar.title} className={`board-tile ${pillar.layout}`}>
+                <a className="board-tile-media" href={pillar.link} aria-label={pillar.title}>
+                  <Image
+                    src={pillar.image}
+                    alt=""
+                    fill
+                    sizes="(max-width: 680px) 100vw, 40vw"
+                  />
+                </a>
+                <div className="board-tile-bar">
+                  <h3>{pillar.title}</h3>
+                  <a className="board-tile-more" href={pillar.link}>See more</a>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="board-collage-row is-rest">
+            {[PILLARS[2], PILLARS[3], PILLARS[1]].map((pillar) => (
+              <article key={pillar.title} className={`board-tile ${pillar.layout}`}>
+                <a className="board-tile-media" href={pillar.link} aria-label={pillar.title}>
+                  <Image
+                    src={pillar.image}
+                    alt=""
+                    fill
+                    sizes="(max-width: 680px) 100vw, 30vw"
+                  />
+                </a>
+                <div className="board-tile-bar">
+                  <h3>{pillar.title}</h3>
+                  <a className="board-tile-more" href={pillar.link}>See more</a>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
 
-        <div className="create-grid">
-          {PILLARS.map((pillar) => (
-            <a key={pillar.num} href={pillar.link} className="create-card">
-              <div className="create-card-image-wrap">
-                <Image
-                  src={pillar.image}
-                  alt={pillar.title}
-                  fill
-                  style={{ objectFit: 'cover' }}
-                />
-                <div className="create-card-number-badge">{pillar.num}</div>
-              </div>
+        <div className="proof-bar">
+          <div className="proof-lead">
+            <Image
+              src="/assets/logo/laurel-wreath-brand.png"
+              alt=""
+              width={64}
+              height={52}
+            />
+            <div>
+              <h3>Top-Rated Pediatric Solutions</h3>
+              <p>Recognized for clinical-grade quality, verified safety, and 5-star ratings across independent global marketplaces.</p>
+            </div>
+          </div>
 
-              <div className="create-card-body">
-                <div className="create-card-category">{pillar.category}</div>
-                <h3 className="create-card-title">{pillar.title}</h3>
-                <p className="create-card-desc">{pillar.desc}</p>
-
-                <div className="create-card-tags">
-                  {pillar.tags.map((tag) => (
-                    <span key={tag} className="create-pill">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="create-card-footer">
-                  <span className="create-card-cta">
-                    {pillar.cta} <span className="create-arrow">→</span>
-                  </span>
-                </div>
-              </div>
+          <div className="proof-marks">
+            <a
+              className="proof-etsy"
+              href="https://www.etsy.com/listing/4519472296/sensory-compression-hammock-propriotex"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src="/assets/logo/etsy-logo-cropped.png" alt="Etsy" width={92} height={40} />
+              <span>
+                <strong>Star Seller</strong>
+                <em>Rating: 5.0 <span className="proof-stars">★★★★★</span></em>
+              </span>
+              <Image src="/assets/logo/etsy-star-seller-badge.png" alt="" width={52} height={52} />
             </a>
-          ))}
+            <a
+              className="proof-rate"
+              href="https://www.amazon.in/Keller-ADAPT-Processing-Occupational-Equipment/dp/B09TW84X2P?th=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Rating: 4.9</span>
+              <span className="proof-stars" aria-hidden="true">★★★★★</span>
+              <Image src="/assets/logo/norm-Amazon-Logo.png" alt="Amazon" width={88} height={28} />
+            </a>
+            <a
+              className="proof-rate"
+              href="https://www.flipkart.com/keller-adapt-deep-pressure-memory-foam-sensory-input-occupational-therapy-aid-autism-sleeping-bag/p/itme587d611de753"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Rating: 4.8</span>
+              <span className="proof-stars" aria-hidden="true">★★★★★</span>
+              <Image src="/assets/logo/norm-Flipkart-Logo.png" alt="Flipkart" width={88} height={28} />
+            </a>
+          </div>
         </div>
       </div>
     </section>
