@@ -8,7 +8,7 @@ export default function LocationMap() {
       <div className="keller-container">
         <div className="contact-map-header">
           <p className="board-kicker">Find Us in Kochi</p>
-          <h2 className="board-title">SenseAbility Innovations & Workshop Location</h2>
+          <h2 className="board-title">Keller Adapt Workshop & Experience Hub</h2>
           <div className="mission-title-bar" aria-hidden="true" />
           <p className="board-lead">
             Our clinical consultation office, R&D workshop, and sensory demo gym are based in Kochi, Kerala. Visits for therapy clinics, hospital teams, and families are welcome by appointment.
@@ -18,7 +18,7 @@ export default function LocationMap() {
         <div className="contact-map-card">
           <div className="map-embed-wrapper">
             <iframe
-              title="SenseAbility Innovations & Keller Adapt Kochi Location Map"
+              title="Keller Adapt Kochi Location Map"
               src="https://maps.google.com/maps?q=Kochi,+Kerala,+India&t=&z=12&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
@@ -35,8 +35,8 @@ export default function LocationMap() {
                 <span className="pin-ping" />
               </div>
               <div className="pin-text">
-                <strong>SenseAbility Innovations Pvt Ltd</strong>
-                <span>Keller Adapt R&D & Sensory Workshop</span>
+                <strong>Keller Adapt</strong>
+                <span>R&D & Sensory Workshop</span>
                 <span className="pin-coords">Kochi, Kerala, India — 682021</span>
               </div>
               <a

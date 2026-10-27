@@ -41,7 +41,7 @@ const MENU_SECTIONS: MenuSection[] = [
     label: 'Who we are',
     headline: 'Pioneering Kerala’s Assistive MedTech',
     description:
-      'Born from SenseAbility Innovations, Keller Adapt combines deep clinical therapy insight with domestic precision engineering to create world-class assistive devices priced 60–80% below imports.',
+      'Keller Adapt combines deep clinical therapy insight with domestic precision engineering to create world-class assistive devices priced 60–80% below imports.',
     ctaText: 'Discover our founding journey',
     ctaLink: '#about',
     items: [
@@ -50,7 +50,7 @@ const MENU_SECTIONS: MenuSection[] = [
       { label: 'Leadership Team & OT Advisors', href: '#team' },
       { label: '100% Domestic Kerala Manufacturing', href: '#why-keller' },
       { label: '9-Day Express Global Delivery (USA, UK, EU)', href: '#global' },
-      { label: 'SenseAbility Innovations Headquarters', href: '#contact' },
+      { label: 'Keller Adapt Headquarters & Workshop', href: '#location' },
     ],
   },
   {
@@ -98,7 +98,7 @@ const MENU_SECTIONS: MenuSection[] = [
       { label: 'Unit Economics & 70%+ Gross Margins', href: '#investor' },
       { label: 'Global D2C Traction & US Export Momentum', href: '#investor' },
       { label: 'B2B Expansion & Government Procurement (GeM)', href: '#investor' },
-      { label: 'Connect with SenseAbility Leadership', href: '#contact' },
+      { label: 'Connect with Keller Adapt Leadership', href: '#contact' },
     ],
   },
   {

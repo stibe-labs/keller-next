@@ -15,7 +15,6 @@ export const metadata: Metadata = {
   description: "Keller Adapt designs and manufactures innovative, affordable pediatric assistive therapy products and sensory integration spaces for children with special needs. Handcrafted in Kerala, India and shipped worldwide.",
   keywords: [
     "Keller Adapt",
-    "SenseAbility Innovations",
     "pediatric therapy",
     "sensory integration",
     "occupational therapy tools",
@@ -24,7 +23,7 @@ export const metadata: Metadata = {
     "sensory room installations",
     "switch adapted technology"
   ],
-  authors: [{ name: "SenseAbility Innovations Pvt Ltd" }],
+  authors: [{ name: "Keller Adapt" }],
   openGraph: {
     title: "Keller Adapt | Making Every Space More Inclusive",
     description: "Pediatric assistive devices, sensory rooms, and occupational therapy products crafted with purpose in Kerala, India.",

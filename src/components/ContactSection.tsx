@@ -69,7 +69,7 @@ export default function ContactSection() {
         <div className="contact-grid">
           {/* Left Column: Organization Credentials & GeM Tenders Card */}
           <div className="contact-info-box">
-            <h3 className="contact-corp-title">SenseAbility Innovations Pvt Ltd</h3>
+            <h3 className="contact-corp-title">Keller Adapt</h3>
             <p className="contact-corp-desc">
               Headquartered in Kerala, India. We consult, design, manufacture, and distribute specialized pediatric assistive technology to institutions and families worldwide.
             </p>

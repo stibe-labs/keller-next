@@ -88,8 +88,8 @@ const ROADMAP_STEPS: RoadmapStep[] = [
     year: '2024',
     step: '04',
     phase: 'Incorporation & ISO',
-    location: 'SenseAbility Scale',
-    title: 'SenseAbility Innovations',
+    location: 'Kerala R&D Scale',
+    title: 'Keller Adapt Production Facility',
     desc: 'Formal incorporation with expanded manufacturing, ISO quality workflows, and proprietary sensory controllers.'
   },
   {

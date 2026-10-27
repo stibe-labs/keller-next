@@ -77,13 +77,13 @@ export default function Home() {
         {/* 13. The Execution Team */}
         <Reveal><Team /></Reveal>
 
-        {/* 14. Conversion & Contact CTA */}
-        <Reveal><ContactSection /></Reveal>
-
-        {/* 15. Frequently Asked Questions */}
+        {/* 14. Frequently Asked Questions */}
         <Reveal><FAQSection /></Reveal>
 
-        {/* 16. Workshop & Demo Gym Location Map */}
+        {/* 15. Conversion & Contact CTA */}
+        <Reveal><ContactSection /></Reveal>
+
+        {/* 16. Keller Adapt Workshop & Experience Hub Map */}
         <Reveal><LocationMap /></Reveal>
 
         {/* 17. Footer */}

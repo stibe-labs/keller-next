@@ -18,7 +18,7 @@ const FAQS: FAQItem[] = [
   },
   {
     question: 'Can schools, hospitals, and clinics purchase via GeM Tenders?',
-    answer: 'Yes. SenseAbility Innovations Pvt Ltd is an active registered vendor on the Government e-Marketplace (GeM). We fulfill custom tender BOQs, technical compliance sheets, and institutional orders.'
+    answer: 'Yes. Keller Adapt is an active registered vendor on the Government e-Marketplace (GeM). We fulfill custom tender BOQs, technical compliance sheets, and institutional orders.'
   },
   {
     question: 'Do you deliver across India and internationally?',

@@ -42,7 +42,7 @@ export default function Footer() {
           <div>
             <h4 className="footer-col-title">Kochi studio</h4>
             <p className="footer-desc">
-              Keller Adapt is a brand by SenseAbility Innovations Pvt Ltd. Pediatric assistive technology, made in Kerala and shipped worldwide.
+              Keller Adapt specializes in pediatric assistive technology, therapeutic sensory room design, and inclusive spaces, made in Kerala and shipped worldwide.
             </p>
             <ul className="footer-links">
               <li><a href="mailto:hello@kelleradapt.com" className="footer-link">hello@kelleradapt.com</a></li>
@@ -75,7 +75,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <div>© 2026 Keller Adapt · SenseAbility Innovations Pvt Ltd</div>
+          <div>© 2026 Keller Adapt · All rights reserved</div>
           <div className="footer-legal">
             <a href="/privacy" className="footer-link">Privacy</a>
             <a href="/terms" className="footer-link">Terms</a>
