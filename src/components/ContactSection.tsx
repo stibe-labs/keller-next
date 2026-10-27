@@ -6,14 +6,32 @@ import ClayIcon from '@/components/ClayIcon';
 
 export default function ContactSection() {
   const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
+  const [copiedPhone, setCopiedPhone] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     organization: '',
     interest: 'Custom Sensory Room Project',
+    preferredContact: 'Phone Call',
     message: ''
   });
+
+  const inquiryPills = [
+    'Custom Sensory Room Project',
+    'LumaSwing & Swings Inquiry',
+    'Therapy Center Bulk Fit-out',
+    'Home Sensory Diet & SoloNest',
+    'Government GeM Tender'
+  ];
+
+  const handleCopyPhone = (number: string) => {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(number);
+      setCopiedPhone(number);
+      setTimeout(() => setCopiedPhone(null), 2500);
+    }
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -25,7 +43,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="contact-section board-section board-rule">
       <div className="keller-container">
-        {/* Top Header with Phone Call & Connect Graffitos */}
+        {/* Top Hero Banner with Therapist & Sensory Room Photo */}
         <div className="board-together">
           <div className="section-graffitos-header">
             <div className="section-graffitos-bg" aria-hidden="true">
@@ -58,91 +76,275 @@ export default function ContactSection() {
           </div>
         </div>
 
-        <h2 className="board-contact-label">Contact.</h2>
+        {/* ==============================================================
+             CALLING & DIRECT COMMUNICATION HUB (REDESIGNED)
+             ============================================================== */}
+        <div className="contact-calling-hub">
+          {/* Background Decorative Calling Vector Art */}
+          <div className="calling-vector-bg" aria-hidden="true">
+            <Image
+              src="/assets/bg/calling-communication-vector.svg"
+              alt=""
+              width={800}
+              height={240}
+              className="calling-vector-img"
+            />
+          </div>
 
-        <div className="contact-grid">
-          {/* Contact Details & Direct Actions */}
-          <div className="contact-info-box">
-            <h3 style={{ fontSize: '1.6rem', fontWeight: 800, color: 'var(--color-text-main)', marginBottom: '14px' }}>
-              SenseAbility Innovations Pvt Ltd
-            </h3>
-            <p style={{ fontSize: '0.95rem', color: 'var(--color-text-muted)', lineHeight: '1.6', marginBottom: '28px' }}>
-              Headquartered in Kerala, India. We consult, design, manufacture, and distribute specialized pediatric assistive technology to institutions and families worldwide.
+          <div className="calling-hub-header">
+            <div className="calling-badge-row">
+              <span className="calling-pill-status">
+                <span className="calling-pulse-dot" />
+                Clinical Lines Live & Ready
+              </span>
+              <span className="calling-pill-location">Kochi R&D Workshop</span>
+            </div>
+            <h3 className="calling-hub-title">Direct Calling & Clinical Consultation</h3>
+            <p className="calling-hub-subtitle">
+              Need immediate technical specifications, room blueprints, or product sizing? Speak or chat directly with our senior clinical engineering team.
             </p>
+          </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '18px', marginBottom: '32px' }}>
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '14px' }}>
+          {/* 3 Interactive Calling & Messaging Cards */}
+          <div className="calling-cards-grid">
+            {/* Card 1: Direct Phone Call */}
+            <div className="calling-card is-phone">
+              <div className="calling-card-top">
+                <div className="calling-icon-wrapper is-coral">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div className="calling-card-badge">Instant Call</div>
+              </div>
+              <h4 className="calling-card-title">Direct Consultation Line</h4>
+              <p className="calling-card-desc">
+                One-on-one phone consultation with our pediatric equipment engineers for custom room dimensions and load ratings.
+              </p>
+              <div className="calling-numbers-list">
+                <div className="calling-number-row">
+                  <a href="tel:+917736630683" className="calling-number-link">
+                    +91 77366 30683
+                  </a>
+                  <button
+                    type="button"
+                    onClick={() => handleCopyPhone('+91 77366 30683')}
+                    className="calling-copy-btn"
+                    title="Copy phone number"
+                  >
+                    {copiedPhone === '+91 77366 30683' ? '✓ Copied' : 'Copy'}
+                  </button>
+                </div>
+                <div className="calling-number-row">
+                  <a href="tel:+917025315392" className="calling-number-link">
+                    +91 70253 15392
+                  </a>
+                  <button
+                    type="button"
+                    onClick={() => handleCopyPhone('+91 70253 15392')}
+                    className="calling-copy-btn"
+                    title="Copy phone number"
+                  >
+                    {copiedPhone === '+91 70253 15392' ? '✓ Copied' : 'Copy'}
+                  </button>
+                </div>
+              </div>
+              <a href="tel:+917736630683" className="calling-action-btn btn-call">
+                <span>Call Primary Line</span>
+                <span aria-hidden="true">📞</span>
+              </a>
+              <span className="calling-timing-hint">Mon – Sat, 9:30 AM – 6:00 PM IST</span>
+            </div>
+
+            {/* Card 2: WhatsApp Chat */}
+            <div className="calling-card is-whatsapp">
+              <div className="calling-card-top">
+                <div className="calling-icon-wrapper is-green">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                  </svg>
+                </div>
+                <div className="calling-card-badge is-green">⚡ Fastest Reply</div>
+              </div>
+              <h4 className="calling-card-title">WhatsApp Clinical Desk</h4>
+              <p className="calling-card-desc">
+                Send room photos, hand sketches, or floor plan PDFs directly. Ideal for quick sizing and product questions.
+              </p>
+              <div className="calling-wa-info">
+                <span className="calling-wa-stat">✓ Usually replies within 1 hour</span>
+                <span className="calling-wa-number">+91 70253 15392</span>
+              </div>
+              <a
+                href="https://wa.me/917025315392?text=Hello%20Keller%20Adapt%20team,%20I%20would%20like%20to%20consult%20regarding%20sensory%20equipment."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="calling-action-btn btn-whatsapp"
+              >
+                <span>Chat on WhatsApp</span>
+                <span aria-hidden="true">💬</span>
+              </a>
+              <span className="calling-timing-hint">Available for international & domestic chats</span>
+            </div>
+
+            {/* Card 3: Free 3D Virtual Walkthrough */}
+            <div className="calling-card is-schedule">
+              <div className="calling-card-top">
+                <div className="calling-icon-wrapper is-teal">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                  </svg>
+                </div>
+                <div className="calling-card-badge is-teal">Free 3D Layout</div>
+              </div>
+              <h4 className="calling-card-title">Virtual Room Planning</h4>
+              <p className="calling-card-desc">
+                Have a clinic or school hall to outfit? Schedule a free 20-minute video walkthrough to map out your sensory stations.
+              </p>
+              <ul className="calling-check-list">
+                <li>✓ Custom 3D CAD space model</li>
+                <li>✓ Vestibular & swing load calculations</li>
+                <li>✓ Tailored BOQ for your budget</li>
+              </ul>
+              <a
+                href="#consultation-form"
+                onClick={() => {
+                  setFormData(prev => ({ ...prev, interest: 'Custom Sensory Room Project', preferredContact: 'Virtual Call' }));
+                  document.getElementById('consultation-form')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="calling-action-btn btn-schedule"
+              >
+                <span>Request 3D Walkthrough</span>
+                <span aria-hidden="true">→</span>
+              </a>
+              <span className="calling-timing-hint">No obligation • 100% confidential</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Section Divider & Headline */}
+        <div className="contact-main-header">
+          <p className="board-kicker">Written Inquiries & Procurement</p>
+          <h2 className="board-title">Contact & Institutional Quotes</h2>
+          <div className="mission-title-bar" aria-hidden="true" />
+        </div>
+
+        {/* ==============================================================
+             REDESIGNED DUAL-CARD GRID (DETAILS & CONSULTATION FORM)
+             ============================================================== */}
+        <div id="consultation-form" className="contact-grid">
+          {/* Left Column: Organization Credentials & GeM Tenders Card */}
+          <div className="contact-info-box contact-details-elevated">
+            <div className="contact-corp-header">
+              <span className="contact-badge-corp">Official Entity</span>
+              <h3 className="contact-corp-title">SenseAbility Innovations Pvt Ltd</h3>
+              <p className="contact-corp-desc">
+                Headquartered in Kochi, Kerala. We research, design, manufacture, and distribute specialized pediatric assistive technology to institutions and families worldwide.
+              </p>
+            </div>
+
+            {/* Contact Channels List */}
+            <div className="contact-channels-list">
+              <div className="contact-channel-row">
                 <ClayIcon name="pin" size={48} />
                 <div>
-                  <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--color-text-light)', textTransform: 'uppercase' }}>Manufacturing & R&D Hub</div>
-                  <div style={{ fontSize: '14.5px', fontWeight: 600, color: 'var(--color-text-main)' }}>Kochi, Kerala, India — 682021</div>
+                  <span className="contact-channel-label">Manufacturing & R&D Hub</span>
+                  <p className="contact-channel-val">Kochi, Kerala, India — 682021</p>
                 </div>
               </div>
 
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '14px' }}>
+              <div className="contact-channel-row">
                 <ClayIcon name="mail" size={48} />
                 <div>
-                  <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--color-text-light)', textTransform: 'uppercase' }}>Direct Email</div>
-                  <a href="mailto:hello@kelleradapt.com" style={{ fontSize: '14.5px', fontWeight: 600, color: 'var(--color-primary)' }}>
+                  <span className="contact-channel-label">Direct Clinical Email</span>
+                  <a href="mailto:hello@kelleradapt.com" className="contact-channel-link">
                     hello@kelleradapt.com
                   </a>
                 </div>
               </div>
 
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '14px' }}>
+              <div className="contact-channel-row">
                 <ClayIcon name="phone" size={48} />
                 <div>
-                  <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--color-text-light)', textTransform: 'uppercase' }}>Direct Consultation Lines</div>
-                  <div style={{ fontSize: '14.5px', fontWeight: 600, color: 'var(--color-text-main)' }}>
-                    +91 77366 30683 / +91 70253 15392
-                  </div>
+                  <span className="contact-channel-label">Hotline & Inquiries</span>
+                  <p className="contact-channel-val">
+                    +91 77366 30683 &middot; +91 70253 15392
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div style={{ background: '#FFFFFF', padding: '20px', borderRadius: '14px', border: '1px solid var(--color-border)' }}>
-              <div style={{ fontSize: '12px', fontWeight: 800, color: 'var(--color-primary)', textTransform: 'uppercase', marginBottom: '6px' }}>
-                Institutional & Government Tenders
+            {/* Institutional & GeM Tenders Card */}
+            <div className="contact-tender-card">
+              <div className="tender-badge-row">
+                <span className="tender-gem-tag">GeM Registered</span>
+                <span className="tender-subtag">Government e-Marketplace</span>
               </div>
-              <p style={{ fontSize: '13px', color: 'var(--color-text-muted)', lineHeight: '1.5' }}>
-                Registered for institutional procurement and GEM Marketplace tenders for schools, rehabilitation centers, and medical colleges.
+              <h4 className="tender-card-title">Institutional Procurement & Tenders</h4>
+              <p className="tender-card-desc">
+                Registered vendor for government medical colleges, special schools, defense rehabilitation centers, and healthcare institutions. We provide custom tender BOQs, technical compliance sheets, and GST invoicing.
               </p>
+              <div className="tender-points">
+                <span>✓ Pan-India Delivery</span>
+                <span>✓ Turnkey Installation</span>
+                <span>✓ CPWD/Hospital Grade Hardware</span>
+              </div>
             </div>
           </div>
 
-          {/* Consultation Request Form */}
-          <div className="contact-form">
+          {/* Right Column: Consultation Request Form */}
+          <div className="contact-form contact-form-elevated">
             {formSubmitted ? (
-              <div style={{ textAlign: 'center', padding: '40px 20px' }}>
-                <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: 'var(--color-mint-subtle)', color: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '32px', margin: '0 auto 20px auto' }}>
-                  ✓
-                </div>
-                <h3 style={{ fontSize: '1.6rem', fontWeight: 800, color: 'var(--color-text-main)', marginBottom: '8px' }}>
+              <div className="contact-success-state">
+                <div className="contact-success-icon" aria-hidden="true">✓</div>
+                <h3 className="contact-success-title">
                   Thank You, {formData.name || 'Friend'}!
                 </h3>
-                <p style={{ fontSize: '1rem', color: 'var(--color-text-muted)', lineHeight: '1.6', marginBottom: '24px' }}>
-                  Your inquiry regarding <strong>{formData.interest}</strong> has been received by our clinical & engineering team in Kochi. We will reach out to you within 24 hours.
+                <p className="contact-success-message">
+                  Your inquiry regarding <strong>{formData.interest}</strong> has been logged with our senior clinical engineering team in Kochi. We will reach out via <strong>{formData.preferredContact}</strong> within 24 hours.
                 </p>
                 <button
+                  type="button"
                   onClick={() => setFormSubmitted(false)}
-                  className="btn btn-secondary"
-                  style={{ padding: '10px 22px', fontSize: '14px' }}
+                  className="btn btn-secondary contact-success-btn"
                 >
                   Send Another Inquiry
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit}>
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 800, color: 'var(--color-text-main)', marginBottom: '6px' }}>
-                  Request Consultation or Custom Quote
-                </h3>
-                <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)', marginBottom: '24px' }}>
-                  Tell us about your space, clinic requirements, or specific child needs.
-                </p>
+              <form onSubmit={handleSubmit} noValidate>
+                <div className="form-head">
+                  <span className="form-head-kicker">Clinical & Institutional Consultation</span>
+                  <h3 className="form-head-title">Request Consultation or Custom Quote</h3>
+                  <p className="form-head-desc">
+                    Tell us about your space, clinic requirements, or specific child needs.
+                  </p>
+                </div>
 
+                {/* Inquiry Area Interactive Pills */}
                 <div className="form-group">
-                  <label className="form-label">Full Name *</label>
+                  <label className="form-label">Inquiry Area</label>
+                  <div className="inquiry-pill-selector">
+                    {inquiryPills.map(pill => (
+                      <button
+                        key={pill}
+                        type="button"
+                        onClick={() => setFormData({ ...formData, interest: pill })}
+                        className={`inquiry-pill-btn ${formData.interest === pill ? 'is-selected' : ''}`}
+                      >
+                        {pill}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Full Name */}
+                <div className="form-group">
+                  <label className="form-label" htmlFor="contact-name">Full Name *</label>
                   <input
+                    id="contact-name"
                     type="text"
                     required
                     className="form-input"
@@ -152,10 +354,12 @@ export default function ContactSection() {
                   />
                 </div>
 
+                {/* Email and Phone Split */}
                 <div className="form-split">
                   <div className="form-group">
-                    <label className="form-label">Email Address *</label>
+                    <label className="form-label" htmlFor="contact-email">Email Address *</label>
                     <input
+                      id="contact-email"
                       type="email"
                       required
                       className="form-input"
@@ -166,9 +370,11 @@ export default function ContactSection() {
                   </div>
 
                   <div className="form-group">
-                    <label className="form-label">Phone / WhatsApp</label>
+                    <label className="form-label" htmlFor="contact-phone">Phone / WhatsApp *</label>
                     <input
+                      id="contact-phone"
                       type="tel"
+                      required
                       className="form-input"
                       placeholder="+91 98765 43210"
                       value={formData.phone}
@@ -177,37 +383,51 @@ export default function ContactSection() {
                   </div>
                 </div>
 
+                {/* Preferred Callback Channel */}
                 <div className="form-group">
-                  <label className="form-label">Inquiry Area</label>
-                  <select
-                    className="form-select"
-                    value={formData.interest}
-                    onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
-                  >
-                    <option value="Custom Sensory Room Project">Custom Sensory Room Project</option>
-                    <option value="LumaSwing or LightLoops Inquiry">LumaSwing / LightLoops Inquiry</option>
-                    <option value="Therapy Center Equipment Bulk Order">Therapy Center Equipment Bulk Order</option>
-                    <option value="International Order & Delivery Support">International Order & Delivery Support</option>
-                    <option value="Institutional Partnership / Distribution">Institutional Partnership / Distribution</option>
-                  </select>
+                  <label className="form-label">Preferred Callback Method</label>
+                  <div className="contact-pref-row">
+                    {['Phone Call', 'WhatsApp', 'Email'].map((method) => (
+                      <label key={method} className={`pref-radio-pill ${formData.preferredContact === method ? 'is-active' : ''}`}>
+                        <input
+                          type="radio"
+                          name="preferredContact"
+                          value={method}
+                          checked={formData.preferredContact === method}
+                          onChange={(e) => setFormData({ ...formData, preferredContact: e.target.value })}
+                        />
+                        <span>{method === 'Phone Call' ? '📞 Call me' : method === 'WhatsApp' ? '💬 WhatsApp' : '✉️ Email'}</span>
+                      </label>
+                    ))}
+                  </div>
                 </div>
 
+                {/* Project Details */}
                 <div className="form-group">
-                  <label className="form-label">Project Details or Questions *</label>
+                  <label className="form-label" htmlFor="contact-message">Project Details or Questions *</label>
                   <textarea
+                    id="contact-message"
                     required
                     rows={4}
                     className="form-textarea"
-                    placeholder="Describe your clinic, school, or home space requirements..."
+                    placeholder="Describe your clinic, school, or home space requirements, child regulation targets, or room dimensions..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  ></textarea>
+                  />
                 </div>
 
-                <button type="button" onClick={handleSubmit} className="btn btn-primary" style={{ width: '100%', padding: '14px' }}>
-                  Request a clinic quote
+                {/* Submit Button */}
+                <button
+                  type="button"
+                  onClick={handleSubmit}
+                  className="btn btn-primary contact-submit-btn"
+                >
+                  <span>Request a clinic quote & floor plan</span>
+                  <span aria-hidden="true">→</span>
                 </button>
-                <p className="cta-micro">A specialist in Kochi replies within one working day. No payment to enquire.</p>
+                <p className="cta-micro">
+                  A specialist in Kochi replies within one working day. No payment to enquire. Confidential clinical review.
+                </p>
               </form>
             )}
           </div>

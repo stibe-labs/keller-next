@@ -14,6 +14,7 @@ import WhyKeller from '@/components/WhyKeller';
 import Team from '@/components/Team';
 import InvestorMetrics from '@/components/InvestorMetrics';
 import ContactSection from '@/components/ContactSection';
+import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 import Reveal from '@/components/Reveal';
 
@@ -78,7 +79,10 @@ export default function Home() {
         {/* 14. Conversion & Investor/Partner Contact */}
         <Reveal><ContactSection /></Reveal>
 
-        {/* 15. Footer */}
+        {/* 15. Frequently Asked Questions */}
+        <Reveal><FAQSection /></Reveal>
+
+        {/* 16. Footer */}
         <Footer />
       </div>
     </>
