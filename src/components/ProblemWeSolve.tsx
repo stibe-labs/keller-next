@@ -79,8 +79,8 @@ export default function ProblemWeSolve() {
           <div className="mission-visual-card">
             <div className="mission-visual-frame">
               <Image
-                src="/assets/sensory_rooms/18 (1).jpg"
-                alt="A child in a Keller Adapt sensory therapy environment"
+                src="/assets/rough/we believe every child deserves.webp"
+                alt="A joyful child immersed in an illuminated Keller Adapt sensory ball pool"
                 fill
                 sizes="(max-width: 900px) 100vw, 480px"
                 className="mission-visual-img"
