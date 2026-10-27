@@ -93,10 +93,10 @@ const ROADMAP_STEPS: RoadmapStep[] = [
     desc: 'Formal incorporation with expanded manufacturing, ISO quality workflows, and proprietary sensory controllers.'
   },
   {
-    year: '2026',
+    year: '2026 & Beyond',
     step: '05',
     phase: 'Global Scale',
-    location: 'US, EU, GCC & India',
+    location: 'Worldwide Hub',
     title: 'Worldwide Institutional Scaling',
     desc: 'Direct institutional distribution scaling worldwide from Kochi with 9-day express delivery and dedicated clinical support.',
     isCurrent: true
@@ -159,19 +159,31 @@ export default function InvestorMetrics() {
 
           {/* Minimal Connected Track */}
           <div className="timeline-connected-track">
-            {/* Horizontal Connecting Guide Rail */}
-            <div className="timeline-guide-rail" aria-hidden="true" />
+            {/* Guide Rail spanning exactly from first milestone to final active horizon */}
+            <div className="timeline-guide-rail" aria-hidden="true">
+              <span className="timeline-rail-arrow" aria-hidden="true">→</span>
+            </div>
 
             <div className="timeline-nodes-grid">
-              {ROADMAP_STEPS.map((step) => (
+              {ROADMAP_STEPS.map((step, idx) => (
                 <div
                   key={step.year}
                   className={`timeline-node-column ${step.isCurrent ? 'is-current-stage' : ''}`}
                 >
-                  {/* Connected Step Node */}
+                  {/* Clean Milestone Node Pin on Rail */}
                   <div className="timeline-node-pin">
-                    <span className="timeline-node-step">{step.step}</span>
-                    <span className="timeline-node-glow" aria-hidden="true" />
+                    {step.isCurrent ? (
+                      <div className="timeline-live-beacon" title="Active Horizon">
+                        <span className="timeline-beacon-dot" />
+                        <span className="timeline-beacon-pulse" />
+                      </div>
+                    ) : (
+                      <div className="timeline-check-node" title={`Phase 0${idx + 1} completed`}>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                      </div>
+                    )}
                   </div>
 
                   {/* Year & Phase Pill */}
@@ -182,13 +194,21 @@ export default function InvestorMetrics() {
 
                   {/* Spacious, Legible Milestone Card */}
                   <div className="timeline-detail-card">
-                    <span className="timeline-location-tag">{step.location}</span>
+                    <div className="timeline-card-kicker-row">
+                      <span className="timeline-stage-badge">Phase 0{idx + 1}</span>
+                      <span className="timeline-location-tag">{step.location}</span>
+                    </div>
                     <h4 className="timeline-card-title">{step.title}</h4>
                     <p className="timeline-card-desc">{step.desc}</p>
-                    {step.isCurrent && (
+                    {step.isCurrent ? (
                       <div className="timeline-current-pill">
                         <span className="timeline-current-pulse" aria-hidden="true" />
-                        <span>Active Expansion</span>
+                        <span>Active Global Expansion</span>
+                      </div>
+                    ) : (
+                      <div className="timeline-achieved-pill">
+                        <span className="timeline-achieved-check">✓</span>
+                        <span>Clinical Milestone Delivered</span>
                       </div>
                     )}
                   </div>
