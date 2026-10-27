@@ -85,21 +85,67 @@ const CHANNELS: ShopChannel[] = [
   }
 ];
 
+const LOGISTICS_PILLARS = [
+  {
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E24B32" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z" />
+      </svg>
+    ),
+    title: '9-Day Express Global Air',
+    text: 'Direct international air dispatch from our Kochi workshop to USA, UK, Europe, & Australia.'
+  },
+  {
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E24B32" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+      </svg>
+    ),
+    title: 'Customs & Duties Pre-Cleared',
+    text: 'Hassle-free international delivery with prepaid customs clearance for clinics, schools, and families.'
+  },
+  {
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E24B32" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+        <line x1="12" y1="22.08" x2="12" y2="12" />
+      </svg>
+    ),
+    title: 'Drop-Tested Clinic Packaging',
+    text: 'Engineered protective crating built to safeguard precision therapy electronics and structural rigs.'
+  },
+  {
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E24B32" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+        <circle cx="12" cy="7" r="4" />
+      </svg>
+    ),
+    title: 'Hospital & Institutional Tenders',
+    text: 'Turnkey sensory room projects, direct hospital purchase orders, and global institutional fulfillment.'
+  }
+];
+
 export default function Marketplaces() {
   return (
     <section id="shop" className="marketplaces-section board-section">
+      {/* Anchor for global logistics nav links */}
+      <div id="global" className="scroll-anchor" />
+
       <div className="keller-container">
-        {/* Section Header */}
+        {/* Combined Section Header */}
         <div className="marketplaces-minimal-header">
-          <p className="board-kicker">Where To Buy</p>
-          <h2 className="board-title">Official Stores & Global Partners</h2>
+          <p className="board-kicker">Where To Buy & Global Logistics</p>
+          <h2 className="board-title">Worldwide Express Delivery & Verified Stores</h2>
           <div className="mission-title-bar" aria-hidden="true" />
           <p className="board-lead">
-            Explore authentic Keller Adapt sensory equipment through our verified marketplace partners or our upcoming direct flagship store.
+            Handcrafted in our Kochi workshop with 9-day express dispatch to the USA, Europe, and Australia. Available through verified global retailers or direct via our upcoming flagship store.
           </p>
         </div>
 
-        {/* Highlight Banner: Our Own Direct Store (Launching Soon) */}
+        {/* Flagship Store: Launching Soon Banner */}
         <div className="marketplaces-own-store-banner">
           <div className="own-store-badge-row">
             <span className="own-store-status-pill">
@@ -176,6 +222,41 @@ export default function Marketplaces() {
               </div>
             </article>
           ))}
+        </div>
+
+        {/* Integrated Global Logistics Capability Band */}
+        <div className="marketplaces-logistics-band">
+          <div className="logistics-band-head">
+            <span className="logistics-kicker">Kochi To The World</span>
+            <h3 className="logistics-title">Global Air Freight & Doorstep Logistics</h3>
+            <p className="logistics-subtitle">
+              Seamless international distribution network delivering clinical-grade pediatric equipment to homes, therapy practices, and hospitals in over 18 countries.
+            </p>
+          </div>
+
+          <div className="logistics-grid">
+            {LOGISTICS_PILLARS.map((pillar, i) => (
+              <div key={i} className="logistics-item">
+                <div className="logistics-icon" aria-hidden="true">
+                  {pillar.icon}
+                </div>
+                <div className="logistics-item-content">
+                  <h4 className="logistics-item-title">{pillar.title}</h4>
+                  <p className="logistics-item-text">{pillar.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="logistics-band-footer">
+            <span className="logistics-footer-text">
+              Looking for hospital tenders, institutional import quotes, or school sensory room installations?
+            </span>
+            <a href="#contact" className="logistics-footer-btn">
+              <span>Request International Quote</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

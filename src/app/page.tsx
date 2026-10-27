@@ -12,7 +12,6 @@ import ProblemWeSolve from '@/components/ProblemWeSolve';
 import WhoWeServe from '@/components/WhoWeServe';
 import WhyKeller from '@/components/WhyKeller';
 import Team from '@/components/Team';
-import GlobalReach from '@/components/GlobalReach';
 import InvestorMetrics from '@/components/InvestorMetrics';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
@@ -70,11 +69,8 @@ export default function Home() {
         {/* 10. Social Proof & Verified Customer Reviews */}
         <Reveal><Reviews /></Reveal>
 
-        {/* 11. Multi-Channel Go-To-Market */}
+        {/* 11. Where To Buy & Global Logistics (Combined) */}
         <Reveal><Marketplaces /></Reveal>
-
-        {/* 12. Global Reach & Scalable Logistics */}
-        <Reveal><GlobalReach /></Reveal>
 
         {/* 13. The Execution Team */}
         <Reveal><Team /></Reveal>
