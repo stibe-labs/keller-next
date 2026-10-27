@@ -50,8 +50,8 @@ export default function ContactSection() {
           </div>
           <div className="board-frame board-together-photo">
             <Image
-              src="/assets/sensory_rooms/10 (1).jpg"
-              alt="A Keller Adapt sensory room"
+              src="/assets/create/sensory-rooms-74.jpg"
+              alt="Therapist and child interacting with inclusive sensory room equipment"
               fill
               sizes="(max-width: 800px) 100vw, 520px"
             />
