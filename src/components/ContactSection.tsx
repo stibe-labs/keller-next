@@ -225,7 +225,7 @@ export default function ContactSection() {
         </div>
 
         {/* Section Divider & Headline */}
-        <div className="contact-main-header">
+        <div id="consultation-form" className="contact-main-header">
           <p className="board-kicker">Written Inquiries & Procurement</p>
           <h2 className="board-title">Contact & Institutional Quotes</h2>
           <div className="mission-title-bar" aria-hidden="true" />
@@ -234,7 +234,7 @@ export default function ContactSection() {
         {/* ==============================================================
              REDESIGNED DUAL-CARD GRID (DETAILS & CONSULTATION FORM)
              ============================================================== */}
-        <div id="consultation-form" className="contact-grid">
+        <div className="contact-grid">
           {/* Left Column: Organization Credentials & GeM Tenders Card */}
           <div className="contact-info-box contact-details-elevated">
             <div className="contact-corp-header">
