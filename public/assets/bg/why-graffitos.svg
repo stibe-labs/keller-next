@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" width="100%" height="100%" fill="none">
+  <!-- ==============================================================
+       WHY KELLER: CRAFT & CLINICAL PURPOSE EXTENDED GRAFFITOS
+       Thematic motifs: Kerala Workshop Palms, Handcrafted Joinery & Needle,
+       Clinical Heart Stethoscope, Calibration Waves, Tactile Weave.
+       Colors: Keller Coral (#F46255) & Keller Teal (#087F7F)
+       Opacities: Calibrated for Cyan Canvas (#D4F1F5) in 0.26 - 0.38 range
+       ============================================================== -->
+
+  <!-- ==============================================================
+       ZONE 1: HIGH TOP-RIGHT (Kerala Palms, Craft Needle, Clinical Heart - MOVED UP!)
+       ============================================================== -->
+  
+  <!-- Kerala Coconut Palm Tree (Kochi Workshop Origin - High Upper-Right y:15 to 260) -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.34">
+    <!-- Tall curved trunk -->
+    <path d="M 985 270 C 990 220 985 150 970 85 C 966 68 962 52 958 40"/>
+    <path d="M 972 270 C 978 225 974 155 958 90 C 955 74 950 56 946 44"/>
+    <!-- Trunk texture rings -->
+    <path d="M 971 230 C 980 232 985 233 990 231" stroke-dasharray="3 3"/>
+    <path d="M 968 185 C 976 187 981 188 985 186" stroke-dasharray="3 3"/>
+    <path d="M 964 140 C 971 142 975 143 979 141" stroke-dasharray="3 3"/>
+    <path d="M 957 95 C 963 97 967 98 970 96" stroke-dasharray="3 3"/>
+
+    <!-- Arching Palm Fronds (High in Sky at y:15-65) -->
+    <path d="M 955 42 C 970 20 1005 15 1030 25 C 1045 32 1050 45 1040 55"/>
+    <path d="M 955 42 C 980 32 1015 35 1035 55"/>
+    <path d="M 955 42 C 965 18 945 12 925 18 C 910 24 905 38 915 50"/>
+    <path d="M 955 42 C 940 28 920 32 905 48"/>
+    <path d="M 955 42 C 950 14 962 10 975 14 C 985 20 988 32 985 45"/>
+    <!-- Coconuts (Soft sketched circles) -->
+    <circle cx="952" cy="50" r="3.2" fill="#087F7F" opacity="0.3"/>
+    <circle cx="960" cy="52" r="2.8" fill="#F46255" opacity="0.3"/>
+    <circle cx="955" cy="56" r="3" fill="#087F7F" opacity="0.3"/>
+  </g>
+
+  <!-- Textile Craft: Yarn Spool & Flowing Thread Needle -->
+  <g stroke="#F46255" stroke-width="1.6" stroke-linecap="round" opacity="0.32">
+    <!-- Thread Spool -->
+    <ellipse cx="880" cy="75" rx="14" ry="20" stroke-dasharray="7 4"/>
+    <path d="M 880 55 L 880 95"/>
+    <!-- Thread winding out in wavy loop -->
+    <path d="M 880 55 C 895 38 915 48 930 70 C 945 92 925 120 910 115 C 895 110 905 85 925 80" stroke-dasharray="5 4"/>
+    
+    <!-- Craft Sewing Needle (Stainless OT fabrication) -->
+    <path d="M 900 130 L 925 90" stroke="#087F7F" stroke-width="2"/>
+    <circle cx="902" cy="127" r="1.6" fill="#087F7F"/>
+  </g>
+
+  <!-- Clinical Purpose: Pediatric Stethoscope Heart & Healing Hands -->
+  <g stroke-linecap="round">
+    <!-- Stethoscope tube forming a Heart -->
+    <g stroke="#F46255" stroke-width="1.8" opacity="0.35">
+      <path d="M 1090 95 C 1075 70 1045 85 1055 108 C 1065 130 1090 148 1090 155 C 1090 148 1115 130 1125 108 C 1135 85 1105 70 1090 95 Z" 
+            stroke-dasharray="14 4 4 4"/>
+      <!-- Chest piece / calibrated sensor -->
+      <circle cx="1090" cy="165" r="7.5" stroke="#087F7F" stroke-width="2" fill="none"/>
+      <circle cx="1090" cy="165" r="2.5" fill="#087F7F" opacity="0.35"/>
+    </g>
+
+    <!-- Woodworking Chisel / Shaping Tool -->
+    <g stroke="#087F7F" stroke-width="1.7" opacity="0.32">
+      <path d="M 1135 48 L 1155 78 C 1157 82 1155 86 1150 88 L 1145 90"/>
+      <path d="M 1155 78 L 1170 100"/>
+    </g>
+  </g>
+
+  <!-- Workshop Sparkles & Star Twinkles (Top-Right Margin) -->
+  <g opacity="0.30">
+    <path d="M 1040 28 L 1042 34 L 1048 35.5 L 1042 37 L 1040 43 L 1038 37 L 1032 35.5 L 1038 34 Z" fill="#087F7F"/>
+    <path d="M 1125 45 L 1127 50 L 1132 52 L 1127 54 L 1125 59 L 1123 54 L 1118 52 L 1123 50 Z" fill="#F46255"/>
+    <circle cx="1020" cy="75" r="2.2" fill="#F46255"/>
+    <circle cx="1075" cy="40" r="2.4" fill="#087F7F"/>
+    <circle cx="1145" cy="120" r="1.8" fill="#087F7F"/>
+    <circle cx="860" cy="35" r="2" fill="#F46255"/>
+  </g>
+
+
+  <!-- ==============================================================
+       ZONE 2: EXTENDING UNDER THE TITLES (Craft & Clinical Underlines)
+       ============================================================== -->
+  
+  <!-- Kicker Accent Swirl in Keller Coral (Near "CRAFT & CLINICAL PURPOSE") -->
+  <path d="M 22 28 C 12 36 10 46 20 52 C 30 56 36 46 28 40 C 22 36 16 42 22 48" 
+        stroke="#F46255" stroke-width="1.5" stroke-linecap="round" opacity="0.28"/>
+
+  <!-- Organic Sensory Underline Flow Line 1 (Directly under "More than products. Engineered for") -->
+  <path d="M 40 108 C 200 120 400 104 580 114 C 700 120 800 106 880 112" 
+        stroke="#F46255" stroke-width="1.9" stroke-linecap="round" stroke-dasharray="14 8" opacity="0.32"/>
+  
+  <!-- Dynamic Hand-Drawn Underline Flourish 2 (Directly under "a better future.") -->
+  <path d="M 40 178 C 110 190 240 186 360 176 C 420 172 470 182 520 175" 
+        stroke="#087F7F" stroke-width="2.1" stroke-linecap="round" opacity="0.36"/>
+
+  <!-- Double Sensory Echo Wave under Title -->
+  <path d="M 46 186 C 130 196 230 192 330 185" 
+        stroke="#F46255" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="4 5" opacity="0.28"/>
+
+  <!-- Swirling Craft Connector Loop flowing towards the Palm Tree in Teal -->
+  <g stroke="#087F7F" stroke-width="1.7" stroke-linecap="round" opacity="0.32">
+    <path d="M 520 175 C 580 162 640 192 700 170 C 760 148 820 180 880 155" stroke-dasharray="6 5"/>
+    <path d="M 700 170 C 715 160 725 175 710 185 C 695 195 680 175 700 165"/>
+    <circle cx="712" cy="172" r="2.2" fill="#F46255" stroke="none" opacity="0.32"/>
+  </g>
+
+  <!-- Calibrated Sensory Weave Ripple under the Lead Paragraph -->
+  <path d="M 40 268 Q 65 258 90 268 T 140 268 T 190 268 T 240 268 T 290 268 T 340 268 T 390 268 T 440 268 T 490 268 T 540 268 T 590 268" 
+        stroke="#087F7F" stroke-width="1.6" stroke-linecap="round" opacity="0.28"/>
+
+  <!-- Artisan Workshop Compass / Angle Gauge Doodle (Between Lead text and Palms) -->
+  <g stroke="#F46255" stroke-width="1.6" stroke-linecap="round" opacity="0.32">
+    <path d="M 685 245 L 705 215 L 725 245"/>
+    <path d="M 692 235 C 700 232 710 232 718 235" stroke-dasharray="3 3"/>
+    <circle cx="705" cy="215" r="2" fill="#087F7F"/>
+  </g>
+
+
+  <!-- ==============================================================
+       ZONE 3: EXTENDING TO AND AROUND GALLERY IMAGES (Why Gallery Grid)
+       ============================================================== -->
+  
+  <!-- Left Side: Cascading Dotted Trail leading into "CLINICAL ENVIRONMENT" Hero Card -->
+  <path d="M 60 275 C 45 305 30 330 20 370 C 12 410 24 450 18 490" 
+        stroke="#087F7F" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="5 6" opacity="0.30"/>
+  
+  <!-- Sketched Corner Frame Accent around Hero Card -->
+  <path d="M 12 360 C 12 342 28 342 48 342" stroke="#F46255" stroke-width="2" stroke-linecap="round" opacity="0.34"/>
+  <circle cx="12" cy="342" r="2.6" fill="#F46255" opacity="0.32"/>
+
+  <!-- Wave swooping across the boundary between Hero Card and Center Cards -->
+  <path d="M 430 310 C 475 295 520 325 570 305 C 620 285 675 315 725 300" 
+        stroke="#F46255" stroke-width="1.7" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.32"/>
+
+  <!-- Right Side: Playful Trails flowing down from Palms towards "DE-ESCALATION PODS" -->
+  <path d="M 870 330 C 850 375 825 410 790 445 C 765 470 780 495 760 525" 
+        stroke="#087F7F" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.30"/>
+
+  <path d="M 960 300 C 980 340 1010 380 1040 420 C 1065 455 1055 490 1075 525" 
+        stroke="#F46255" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 5" opacity="0.30"/>
+
+  <!-- Looping Sweep around Center Column Header -->
+  <path d="M 520 335 C 550 315 580 345 610 325 C 630 310 655 330 675 320" 
+        stroke="#087F7F" stroke-width="1.7" stroke-linecap="round" opacity="0.32"/>
+
+  <!-- Subtle Coral & Teal Sparkles near Image Cards -->
+  <g opacity="0.30">
+    <circle cx="490" cy="318" r="2.5" fill="#F46255"/>
+    <circle cx="735" cy="310" r="2.2" fill="#087F7F"/>
+    <circle cx="810" cy="420" r="2.4" fill="#F46255"/>
+    <circle cx="1025" cy="415" r="2.4" fill="#087F7F"/>
+    <circle cx="28" cy="460" r="2" fill="#087F7F"/>
+    <circle cx="1090" cy="505" r="2.2" fill="#F46255"/>
+  </g>
+</svg>

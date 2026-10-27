@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import SmoothScroll from "@/components/SmoothScroll";
+import SplashScreen from "@/components/SplashScreen";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -63,12 +64,21 @@ export default function RootLayout({
         <link rel="preload" href="/assets/logo/keller-logo.png" as="image" />
         <script
           dangerouslySetInnerHTML={{
-            __html:
-              "try{if(sessionStorage.getItem('keller_splash_completed')==='true')document.documentElement.classList.add('splash-done')}catch(e){}",
+            __html: `
+              try {
+                var isReload = false;
+                var nav = performance.getEntriesByType('navigation');
+                if (nav && nav[0] && nav[0].type === 'reload') isReload = true;
+                if (!isReload && sessionStorage.getItem('keller_splash_shown') === 'true') {
+                  document.documentElement.classList.add('splash-done');
+                }
+              } catch(e) {}
+            `,
           }}
         />
       </head>
       <body>
+        <SplashScreen />
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>

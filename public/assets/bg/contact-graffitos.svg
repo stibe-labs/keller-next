@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="100%" height="100%" fill="none">
+  <!-- Left: Paper airplane delivering a note with gentle loop trail -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.45">
+    <path d="M 60 95 L 115 110 L 85 125 L 95 112 Z" stroke="#F46255" stroke-width="2"/>
+    <path d="M 95 112 L 115 110"/>
+    <path d="M 40 150 C 45 120 70 120 60 95" stroke-dasharray="5 5" stroke="#E9B949"/>
+    <!-- Letter envelope with little heart seal -->
+    <rect x="135" y="85" width="45" height="32" rx="6" stroke-dasharray="6 4"/>
+    <path d="M 135 85 L 157 102 L 180 85"/>
+    <circle cx="157" cy="102" r="3" fill="#F46255" stroke="none"/>
+  </g>
+
+  <!-- Center: Welcoming Open Arch Doorway with Warm Radiance -->
+  <g stroke="#F46255" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.42">
+    <!-- Curved inviting arch -->
+    <path d="M 500 155 L 500 80 C 500 50 560 50 560 80 L 560 155" stroke-dasharray="10 5" stroke="#087F7F"/>
+    <!-- Gentle radiant light rays from open door -->
+    <path d="M 530 65 L 530 45" stroke="#E9B949"/>
+    <path d="M 515 72 L 500 58" stroke="#E9B949"/>
+    <path d="M 545 72 L 560 58" stroke="#E9B949"/>
+    <!-- Friendly handshake flourish below arch -->
+    <path d="M 490 145 C 505 135 520 148 530 140 C 540 148 555 135 570 145" stroke-width="2"/>
+  </g>
+
+  <!-- Right: Steaming Warm Cup & Connection Sparkles -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" opacity="0.45">
+    <!-- Teacup / mug -->
+    <path d="M 880 90 L 885 120 C 885 130 915 130 915 120 L 920 90 Z" stroke="#F46255"/>
+    <!-- Mug handle -->
+    <path d="M 918 95 C 930 95 930 115 916 115"/>
+    <!-- Gentle steam spirals -->
+    <path d="M 892 82 C 890 70 898 62 894 50" stroke-dasharray="3 4"/>
+    <path d="M 905 80 C 908 68 902 60 906 48" stroke-dasharray="3 4" stroke="#E9B949"/>
+    <!-- Sparkles -->
+    <path d="M 970 70 L 972 75 L 977 76.5 L 972 78 L 970 83 L 968 78 L 963 76.5 L 968 75 Z" fill="#E9B949" stroke="none"/>
+    <circle cx="1010" cy="85" r="2.5" fill="#F46255" stroke="none"/>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="100%" height="100%" fill="none">
+  <!-- Left: Sprouting seedling & growth tree rings -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.45">
+    <path d="M 80 155 C 80 120 78 85 82 55"/>
+    <path d="M 82 55 C 65 40 50 55 70 70 C 80 75 82 60 82 55 Z" fill="#2DD4BF" stroke="none" opacity="0.6"/>
+    <path d="M 82 55 C 95 38 115 50 95 68 C 85 75 82 60 82 55 Z" fill="#F46255" stroke="none" opacity="0.6"/>
+    <!-- Organic expanding growth ripple -->
+    <path d="M 120 135 C 135 110 165 110 180 135 C 195 160 170 185 145 175" stroke="#E9B949" stroke-dasharray="6 4"/>
+  </g>
+
+  <!-- Center: Soaring paper plane with upward trajectory & star cluster -->
+  <g stroke="#F46255" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" opacity="0.42">
+    <!-- Playful soaring paper plane doodle -->
+    <path d="M 520 60 L 565 85 L 505 105 L 530 85 Z" stroke="#087F7F" stroke-width="2"/>
+    <path d="M 530 85 L 565 85"/>
+    <!-- Ascending loop-de-loop flight trail -->
+    <path d="M 440 145 C 465 165 490 145 480 125 C 470 105 450 115 465 135 C 480 150 505 135 520 105" 
+          stroke="#E9B949" stroke-dasharray="6 5"/>
+    <!-- 5 Five-star cluster -->
+    <path d="M 610 80 L 612 85 L 617 86.5 L 612 88 L 610 93 L 608 88 L 603 86.5 L 608 85 Z" fill="#E9B949" stroke="none"/>
+    <path d="M 635 68 L 637 73 L 642 74.5 L 637 76 L 635 81 L 633 76 L 628 74.5 L 633 73 Z" fill="#F46255" stroke="none"/>
+    <path d="M 655 85 L 657 90 L 662 91.5 L 657 93 L 655 98 L 653 93 L 648 91.5 L 653 90 Z" fill="#087F7F" stroke="none"/>
+  </g>
+
+  <!-- Right: Milestone summit flag & trust handshake loop -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.44">
+    <!-- Mountain hill slope -->
+    <path d="M 820 160 C 870 110 910 90 940 85 C 970 80 1010 120 1050 160" stroke-dasharray="10 5"/>
+    <!-- Summit flag -->
+    <line x1="940" y1="85" x2="940" y2="45" stroke-width="2"/>
+    <path d="M 940 45 C 955 42 970 52 958 62 C 948 68 940 65 940 65" fill="#F46255" stroke="none" opacity="0.7"/>
+    <!-- Sparkles -->
+    <circle cx="985" cy="50" r="2.5" fill="#E9B949" stroke="none"/>
+    <circle cx="890" cy="70" r="2" fill="#087F7F" stroke="none"/>
+  </g>
+</svg>

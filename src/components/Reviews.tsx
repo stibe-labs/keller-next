@@ -78,11 +78,22 @@ export default function Reviews() {
       <div className="keller-container">
         <div className="board-trusted">
           <div className="board-trusted-map-bg" aria-hidden="true" />
-          <div className="board-trusted-content">
+          <div className="board-trusted-content section-graffitos-header">
+            <div className="section-graffitos-bg" aria-hidden="true">
+              <Image
+                src="/assets/bg/reviews-graffitos.svg"
+                alt=""
+                fill
+                sizes="(max-width: 900px) 100vw, 1100px"
+                className="section-graffitos-img"
+              />
+            </div>
+            <p className="board-kicker">Verified Reviews</p>
             <h2 className="board-title board-title-stack">
               <span>Trusted</span>
               <span>Globally.</span>
             </h2>
+            <div className="mission-title-bar" aria-hidden="true" />
             <p className="board-lead">
               Parents and therapists in the United States, India, Portugal, and beyond, writing about the first afternoon a child found their own way to use the piece.
             </p>
@@ -141,8 +152,8 @@ export default function Reviews() {
                           <span className="platform-label">Verified</span>
                         </span>
                       ) : (
-                        <span className="platform-tag" title="Verified Review">
-                          <span className="platform-label">Verified Purchase</span>
+                        <span className="platform-tag" title={review.source || 'Verified Clinical Message'}>
+                          <span className="platform-label">{review.source || 'Verified Purchase'}</span>
                         </span>
                       )}
                     </div>

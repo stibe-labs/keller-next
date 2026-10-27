@@ -2,12 +2,9 @@
 import React, { useSyncExternalStore } from 'react';
 import { SITE_CONFIG } from '@/config/siteConfig';
 import ComingSoon from '@/components/ComingSoon';
-import SplashScreen from '@/components/SplashScreen';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import WhatWeCreate from '@/components/WhatWeCreate';
-import ProductCatalog from '@/components/ProductCatalog';
-import ProductDeepDive from '@/components/ProductDeepDive';
 import Marketplaces from '@/components/Marketplaces';
 import ClinicalImpact from '@/components/ClinicalImpact';
 import Reviews from '@/components/Reviews';
@@ -45,25 +42,47 @@ export default function Home() {
   // Full production website
   return (
     <>
-      <SplashScreen />
       <div>
         {/* 00. Global Navigation Header */}
         <Navbar />
 
+        {/* 01. Hook & Category Header */}
         <Reveal><Hero /></Reveal>
-        <Reveal><WhatWeCreate /></Reveal>
-        <Reveal><Reviews /></Reveal>
+
+        {/* 02. The Problem & Market Need */}
         <Reveal><ProblemWeSolve /></Reveal>
-        <Reveal><WhoWeServe /></Reveal>
+
+        {/* 03. The Solution & Unfair Advantage */}
         <Reveal><WhyKeller /></Reveal>
-        <Reveal><ClinicalImpact /></Reveal>
-        <Reveal><Team /></Reveal>
-        <Reveal><Marketplaces /></Reveal>
-        <Reveal><GlobalReach /></Reveal>
-        <Reveal><ContactSection /></Reveal>
-        <Reveal><ProductCatalog /></Reveal>
-        <Reveal><ProductDeepDive /></Reveal>
+
+        {/* 04. What We Create (Product Innovation Pillars) */}
+        <Reveal><WhatWeCreate /></Reveal>
+
+        {/* 05. Market Expansion & Environments (TAM) */}
+        <Reveal><WhoWeServe /></Reveal>
+
+        {/* 08. Traction, Key Metrics & Growth Roadmap */}
         <Reveal><InvestorMetrics /></Reveal>
+
+        {/* 09. Clinical Advisory & Early Medical Adopters */}
+        <Reveal><ClinicalImpact /></Reveal>
+
+        {/* 10. Social Proof & Verified Customer Reviews */}
+        <Reveal><Reviews /></Reveal>
+
+        {/* 11. Multi-Channel Go-To-Market */}
+        <Reveal><Marketplaces /></Reveal>
+
+        {/* 12. Global Reach & Scalable Logistics */}
+        <Reveal><GlobalReach /></Reveal>
+
+        {/* 13. The Execution Team */}
+        <Reveal><Team /></Reveal>
+
+        {/* 14. Conversion & Investor/Partner Contact */}
+        <Reveal><ContactSection /></Reveal>
+
+        {/* 15. Footer */}
         <Footer />
       </div>
     </>

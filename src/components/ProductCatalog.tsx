@@ -29,10 +29,23 @@ export default function ProductCatalog() {
 
   return (
     <section id="products" className="catalog-section board-section board-rule">
-      <div className="keller-container">
-        <div className="section-header">
+      <div className="keller-container catalog-container-relative">
+        {/* Dynamic Graffitos Canvas: Moved UP, extending under titles and down to catalog cards */}
+        <div className="catalog-graffitos-extended" aria-hidden="true">
+          <Image
+            src="/assets/bg/catalog-extended-graffitos.svg"
+            alt=""
+            fill
+            sizes="(max-width: 900px) 100vw, 1240px"
+            priority
+            className="catalog-graffitos-extended-img"
+          />
+        </div>
+
+        <div className="catalog-header">
           <p className="board-kicker">The catalog</p>
           <h2 className="board-title">Explore our products.</h2>
+          <div className="mission-title-bar" aria-hidden="true" />
           <p className="board-lead">
             Hammocks, glow swings, balance benches, and rooms. Co-developed with occupational therapists and made in Kerala.
           </p>

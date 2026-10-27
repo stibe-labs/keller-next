@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="100%" height="100%" fill="none">
+  <!-- Left: Compression wrap & soft tactile pillow folds -->
+  <g stroke="#F46255" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.42">
+    <path d="M 60 90 C 75 75 110 75 125 90 C 140 105 140 135 125 150 C 110 165 75 165 60 150 Z" stroke-dasharray="10 5"/>
+    <path d="M 75 105 C 85 95 100 95 110 105 C 120 115 120 125 110 135 C 100 145 85 145 75 135 Z" stroke="#087F7F"/>
+    <path d="M 135 100 C 150 90 170 105 185 120 C 200 135 190 155 170 150" stroke-dasharray="4 4" stroke="#E9B949"/>
+  </g>
+
+  <!-- Center: Swirling tactile textures & sensory glow orbs -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" opacity="0.4">
+    <circle cx="480" cy="110" r="28" stroke-dasharray="6 6"/>
+    <circle cx="480" cy="110" r="14" stroke="#F46255"/>
+    <circle cx="480" cy="110" r="4" fill="#E9B949" stroke="none"/>
+    <circle cx="560" cy="85" r="20" stroke-dasharray="5 5" stroke="#E9B949"/>
+    <circle cx="560" cy="85" r="6" fill="#087F7F" stroke="none"/>
+    <!-- Organic tactile touch wave -->
+    <path d="M 430 160 C 470 140 520 170 560 150 C 600 130 630 160 660 145" stroke="#F46255" stroke-width="2" stroke-dasharray="8 5"/>
+  </g>
+
+  <!-- Right: Balance bench & joyful checkmark sparkles -->
+  <g stroke="#087F7F" stroke-width="1.7" stroke-linecap="round" opacity="0.44">
+    <!-- Rocking rocker curve -->
+    <path d="M 820 140 C 865 165 935 165 980 140" stroke-width="2.5"/>
+    <path d="M 850 130 C 880 115 920 115 950 130" stroke="#F46255" stroke-dasharray="6 4"/>
+    <!-- Twinkle stars -->
+    <path d="M 985 65 L 987 71 L 993 72.5 L 987 74 L 985 80 L 983 74 L 977 72.5 L 983 71 Z" fill="#E9B949" stroke="none"/>
+    <circle cx="950" cy="70" r="2" fill="#F46255" stroke="none"/>
+    <circle cx="1020" cy="90" r="2.5" fill="#087F7F" stroke="none"/>
+  </g>
+</svg>

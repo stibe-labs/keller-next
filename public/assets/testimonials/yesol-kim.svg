@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf3ed"/>
+      <stop offset="100%" stop-color="#f8decb"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b43b24"/>
+      <stop offset="100%" stop-color="#8a2818"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="58" fill="url(#bgGrad)" stroke="#b43b24" stroke-width="2.5" stroke-opacity="0.3"/>
+  
+  <!-- Stethoscope / Medical Cross Motif -->
+  <g fill="none" stroke="url(#primaryGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Medical cross behind -->
+    <path d="M60 28 V46 M51 37 H69" stroke="#b43b24" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Physician Silhouette -->
+    <circle cx="60" cy="54" r="16" fill="#b43b24" stroke="none"/>
+    <path d="M34 94 C34 76 45 74 60 74 C75 74 86 76 86 94" fill="#b43b24" stroke="none"/>
+  </g>
+  
+  <!-- Subtle South Korea flag emblem badge at bottom-right -->
+  <g transform="translate(76, 76)">
+    <circle cx="16" cy="16" r="15" fill="#ffffff" stroke="#b43b24" stroke-width="1.5" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.15))"/>
+    <!-- Taegeuk simplified -->
+    <path d="M16 6 A10 10 0 0 1 16 26 A5 5 0 0 1 16 16 A5 5 0 0 0 16 6 Z" fill="#cd2e3a"/>
+    <path d="M16 26 A10 10 0 0 1 16 6 A5 5 0 0 1 16 16 A5 5 0 0 0 16 26 Z" fill="#0047a0"/>
+  </g>
+</svg>

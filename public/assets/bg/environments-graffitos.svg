@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="100%" height="100%" fill="none">
+  <!-- Left: School chalkboard, open book, and building blocks -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.42">
+    <!-- Open storybook / educational learning curve -->
+    <path d="M 60 120 C 80 110 100 115 110 125 C 120 115 140 110 160 120 C 158 145 138 140 110 150 C 82 140 62 145 60 120 Z" stroke-dasharray="8 4"/>
+    <path d="M 110 125 L 110 150"/>
+    <!-- Pencil drawing a loop -->
+    <path d="M 175 75 C 190 60 215 70 210 95 C 205 115 185 115 180 135" stroke="#F46255" stroke-dasharray="5 4"/>
+  </g>
+
+  <!-- Center: Airport Sensory Room - Airplane soaring through peaceful clouds -->
+  <g stroke="#F46255" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4">
+    <!-- Gentle playful airplane doodle -->
+    <path d="M 520 85 C 540 82 560 90 575 88 C 585 86 590 92 575 96 C 555 98 540 102 525 106 L 515 118 L 512 108 L 495 104 C 488 102 485 96 492 94 L 512 92 L 518 76 Z" 
+          stroke="#087F7F" stroke-width="2"/>
+    <!-- Flight trail loop through cloud -->
+    <path d="M 450 110 C 470 125 490 100 512 95" stroke-dasharray="5 5" stroke="#E9B949"/>
+    <!-- Calming puffy cloud -->
+    <path d="M 410 120 C 405 108 415 95 430 98 C 438 88 455 90 460 102 C 472 100 480 112 475 125 C 470 135 420 135 410 120 Z" 
+          stroke-dasharray="8 4"/>
+  </g>
+
+  <!-- Right: Clinic with heart & cozy home sanctuary tent -->
+  <g stroke="#087F7F" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.44">
+    <!-- Cozy play teepee / home calming tent -->
+    <path d="M 830 150 L 870 70 L 910 150 Z" stroke-dasharray="10 5" stroke="#F46255"/>
+    <path d="M 860 150 C 865 125 875 125 880 150"/>
+    <path d="M 870 58 L 870 70"/>
+    <!-- Heart in clinic window -->
+    <path d="M 960 95 C 950 80 930 90 940 105 C 950 120 960 130 960 135 C 960 130 970 120 980 105 C 990 90 970 80 960 95 Z" 
+          stroke="#087F7F" stroke-width="2"/>
+    <!-- Stars -->
+    <circle cx="930" cy="65" r="2.5" fill="#E9B949" stroke="none"/>
+    <circle cx="1010" cy="80" r="2" fill="#F46255" stroke="none"/>
+  </g>
+</svg>

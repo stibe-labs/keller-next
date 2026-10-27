@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" width="100%" height="100%" fill="none">
+  <!-- ==============================================================
+       WHAT WE CREATE: EXTENDED GRAFFITOS CANVAS
+       Thematic motifs: Sensory Pod Dome, LightLoops Rings, Rocker Board,
+       Tactile Switch, Acoustic Chimes, Sensory Waves.
+       Colors: Keller Coral (#F46255) & Keller Teal (#087F7F)
+       Opacities: Soft watermark range (0.24 - 0.34)
+       ============================================================== -->
+
+  <!-- ==============================================================
+       ZONE 1: HIGH TOP-RIGHT (Sensory Pod, LightLoops, Rocker - MOVED UP!)
+       (Confined strictly to x: 780 to 1180, high at y: 15 to 280)
+       ============================================================== -->
+  
+  <!-- Calming Sensory Cave / De-escalation Pod Arch (High in Upper Right y:20 to 160) -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.32">
+    <!-- Pod dome arch -->
+    <path d="M 880 155 C 880 45 1010 45 1010 155" stroke-dasharray="14 6"/>
+    <!-- Outer concentric comfort aura -->
+    <path d="M 865 155 C 865 25 1025 25 1025 155" stroke-dasharray="6 6" opacity="0.6"/>
+    <!-- Inner soft cushioned floor curve -->
+    <path d="M 885 155 C 920 145 970 145 1005 155"/>
+    <!-- Hanging sensory chime / light pendant -->
+    <path d="M 945 35 L 945 75"/>
+    <circle cx="945" cy="80" r="4.5" fill="#F46255" opacity="0.35"/>
+  </g>
+
+  <!-- Interactive LightLoops & Glowing Concentric Rings (Sensory Tech) -->
+  <g stroke-linecap="round" opacity="0.30">
+    <!-- Concentric glowing tactile rings -->
+    <ellipse cx="1090" cy="95" rx="36" ry="24" stroke="#F46255" stroke-width="1.6" stroke-dasharray="7 5"/>
+    <ellipse cx="1090" cy="95" rx="58" ry="38" stroke="#087F7F" stroke-width="1.6" stroke-dasharray="10 6"/>
+    <ellipse cx="1090" cy="95" rx="80" ry="52" stroke="#F46255" stroke-width="1.4" stroke-dasharray="14 8"/>
+    <!-- Center interactive switch / sensor node -->
+    <circle cx="1090" cy="95" r="4.5" fill="#087F7F" stroke="none" opacity="0.35"/>
+    <!-- Tactile toggle lever -->
+    <path d="M 1145 70 C 1150 55 1165 55 1170 70 C 1172 85 1143 85 1145 70 Z" stroke="#087F7F" stroke-width="1.5"/>
+    <circle cx="1158" cy="65" r="2.2" fill="#F46255"/>
+  </g>
+
+  <!-- FlowSwing Vestibular Rocker Board & Balance Orb (Movement & Balance) -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.32">
+    <!-- Rocker curved platform -->
+    <path d="M 780 170 C 825 200 905 200 950 170" stroke-width="2.2" stroke="#F46255"/>
+    <!-- Balance guide orb -->
+    <circle cx="865" cy="180" r="5.5" stroke="#087F7F" stroke-dasharray="3 3"/>
+    <circle cx="865" cy="180" r="2" fill="#087F7F"/>
+    <!-- Motion arc squiggles -->
+    <path d="M 770 160 C 765 175 770 190 778 185" stroke-dasharray="3 3" opacity="0.7"/>
+    <path d="M 960 160 C 965 175 960 190 952 185" stroke-dasharray="3 3" opacity="0.7"/>
+  </g>
+
+  <!-- Starburst Sparkles & Creative Twinkles (Top-Right Sky) -->
+  <g opacity="0.28">
+    <path d="M 1040 25 L 1042 32 L 1048 33.5 L 1042 35 L 1040 42 L 1038 35 L 1032 33.5 L 1038 32 Z" fill="#F46255"/>
+    <path d="M 1130 38 L 1132 43 L 1137 45 L 1132 47 L 1130 52 L 1128 47 L 1123 45 L 1128 43 Z" fill="#087F7F"/>
+    <circle cx="1060" cy="55" r="2.2" fill="#087F7F"/>
+    <circle cx="1110" cy="28" r="2.4" fill="#F46255"/>
+    <circle cx="1165" cy="115" r="1.8" fill="#F46255"/>
+    <circle cx="840" cy="35" r="2" fill="#087F7F"/>
+  </g>
+
+
+  <!-- ==============================================================
+       ZONE 2: EXTENDING UNDER THE TITLES (Craft & Sensory Underlines)
+       (Strictly under letter baselines: y:108 for L1, y:178 for L2)
+       ============================================================== -->
+
+  <!-- Organic Sensory Underline Flow Line 1 (Directly under "Designed Around") -->
+  <path d="M 40 108 C 160 118 320 106 480 114 C 580 118 660 106 740 112" 
+        stroke="#F46255" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="14 8" opacity="0.28"/>
+  
+  <!-- Dynamic Hand-Drawn Underline Flourish 2 (Directly under "Different Needs") -->
+  <path d="M 40 178 C 110 190 220 186 340 176 C 390 172 440 182 490 175" 
+        stroke="#087F7F" stroke-width="2" stroke-linecap="round" opacity="0.32"/>
+
+  <!-- Double Sensory Echo Wave under Title -->
+  <path d="M 46 186 C 120 196 210 192 310 185" 
+        stroke="#F46255" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="4 5" opacity="0.25"/>
+
+  <!-- Swirling Sensory Connector Loop flowing towards the Pod Arch in Teal -->
+  <g stroke="#087F7F" stroke-width="1.6" stroke-linecap="round" opacity="0.28">
+    <path d="M 490 175 C 550 162 610 192 670 170 C 730 148 780 180 840 155" stroke-dasharray="6 5"/>
+    <path d="M 670 170 C 685 160 695 175 680 185 C 665 195 650 175 670 165"/>
+    <circle cx="682" cy="172" r="2" fill="#F46255" stroke="none" opacity="0.28"/>
+  </g>
+
+  <!-- Calibrated Sensory Vibration Ripple under the Lead Subtitle -->
+  <path d="M 40 260 Q 65 250 90 260 T 140 260 T 190 260 T 240 260 T 290 260 T 340 260 T 390 260 T 440 260 T 490 260 T 540 260 T 590 260" 
+        stroke="#087F7F" stroke-width="1.5" stroke-linecap="round" opacity="0.24"/>
+
+  <!-- Tactile Switch Knob Sketch (Between Lead text and Pod) -->
+  <g stroke="#F46255" stroke-width="1.5" stroke-linecap="round" opacity="0.28">
+    <circle cx="690" cy="235" r="10" stroke-dasharray="4 3"/>
+    <path d="M 690 228 L 690 242"/>
+    <circle cx="690" cy="235" r="2" fill="#087F7F"/>
+  </g>
+
+
+  <!-- ==============================================================
+       ZONE 3: EXTENDING TO AND AROUND PRODUCT TILES (Board Collage Row)
+       ============================================================== -->
+  
+  <!-- Left Side: Cascading Dotted Trail leading into "Sensory Technology" Tile 1 -->
+  <path d="M 60 270 C 45 300 30 325 20 365 C 12 405 24 445 18 485" 
+        stroke="#087F7F" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 6" opacity="0.26"/>
+  
+  <!-- Sketched Corner Frame Accent around Tile 1 (Blue card) -->
+  <path d="M 12 355 C 12 338 28 338 48 338" stroke="#F46255" stroke-width="1.9" stroke-linecap="round" opacity="0.30"/>
+  <circle cx="12" cy="338" r="2.4" fill="#F46255" opacity="0.28"/>
+
+  <!-- Wave swooping across the boundary between Tile 1 and Tile 2 -->
+  <path d="M 520 315 C 560 300 600 330 650 310 C 700 290 740 320 780 305" 
+        stroke="#F46255" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.28"/>
+
+  <!-- Right Side: Playful Trails flowing down towards "Custom manufacture" Tile 2 -->
+  <path d="M 870 320 C 850 365 825 400 790 435 C 765 460 780 485 760 515" 
+        stroke="#087F7F" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.26"/>
+
+  <path d="M 960 295 C 980 335 1010 375 1040 415 C 1065 450 1055 485 1075 520" 
+        stroke="#F46255" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="5 5" opacity="0.26"/>
+
+  <!-- Subtle Coral & Teal Sparkles near Product Cards -->
+  <g opacity="0.26">
+    <circle cx="580" cy="320" r="2.2" fill="#F46255"/>
+    <circle cx="720" cy="312" r="2" fill="#087F7F"/>
+    <circle cx="800" cy="415" r="2.2" fill="#F46255"/>
+    <circle cx="1025" cy="410" r="2.2" fill="#087F7F"/>
+    <circle cx="28" cy="455" r="1.8" fill="#087F7F"/>
+    <circle cx="1090" cy="500" r="2" fill="#F46255"/>
+  </g>
+</svg>

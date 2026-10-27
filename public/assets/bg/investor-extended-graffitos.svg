@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" width="100%" height="100%" fill="none">
+  <!-- ==============================================================
+       INVESTOR METRICS: EXTENDED GRAFFITOS CANVAS
+       Thematic motifs: Mountain Summit Flag, Soaring Paper Airplane,
+       Sprouting Seedling, Upward Growth Trajectory, Starburst Sparkles.
+       Colors: Keller Coral (#F46255) & Keller Teal (#087F7F)
+       Opacities: Soft watermark range (0.24 - 0.34)
+       ============================================================== -->
+
+  <!-- ==============================================================
+       ZONE 1: HIGH TOP-RIGHT (Mountain Summit, Paper Plane, Seedling - MOVED UP!)
+       (Confined strictly to x: 780 to 1180, high at y: 15 to 280)
+       ============================================================== -->
+  
+  <!-- Mountain Summit & Milestone Flag (High Upper Right y:20 to 160) -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.32">
+    <!-- Mountain hill slope -->
+    <path d="M 920 160 C 950 110 985 85 1015 80 C 1045 75 1085 115 1120 160" stroke-dasharray="10 5"/>
+    <!-- Flagpole -->
+    <line x1="1015" y1="80" x2="1015" y2="35" stroke-width="2"/>
+    <!-- Waving summit milestone flag in Coral -->
+    <path d="M 1015 35 C 1030 30 1048 42 1035 52 C 1025 58 1015 55 1015 55 Z" fill="#F46255" opacity="0.35"/>
+    <circle cx="1015" cy="35" r="2.5" fill="#087F7F"/>
+  </g>
+
+  <!-- Soaring Paper Airplane with Upward Flight Trail (High Sky) -->
+  <g stroke-linecap="round" opacity="0.32">
+    <!-- Paper airplane body in Teal -->
+    <path d="M 880 45 L 925 70 L 865 90 L 890 70 Z" stroke="#087F7F" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M 890 70 L 925 70" stroke="#087F7F" stroke-width="1.6"/>
+    <!-- Upward loop-de-loop flight trail in Coral -->
+    <path d="M 800 135 C 825 155 850 135 840 115 C 830 95 810 105 825 125 C 840 140 865 125 880 95" 
+          stroke="#F46255" stroke-width="1.6" stroke-dasharray="6 5"/>
+  </g>
+
+  <!-- Sprouting Botanical Seedling (Organic Scaling & Early Traction) -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.30">
+    <path d="M 1120 160 C 1120 125 1118 90 1122 60"/>
+    <!-- Twin leaves -->
+    <path d="M 1122 60 C 1105 45 1090 60 1110 75 C 1120 80 1122 65 1122 60 Z" fill="#087F7F" opacity="0.25"/>
+    <path d="M 1122 60 C 1135 43 1155 55 1135 73 C 1125 80 1122 65 1122 60 Z" fill="#F46255" opacity="0.25"/>
+  </g>
+
+  <!-- 5-Star Cluster & Growth Twinkles (Top-Right Sky) -->
+  <g opacity="0.28">
+    <path d="M 1045 22 L 1047 29 L 1053 30.5 L 1047 32 L 1045 39 L 1043 32 L 1037 30.5 L 1043 29 Z" fill="#F46255"/>
+    <path d="M 1080 32 L 1081.5 36 L 1086 37 L 1081.5 38 L 1080 42 L 1078.5 38 L 1074 37 L 1078.5 36 Z" fill="#087F7F"/>
+    <path d="M 1150 35 L 1152 40 L 1157 42 L 1152 44 L 1150 49 L 1148 44 L 1143 42 L 1148 40 Z" fill="#F46255"/>
+    <circle cx="950" cy="40" r="2.2" fill="#087F7F"/>
+    <circle cx="1065" cy="55" r="2.4" fill="#F46255"/>
+    <circle cx="1165" cy="95" r="1.8" fill="#087F7F"/>
+    <circle cx="830" cy="30" r="2" fill="#F46255"/>
+  </g>
+
+
+  <!-- ==============================================================
+       ZONE 2: EXTENDING UNDER THE TITLES (Proof & Scaling Underlines)
+       (Strictly under letter baselines: y:108 for L1, y:175 for L2)
+       ============================================================== -->
+
+  <!-- Organic Sensory Underline Flow Line 1 (Directly under "From proven products") -->
+  <path d="M 40 108 C 180 118 360 106 520 114 C 620 118 700 106 780 112" 
+        stroke="#F46255" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="14 8" opacity="0.28"/>
+  
+  <!-- Dynamic Hand-Drawn Underline Flourish 2 (Directly under "to scalable solutions.") -->
+  <path d="M 40 174 C 110 186 240 182 380 172 C 450 168 520 178 580 170" 
+        stroke="#087F7F" stroke-width="2" stroke-linecap="round" opacity="0.32"/>
+
+  <!-- Double Sensory Echo Wave under Title -->
+  <path d="M 46 182 C 120 192 210 188 320 180" 
+        stroke="#F46255" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="4 5" opacity="0.25"/>
+
+  <!-- Swirling Connector Loop flowing towards Mountain Summit in Teal -->
+  <g stroke="#087F7F" stroke-width="1.6" stroke-linecap="round" opacity="0.28">
+    <path d="M 580 170 C 640 155 700 185 760 162 C 820 140 880 172 940 148" stroke-dasharray="6 5"/>
+    <path d="M 760 162 C 775 152 785 167 770 177 C 755 187 740 167 760 157"/>
+    <circle cx="772" cy="164" r="2" fill="#F46255" stroke="none" opacity="0.28"/>
+  </g>
+
+  <!-- Calibrated Sensory Vibration Ripple under the Lead Text -->
+  <path d="M 40 250 Q 65 240 90 250 T 140 250 T 190 250 T 240 250 T 290 250 T 340 250 T 390 250 T 440 250 T 490 250 T 540 250 T 590 250" 
+        stroke="#087F7F" stroke-width="1.5" stroke-linecap="round" opacity="0.24"/>
+
+  <!-- Metric Growth Compass Node (Between Lead text and Summit) -->
+  <g stroke="#F46255" stroke-width="1.5" stroke-linecap="round" opacity="0.28">
+    <circle cx="700" cy="225" r="9" stroke-dasharray="4 3"/>
+    <path d="M 700 218 L 700 232"/>
+    <path d="M 693 225 L 707 225"/>
+    <circle cx="700" cy="225" r="2" fill="#087F7F"/>
+  </g>
+
+
+  <!-- ==============================================================
+       ZONE 3: EXTENDING TO AND AROUND METRICS CARDS & MILESTONES
+       ============================================================== -->
+  
+  <!-- Left Side: Cascading Dotted Trail leading into Metric 1 (8+ Years) -->
+  <path d="M 60 260 C 45 290 30 315 20 355 C 12 395 24 435 18 475" 
+        stroke="#087F7F" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 6" opacity="0.26"/>
+  
+  <!-- Sketched Corner Frame Accent around Metrics Row -->
+  <path d="M 12 345 C 12 328 28 328 48 328" stroke="#F46255" stroke-width="1.9" stroke-linecap="round" opacity="0.30"/>
+  <circle cx="12" cy="328" r="2.4" fill="#F46255" opacity="0.28"/>
+
+  <!-- Wave swooping across the boundary between Metrics and Milestones -->
+  <path d="M 420 315 C 470 295 520 325 580 305 C 640 285 700 315 760 300" 
+        stroke="#F46255" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.28"/>
+
+  <!-- Right Side: Playful Trails flowing down towards Milestones -->
+  <path d="M 870 310 C 850 355 825 390 790 425 C 765 450 780 475 760 505" 
+        stroke="#087F7F" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.26"/>
+
+  <path d="M 960 285 C 980 325 1010 365 1040 405 C 1065 440 1055 475 1075 510" 
+        stroke="#F46255" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="5 5" opacity="0.26"/>
+
+  <!-- Subtle Coral & Teal Sparkles near Cards -->
+  <g opacity="0.26">
+    <circle cx="460" cy="315" r="2.2" fill="#F46255"/>
+    <circle cx="730" cy="308" r="2" fill="#087F7F"/>
+    <circle cx="810" cy="405" r="2.2" fill="#F46255"/>
+    <circle cx="1025" cy="400" r="2.2" fill="#087F7F"/>
+    <circle cx="28" cy="445" r="1.8" fill="#087F7F"/>
+    <circle cx="1090" cy="490" r="2" fill="#F46255"/>
+  </g>
+</svg>

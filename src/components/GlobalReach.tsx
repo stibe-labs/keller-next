@@ -20,6 +20,14 @@ export default function GlobalReach() {
   return (
     <section id="global" className="global-reach-section board-section board-rule">
       <div className="keller-container">
+        <div className="section-header" style={{ marginBottom: '32px' }}>
+          <p className="board-kicker">Global Logistics</p>
+          <h2 className="board-title">Worldwide Express Delivery</h2>
+          <div className="mission-title-bar" aria-hidden="true" />
+          <p className="board-lead">
+            Handcrafted in Kochi. Nine-day express shipping directly to the USA, Europe, and Australia.
+          </p>
+        </div>
         <div className="board-map">
           <Image
             src="/assets/banners/shipping-worldwide.png"

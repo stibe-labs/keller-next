@@ -32,8 +32,23 @@ export default function Marketplaces() {
   return (
     <section id="shop" className="marketplaces-section board-section board-rule">
       <div className="keller-container">
-        <p className="board-shop-soon">Store opening soon</p>
-        <h2 className="board-title board-shop-title">Currently available on these</h2>
+        <div className="section-header section-graffitos-header" style={{ marginBottom: '28px' }}>
+          <div className="section-graffitos-bg" aria-hidden="true">
+            <Image
+              src="/assets/bg/marketplaces-graffitos.svg"
+              alt=""
+              fill
+              sizes="(max-width: 900px) 100vw, 1100px"
+              className="section-graffitos-img"
+            />
+          </div>
+          <p className="board-kicker">Where To Buy</p>
+          <h2 className="board-title board-shop-title">Currently Available On These</h2>
+          <div className="mission-title-bar" aria-hidden="true" />
+          <p className="board-lead">
+            Explore official Keller Adapt equipment through verified global marketplace partners.
+          </p>
+        </div>
         <div className="board-shops">
           {SHOPS.map((shop) => {
             const mark = (

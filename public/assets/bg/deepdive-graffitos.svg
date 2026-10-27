@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="100%" height="100%" fill="none">
+  <!-- Left: Glowing ball pit sphere doodles with radiant ripples -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" opacity="0.45">
+    <circle cx="90" cy="110" r="32" stroke="#F46255" stroke-dasharray="10 6"/>
+    <circle cx="90" cy="110" r="16" stroke="#E9B949"/>
+    <circle cx="90" cy="110" r="5" fill="#F46255" stroke="none"/>
+    <circle cx="150" cy="85" r="22" stroke-dasharray="6 4"/>
+    <circle cx="150" cy="85" r="4" fill="#087F7F" stroke="none"/>
+    <circle cx="130" cy="140" r="18" stroke="#E9B949" stroke-dasharray="5 4"/>
+  </g>
+
+  <!-- Center: Voice/Sound Reactivity Waves & Glowing Halos -->
+  <g stroke="#F46255" stroke-width="1.9" stroke-linecap="round" opacity="0.42">
+    <!-- Sound frequency pulse (reacting to non-verbal vocalization) -->
+    <path d="M 440 120 Q 455 90 470 120 T 500 120 T 530 120 T 560 120 T 590 120 T 620 120" stroke-width="2.2"/>
+    <path d="M 460 138 Q 475 118 490 138 T 520 138 T 550 138 T 580 138 T 610 138" stroke="#087F7F" stroke-dasharray="6 5"/>
+    <!-- Switch-adapted wireless remote controller outline -->
+    <rect x="660" y="80" width="34" height="54" rx="10" stroke="#087F7F" stroke-dasharray="6 4"/>
+    <circle cx="677" cy="98" r="6" stroke="#E9B949"/>
+    <circle cx="677" cy="116" r="3.5" fill="#F46255" stroke="none"/>
+  </g>
+
+  <!-- Right: Vestibular Swing Arc & Joyful Glow Sparkles -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" opacity="0.45">
+    <!-- Dynamic swing sweep arc -->
+    <path d="M 810 50 C 830 140 880 170 940 170 C 990 170 1020 130 1030 60" stroke-dasharray="14 6" stroke="#F46255"/>
+    <circle cx="940" cy="170" r="10" fill="#E9B949" stroke="none"/>
+    <path d="M 975 60 L 977 66 L 983 67.5 L 977 69 L 975 75 L 973 69 L 967 67.5 L 973 66 Z" fill="#087F7F" stroke="none"/>
+    <circle cx="1025" cy="85" r="2.5" fill="#F46255" stroke="none"/>
+  </g>
+</svg>

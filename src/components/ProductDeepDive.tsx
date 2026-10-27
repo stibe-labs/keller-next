@@ -11,7 +11,16 @@ export default function ProductDeepDive() {
   return (
     <section id="deep-dive" className="deep-dive-section board-section board-rule">
       <div className="keller-container">
-        <div className="section-header">
+        <div className="section-header section-graffitos-header">
+          <div className="section-graffitos-bg" aria-hidden="true">
+            <Image
+              src="/assets/bg/deepdive-graffitos.svg"
+              alt=""
+              fill
+              sizes="(max-width: 900px) 100vw, 1100px"
+              className="section-graffitos-img"
+            />
+          </div>
           <p className="board-kicker">Flagship</p>
           <h2 className="board-title">Solutions for different spaces.</h2>
           <p className="board-lead">

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="100%" height="100%" fill="none">
+  <!-- Left: Conversation speech bubble with heart & glowing 5-stars -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.45">
+    <path d="M 60 75 C 60 55 85 45 115 45 C 145 45 170 55 170 75 C 170 95 145 105 125 105 L 105 120 L 110 105 C 85 105 60 95 60 75 Z" 
+          stroke-dasharray="10 4"/>
+    <path d="M 115 65 C 110 58 98 62 104 72 C 110 82 115 88 115 90 C 115 88 120 82 126 72 C 132 62 120 58 115 65 Z" 
+          fill="#F46255" stroke="none" opacity="0.7"/>
+    <!-- 5-star row doodle -->
+    <path d="M 80 135 L 82 140 L 87 141.5 L 82 143 L 80 148 L 78 143 L 73 141.5 L 78 140 Z" fill="#E9B949" stroke="none"/>
+    <path d="M 100 135 L 102 140 L 107 141.5 L 102 143 L 100 148 L 98 143 L 93 141.5 L 98 140 Z" fill="#E9B949" stroke="none"/>
+    <path d="M 120 135 L 122 140 L 127 141.5 L 122 143 L 120 148 L 118 143 L 113 141.5 L 118 140 Z" fill="#E9B949" stroke="none"/>
+    <path d="M 140 135 L 142 140 L 147 141.5 L 142 143 L 140 148 L 138 143 L 133 141.5 L 138 140 Z" fill="#E9B949" stroke="none"/>
+    <path d="M 160 135 L 162 140 L 167 141.5 L 162 143 L 160 148 L 158 143 L 153 141.5 L 158 140 Z" fill="#E9B949" stroke="none"/>
+  </g>
+
+  <!-- Center: Happy Jumping / Dancing Child Doodle with arms raised -->
+  <g stroke="#F46255" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.45">
+    <circle cx="510" cy="65" r="14" stroke="#087F7F"/>
+    <!-- Smile -->
+    <path d="M 505 68 C 508 72 512 72 515 68" stroke="#087F7F" stroke-width="1.5"/>
+    <!-- Body -->
+    <path d="M 510 79 L 510 115"/>
+    <!-- Joyful arms raised high -->
+    <path d="M 510 90 L 485 70"/>
+    <path d="M 510 90 L 535 70"/>
+    <!-- Jumping legs -->
+    <path d="M 510 115 L 490 140"/>
+    <path d="M 510 115 L 530 140"/>
+    <!-- Joy sparkles around child -->
+    <circle cx="475" cy="55" r="2.5" fill="#E9B949" stroke="none"/>
+    <circle cx="545" cy="55" r="2.5" fill="#E9B949" stroke="none"/>
+  </g>
+
+  <!-- Right: Loving hug doodle & thumbs up celebration -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" opacity="0.42">
+    <!-- Heart pulse flourish -->
+    <path d="M 850 90 C 870 70 890 90 910 110 C 930 90 950 70 970 90 C 970 125 910 155 910 155 C 910 155 850 125 850 90 Z" 
+          stroke="#F46255" stroke-dasharray="12 5"/>
+    <circle cx="910" cy="108" r="4" fill="#E9B949" stroke="none"/>
+    <circle cx="995" cy="75" r="2" fill="#087F7F" stroke="none"/>
+  </g>
+</svg>

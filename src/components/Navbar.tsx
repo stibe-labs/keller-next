@@ -27,7 +27,7 @@ const MENU_SECTIONS: MenuSection[] = [
     description:
       'Transforming pediatric rehabilitation with clinical-grade sensory environments, precision vestibular swings, and cause-and-effect learning panels designed for neurodivergent children.',
     ctaText: 'Unlock inclusive therapy solutions',
-    ctaLink: '#what-we-create',
+    ctaLink: '#products',
     items: [
       { label: 'Sensory Technology (LumaSwing™ & LightLoops)', href: '#products' },
       { label: 'Movement & Vestibular Integration (FlowSwing, Balance Seat)', href: '#products' },
@@ -62,7 +62,7 @@ const MENU_SECTIONS: MenuSection[] = [
     ctaText: 'Explore complete hardware catalog (12 Systems)',
     ctaLink: '#products',
     items: [
-      { label: 'LumaSwing™ Interactive Sensory Glow Swing', href: '#deep-dive' },
+      { label: 'LumaSwing™ Interactive Sensory Glow Swing', href: '#what-we-create' },
       { label: 'LIGHTLOOPS Sensory Cause & Effect Panel', href: '#products' },
       { label: 'SymphonySense II Acoustic Musical Wall Tiles', href: '#products' },
       { label: 'Balance Bench & Ergonomic Rocker Seat', href: '#products' },

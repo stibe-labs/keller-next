@@ -47,11 +47,22 @@ const MISSION_PILLARS: MissionPillar[] = [
 export default function ProblemWeSolve() {
   return (
     <section id="mission" className="problem-section board-section board-rule">
-      <div className="mission-vector-bg" aria-hidden="true" />
-      <div className="keller-container">
+      <div className="keller-container mission-container-relative">
+        {/* Dynamic Graffitos Canvas: Moved UP, extending under titles and down to images */}
+        <div className="mission-graffitos-extended" aria-hidden="true">
+          <Image
+            src="/assets/bg/mission-graffitos.svg"
+            alt=""
+            fill
+            sizes="(max-width: 900px) 100vw, 1240px"
+            priority
+            className="mission-graffitos-extended-img"
+          />
+        </div>
+
         {/* Section Header */}
         <div className="mission-header">
-          <p className="board-kicker">Our mission</p>
+          <p className="board-kicker">Our Mission</p>
           <h2 className="board-title">Accessibility should be a part of every space</h2>
           <div className="mission-title-bar" aria-hidden="true" />
           <p className="board-lead">

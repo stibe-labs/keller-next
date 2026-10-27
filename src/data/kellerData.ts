@@ -414,6 +414,7 @@ export const EARLY_BUYERS: EarlyBuyer[] = [
     organization: 'Founder & Executive Director, Function Junction NYC',
     location: 'New York City, USA',
     bio: 'Pediatric occupational therapist since 2008. Directed OT programs at Alexander Robertson School and Bank Street College Family Center. Certified in Wilbarger Deep Pressure Protocol and Greenspan Floortime.',
+    image: '/assets/testimonials/polina-starr.jpg',
     quoteSnippet: 'Keller Adapt products deliver the exact sensory integration tolerances our clinic demands at unprecedented accessibility.'
   },
   {
@@ -422,6 +423,7 @@ export const EARLY_BUYERS: EarlyBuyer[] = [
     organization: 'Manhattan Medical Practice & Former Hofstra Faculty',
     location: 'New York, USA',
     bio: 'Attuned to both physical and emotional well-being, Dr. Fitzpatrick champions sensory-safe, hypoallergenic, skin-friendly fabrics for children with sensory processing sensitivities.',
+    image: '/assets/testimonials/laura-fitzpatrick.jpg',
     quoteSnippet: 'The fabric quality and tactile skin-feel of Keller Adapt textiles reflect deep care for child dermatological comfort.'
   },
   {
@@ -430,6 +432,7 @@ export const EARLY_BUYERS: EarlyBuyer[] = [
     organization: 'Neurodiversity Advocate & Health Executive',
     location: 'United States',
     bio: 'Speaking and writing on autism, monotropism, and neuroscience of attention. Evaluates therapy tools through a neuro-affirming clinical lens.',
+    image: '/assets/testimonials/alia-breon.jpg',
     quoteSnippet: 'A truly considered approach to sensory inclusion that centers the dignity and autonomy of neurodivergent children.'
   },
   {
@@ -438,11 +441,32 @@ export const EARLY_BUYERS: EarlyBuyer[] = [
     organization: 'Centro de Desenvolvimento e Aprendizagem',
     location: 'São Paulo, Brazil',
     bio: 'Leading pediatric occupational therapy clinician in Brazil utilizing sensory hammocks and adaptive tools for sensory processing disorders.',
+    image: '/assets/testimonials/valeria-fernandes.svg',
     quoteSnippet: 'Exceptional therapeutic quality, arriving seamlessly across continents with outstanding attention to detail.'
+  },
+  {
+    name: 'Dr. Yesol Kim, MD',
+    credentials: 'MD | Physician Dealing with Minor Trauma',
+    organization: 'Clinical Care & Pediatric Sensory Rehabilitation',
+    location: 'South Korea',
+    bio: 'Physician dealing with minor trauma in South Korea who reached out directly to bring Keller Adapt’s Sensory Therapy Wrap into pediatric clinical recovery and support international patients.',
+    image: '/assets/testimonials/yesol-kim.svg',
+    quoteSnippet: 'I fortunately found your amazing product, Sensory Therapy Wrap For Kids... Thank you for your beautiful idea and products.'
   }
 ];
 
 export const REVIEWS: Review[] = [
+  {
+    reviewer: 'Dr. Yesol Kim',
+    date: 'Verified Clinical Inquiry',
+    location: 'South Korea',
+    rating: 5,
+    source: 'Direct Clinical Message',
+    verified: true,
+    highlight: 'Thank you for your beautiful idea and products.',
+    detail: 'Physician (Minor Trauma) · Sensory Therapy Wrap for Kids',
+    content: "Hello. My name is Yesol Kim. I'm a physician dealing with minor trauma in South Korea. I fortunately found your amazing product, Sensory Therapy Wrap For Kids, on internet by chance. I'm very interested in it and eager to buy it. Do you currently offer international shipping to South Korea? If I could buy the product, please let me know the price by the sizes and the shipping price. Thank you for your beautiful idea and products. With all my heart, Yesol Kim From South Korea."
+  },
   {
     reviewer: 'Kate',
     date: '18 August, 2026',

@@ -18,7 +18,7 @@ const ENVIRONMENTS: EnvironmentItem[] = [
     tag: '01 · Education',
     title: 'Schools & learning spaces',
     subtitle: 'Sensory integration within mainstream classrooms',
-    image: '/assets/sensory_rooms/26.jpg',
+    image: '/assets/rough/school webp.webp',
     desc: 'Sensory corners and quiet breakout rooms installed directly inside classrooms, providing children with neurodiverse profiles a safe way to regulate and rejoin the lesson without leaving their peers.',
     specScope: 'Modular sensory corners · Quiet breakout pods',
     specImpact: '100+ Classrooms fitted across India',
@@ -28,7 +28,7 @@ const ENVIRONMENTS: EnvironmentItem[] = [
     tag: '02 · Transit & Aviation',
     title: 'Airport & travel hubs',
     subtitle: 'Acoustic buffering and de-escalation in terminals',
-    image: '/assets/sensory_rooms/21 (1).jpg',
+    image: '/assets/rough/airport.webp',
     desc: 'Dedicated sensory calming lounges designed for high-density airport gates and railway terminals, ensuring an unfamiliar journey does not escalate into sensory overload or a distressful meltdown.',
     specScope: 'Terminal de-escalation rooms · Acoustic privacy pods',
     specImpact: 'Autism-friendly certified transit environments',
@@ -38,7 +38,7 @@ const ENVIRONMENTS: EnvironmentItem[] = [
     tag: '03 · Civic Spaces',
     title: 'Public spaces & clinics',
     subtitle: 'Universal accessibility for civic infrastructure',
-    image: '/assets/sensory_rooms/16 (1).jpg',
+    image: '/assets/rough/public space.webp',
     desc: 'Public libraries, pediatric hospital waiting areas, and community buildings engineered with adaptable therapeutic furnishings so families of children with special needs can comfortably belong.',
     specScope: 'Pediatric waiting areas · Civic public libraries',
     specImpact: 'Turnkey universal accessibility retrofit',
@@ -48,10 +48,18 @@ const ENVIRONMENTS: EnvironmentItem[] = [
 export default function WhoWeServe() {
   return (
     <section id="who-we-serve" className="serve-section board-section">
-      <div className="serve-vector-bg" aria-hidden="true" />
       <div className="keller-container">
         {/* Section Header */}
-        <div className="serve-header">
+        <div className="serve-header section-graffitos-header">
+          <div className="section-graffitos-bg" aria-hidden="true">
+            <Image
+              src="/assets/bg/environments-graffitos.svg"
+              alt=""
+              fill
+              sizes="(max-width: 900px) 100vw, 1100px"
+              className="section-graffitos-img"
+            />
+          </div>
           <p className="board-kicker">Environments & Deployment</p>
           <h2 className="board-title">One mission, multiple environments</h2>
           <div className="mission-title-bar" aria-hidden="true" />

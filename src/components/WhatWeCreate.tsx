@@ -37,12 +37,28 @@ const PILLARS = [
 export default function WhatWeCreate() {
   return (
     <section id="what-we-create" className="what-we-create-section board-section">
-      <div className="keller-container">
-        <p className="board-kicker">What we create</p>
-        <h2 className="board-title">Designed Around Different Needs</h2>
-        <p className="board-lead">
-          Sensory technology, movement pieces, therapy textiles, sensory rooms, and custom workshop pieces.
-        </p>
+      <div id="products" style={{ position: 'relative', top: '-60px' }} />
+      <div className="keller-container create-container-relative">
+        {/* Dynamic Graffitos Canvas: Moved UP, extending under titles and down to product tiles */}
+        <div className="create-graffitos-extended" aria-hidden="true">
+          <Image
+            src="/assets/bg/create-extended-graffitos.svg"
+            alt=""
+            fill
+            sizes="(max-width: 900px) 100vw, 1240px"
+            priority
+            className="create-graffitos-extended-img"
+          />
+        </div>
+
+        <div className="create-header">
+          <p className="board-kicker">What We Create</p>
+          <h2 className="board-title">Designed Around Different Needs</h2>
+          <div className="mission-title-bar" aria-hidden="true" />
+          <p className="board-lead">
+            Sensory technology, movement pieces, therapy textiles, sensory rooms, and custom workshop pieces.
+          </p>
+        </div>
 
         <div className="board-tiles">
           <div className="board-collage-row is-lead">

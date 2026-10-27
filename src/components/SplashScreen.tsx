@@ -1,71 +1,106 @@
 'use client';
 
-import React, { useEffect, useState, useSyncExternalStore } from 'react';
+import React, { useEffect, useState } from 'react';
 
-const STORAGE_KEY = 'keller_splash_completed';
-
-function noopSubscribe() {
-  return () => {};
-}
-
-function getCompletedSnapshot(): boolean {
-  try {
-    return sessionStorage.getItem(STORAGE_KEY) === 'true';
-  } catch {
-    return false;
+declare global {
+  interface Window {
+    __keller_splash_completed?: boolean;
   }
 }
 
-function getServerCompletedSnapshot(): boolean {
+// Module-level session cache: persists across all client-side route navigations and button clicks
+let hasShownInCurrentSession = false;
+
+function checkIfShouldShow(): boolean {
+  if (typeof window === 'undefined') return false;
+
+  // 1. If already shown in the current in-memory JS session (SPA navigation), NEVER show again!
+  if (hasShownInCurrentSession || window.__keller_splash_completed) {
+    return false;
+  }
+
+  // 2. Detect if this is an explicit browser reload (F5 / Cmd+R / reload button)
+  let isBrowserReload = false;
+  try {
+    const navEntries = performance.getEntriesByType('navigation');
+    if (navEntries.length > 0) {
+      isBrowserReload = (navEntries[0] as PerformanceNavigationTiming).type === 'reload';
+    } else if (window.performance && window.performance.navigation) {
+      isBrowserReload = window.performance.navigation.type === 1;
+    }
+  } catch {}
+
+  // 3. User requirement: "Browser reload button press cheythalum kaanicho" (show on browser reload)
+  if (isBrowserReload) {
+    return true;
+  }
+
+  // 4. Check sessionStorage for previous visits in this browser tab/window
+  try {
+    const alreadyShownInStorage = sessionStorage.getItem('keller_splash_shown') === 'true';
+    if (alreadyShownInStorage) {
+      return false;
+    }
+  } catch {}
+
+  // Initial fresh visit: show
   return true;
 }
 
-function markSeen() {
-  try {
-    sessionStorage.setItem(STORAGE_KEY, 'true');
-  } catch {}
-  document.documentElement.classList.add('splash-done');
-}
-
 export default function SplashScreen() {
-  const isAlreadyCompleted = useSyncExternalStore(
-    noopSubscribe,
-    getCompletedSnapshot,
-    getServerCompletedSnapshot
-  );
+  const [shouldShow, setShouldShow] = useState<boolean>(() => {
+    const show = checkIfShouldShow();
+    if (!show && typeof document !== 'undefined') {
+      document.documentElement.classList.add('splash-done');
+    }
+    return show;
+  });
 
-  const [dismissed, setDismissed] = useState(false);
   const [fading, setFading] = useState(false);
+  const [dismissed, setDismissed] = useState(false);
 
   useEffect(() => {
-    if (isAlreadyCompleted) {
-      markSeen();
+    if (!shouldShow) {
+      document.documentElement.classList.add('splash-done');
       return;
     }
 
+    // Mark as shown immediately so subsequent button clicks or route changes never re-trigger it
+    hasShownInCurrentSession = true;
+    window.__keller_splash_completed = true;
+    try {
+      sessionStorage.setItem('keller_splash_shown', 'true');
+    } catch {}
+
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const fadeAt = reduce ? 400 : 1100;
-    const hideAt = reduce ? 500 : 1700;
+    const fadeAt = reduce ? 300 : 1600;
+    const hideAt = reduce ? 500 : 2100;
+
     const fadeTimer = window.setTimeout(() => setFading(true), fadeAt);
     const hideTimer = window.setTimeout(() => {
-      markSeen();
       setDismissed(true);
+      document.documentElement.classList.add('splash-done');
     }, hideAt);
 
     return () => {
       window.clearTimeout(fadeTimer);
       window.clearTimeout(hideTimer);
     };
-  }, [isAlreadyCompleted]);
+  }, [shouldShow]);
 
-  if (isAlreadyCompleted || dismissed) return null;
+  if (!shouldShow || dismissed) return null;
 
   return (
     <div
       className={`keller-splash${fading ? ' is-fading' : ''}`}
       onClick={() => {
-        markSeen();
         setDismissed(true);
+        hasShownInCurrentSession = true;
+        window.__keller_splash_completed = true;
+        try {
+          sessionStorage.setItem('keller_splash_shown', 'true');
+        } catch {}
+        document.documentElement.classList.add('splash-done');
       }}
       role="presentation"
     >

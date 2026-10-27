@@ -43,7 +43,19 @@ const PILLARS: CraftPillar[] = [
 export default function WhyKeller() {
   return (
     <section id="why-keller" className="why-section board-section board-rule">
-      <div className="keller-container">
+      <div className="keller-container why-container-relative">
+        {/* Dynamic Graffitos Canvas: Moved UP, extending under titles and down to gallery cards */}
+        <div className="why-graffitos-extended" aria-hidden="true">
+          <Image
+            src="/assets/bg/why-craft-graffitos.svg"
+            alt=""
+            fill
+            sizes="(max-width: 900px) 100vw, 1240px"
+            priority
+            className="why-graffitos-extended-img"
+          />
+        </div>
+
         {/* Section Header */}
         <div className="why-header">
           <p className="board-kicker">Craft & Clinical Purpose</p>
@@ -63,11 +75,12 @@ export default function WhyKeller() {
           <article className="why-gallery-card why-card-primary">
             <div className="why-gallery-frame">
               <Image
-                src="/assets/sensory_rooms/19 (1).jpg"
-                alt="Children in a Keller Adapt sensory therapy room"
+                src="/assets/create/inclusive-spaces.jpg"
+                alt="Therapist and child in a Keller Adapt sensory therapy room"
                 fill
                 sizes="(max-width: 900px) 100vw, 420px"
                 className="why-gallery-img"
+                style={{ objectPosition: 'center 20%' }}
               />
               <div className="why-gallery-gradient" />
               <div className="why-gallery-badge">
@@ -85,11 +98,12 @@ export default function WhyKeller() {
             <article className="why-gallery-card why-card-interactive">
               <div className="why-gallery-frame">
                 <Image
-                  src="/assets/products/Joyful Girl Playing Musical Sensory Panels.png"
-                  alt="Child playing with musical sensory panels"
+                  src="/assets/create/gallery/bubble-switches.jpg"
+                  alt="Child interacting with multi-sensory switch buttons and bubble tube"
                   fill
                   sizes="(max-width: 900px) 100vw, 380px"
                   className="why-gallery-img"
+                  style={{ objectPosition: 'center 35%' }}
                 />
                 <div className="why-gallery-gradient" />
                 <div className="why-gallery-badge">
@@ -103,18 +117,20 @@ export default function WhyKeller() {
             </article>
 
             <article className="why-gallery-card why-card-product">
-              <div className="why-gallery-frame why-frame-soft">
+              <div className="why-gallery-frame">
                 <Image
-                  src="/assets/products/balance-bench-clean.png"
-                  alt="Keller Adapt custom balance bench"
+                  src="/assets/create/movement-balance-bench.jpg"
+                  alt="Keller Adapt custom balance bench handcrafted in solid birch wood"
                   fill
                   sizes="(max-width: 900px) 100vw, 380px"
-                  className="why-gallery-img is-contain"
+                  className="why-gallery-img"
+                  style={{ objectPosition: 'center 40%' }}
                 />
-                <div className="why-gallery-badge why-badge-dark">
+                <div className="why-gallery-gradient" />
+                <div className="why-gallery-badge">
                   <span>Pediatric Ergonomics</span>
                 </div>
-                <div className="why-gallery-caption why-caption-light">
+                <div className="why-gallery-caption">
                   <span className="why-gallery-meta">Therapeutic Seating</span>
                   <h4>Solid wood craft with child-safe curves</h4>
                 </div>
@@ -131,6 +147,7 @@ export default function WhyKeller() {
                 fill
                 sizes="(max-width: 900px) 100vw, 420px"
                 className="why-gallery-img"
+                style={{ objectPosition: 'center 25%' }}
               />
               <div className="why-gallery-gradient" />
               <div className="why-gallery-badge">

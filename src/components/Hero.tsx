@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="hero-stage">
         <div className="hero-fade">
           <Image
-            src="/assets/sensory/sai-sensory-orbs.jpg"
+            src="/assets/rough/cover photo girl.webp"
             alt="A child smiling among glowing sensory orbs in a Keller Adapt sensory room"
             fill
             priority

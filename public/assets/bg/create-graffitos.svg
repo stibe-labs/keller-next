@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="100%" height="100%" fill="none">
+  <defs>
+    <filter id="createGlow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur stdDeviation="0.4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Left: Acoustic Musical Bells & Vibration Arcs (SymphonySense) -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.42" filter="url(#createGlow)">
+    <!-- Xylophone / chime bars with organic wobbly curves -->
+    <path d="M 60 70 C 65 68 85 68 90 70 C 92 85 92 135 90 150 C 85 152 65 152 60 150 Z"/>
+    <path d="M 102 80 C 107 78 123 78 128 80 C 130 95 130 135 128 150 C 123 152 107 152 102 150 Z" stroke="#F46255"/>
+    <path d="M 140 90 C 145 88 158 88 162 90 C 164 105 164 135 162 150 C 158 152 145 152 140 150 Z"/>
+    <!-- Musical sound ripples -->
+    <path d="M 175 75 C 190 60 195 90 215 80" stroke-dasharray="4 4" stroke="#E9B949"/>
+    <circle cx="220" cy="78" r="3" fill="#E9B949" stroke="none"/>
+  </g>
+
+  <!-- Center: Interactive LightLoops & Glowing Concentric Rings -->
+  <g stroke="#F46255" stroke-width="1.7" stroke-linecap="round" opacity="0.4">
+    <!-- Glowing concentric sensory rings -->
+    <ellipse cx="490" cy="100" rx="36" ry="24" stroke-dasharray="8 6"/>
+    <ellipse cx="490" cy="100" rx="60" ry="40" stroke-dasharray="12 6" stroke="#087F7F"/>
+    <ellipse cx="490" cy="100" rx="84" ry="56" stroke-dasharray="16 8" stroke="#E9B949"/>
+    <circle cx="490" cy="100" r="5" fill="#F46255" stroke="none"/>
+    <!-- Tactile toggle switch doodle -->
+    <path d="M 580 90 C 585 70 605 70 610 90 C 612 110 578 110 580 90 Z" stroke="#087F7F"/>
+    <circle cx="595" cy="85" r="3" fill="#087F7F" stroke="none"/>
+  </g>
+
+  <!-- Right: FlowSwing Rocker & Calming Sensory Pod Arch -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.45">
+    <!-- Balance Rocker curved board -->
+    <path d="M 780 155 C 830 185 910 185 960 155" stroke-width="2.5" stroke="#F46255"/>
+    <circle cx="870" cy="165" r="6" stroke="#087F7F" stroke-dasharray="3 3"/>
+    <!-- Dome shaped sensory cave / pod -->
+    <path d="M 820 140 C 820 60 920 60 920 140" stroke-dasharray="10 5"/>
+    <!-- Starburst sparkles -->
+    <path d="M 970 65 L 973 72 L 980 73.5 L 973 75 L 970 82 L 967 75 L 960 73.5 L 967 72 Z" fill="#E9B949" stroke="none"/>
+    <circle cx="1010" cy="95" r="2.5" fill="#F46255" stroke="none"/>
+    <circle cx="945" cy="45" r="2" fill="#087F7F" stroke="none"/>
+  </g>
+</svg>

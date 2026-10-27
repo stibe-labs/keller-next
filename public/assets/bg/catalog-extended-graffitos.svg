@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" width="100%" height="100%" fill="none">
+  <!-- ==============================================================
+       THE CATALOG: EXTENDED GRAFFITOS CANVAS
+       Thematic motifs: Sensory Hammock Pod, Compression Wrap, Glow Swing,
+       Balance Rocker, Calibrated Vibration Waves, Product Sparkles.
+       Colors: Keller Coral (#F46255) & Keller Teal (#087F7F)
+       Opacities: Soft watermark range (0.24 - 0.34)
+       ============================================================== -->
+
+  <!-- ==============================================================
+       ZONE 1: HIGH TOP-RIGHT (Sensory Hammock, Glow Swing, Rocker - MOVED UP!)
+       (Confined strictly to x: 780 to 1180, high at y: 15 to 280)
+       ============================================================== -->
+  
+  <!-- Sensory Therapy Hammock / Suspended Cocoon Pod (High Upper Right y:20 to 170) -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.32">
+    <!-- Suspension cables / carabiner rings -->
+    <path d="M 910 25 L 945 80" stroke-dasharray="6 5"/>
+    <path d="M 1040 25 L 1005 80" stroke-dasharray="6 5"/>
+    <circle cx="910" cy="22" r="3.2" fill="#F46255" opacity="0.35"/>
+    <circle cx="1040" cy="22" r="3.2" fill="#087F7F" opacity="0.35"/>
+
+    <!-- Calming deep-pressure cocoon sling curve -->
+    <path d="M 940 80 C 925 150 1025 150 1010 80" stroke-width="2.2" stroke="#F46255"/>
+    <!-- Internal cushion fold lines -->
+    <path d="M 948 100 C 960 135 990 135 1002 100" stroke-dasharray="4 4"/>
+    <circle cx="975" cy="115" r="4.5" fill="#087F7F" opacity="0.3"/>
+  </g>
+
+  <!-- Interactive LumaSwing Glow Orbs & Light Pulses (High Right Sky) -->
+  <g stroke-linecap="round" opacity="0.30">
+    <!-- Concentric glowing sensory orbs -->
+    <circle cx="1095" cy="90" r="24" stroke="#F46255" stroke-width="1.6" stroke-dasharray="7 5"/>
+    <circle cx="1095" cy="90" r="40" stroke="#087F7F" stroke-width="1.5" stroke-dasharray="10 6"/>
+    <circle cx="1095" cy="90" r="4" fill="#F46255" stroke="none" opacity="0.35"/>
+    <!-- Swirling ambient glow trails -->
+    <path d="M 1055 75 C 1070 50 1120 50 1135 75 C 1145 95 1125 125 1095 130" stroke="#087F7F" stroke-width="1.4" stroke-dasharray="5 5"/>
+  </g>
+
+  <!-- FlowSwing Rocker Board & Balance Orbs (Movement & Balance) -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.32">
+    <!-- Rocker curved platform -->
+    <path d="M 790 165 C 835 195 915 195 960 165" stroke-width="2.2" stroke="#F46255"/>
+    <!-- Balance guide orb -->
+    <circle cx="875" cy="175" r="5.5" stroke="#087F7F" stroke-dasharray="3 3"/>
+    <circle cx="875" cy="175" r="2" fill="#087F7F"/>
+    <!-- Motion arc squiggles -->
+    <path d="M 780 155 C 775 170 780 185 788 180" stroke-dasharray="3 3" opacity="0.7"/>
+    <path d="M 970 155 C 975 170 970 185 962 180" stroke-dasharray="3 3" opacity="0.7"/>
+  </g>
+
+  <!-- Starburst Sparkles & Unboxing Twinkles (Top-Right Sky) -->
+  <g opacity="0.28">
+    <path d="M 1045 22 L 1047 29 L 1053 30.5 L 1047 32 L 1045 39 L 1043 32 L 1037 30.5 L 1043 29 Z" fill="#F46255"/>
+    <path d="M 1135 35 L 1137 40 L 1142 42 L 1137 44 L 1135 49 L 1133 44 L 1128 42 L 1133 40 Z" fill="#087F7F"/>
+    <circle cx="1065" cy="50" r="2.2" fill="#087F7F"/>
+    <circle cx="1115" cy="25" r="2.4" fill="#F46255"/>
+    <circle cx="1165" cy="110" r="1.8" fill="#F46255"/>
+    <circle cx="850" cy="35" r="2" fill="#087F7F"/>
+  </g>
+
+
+  <!-- ==============================================================
+       ZONE 2: EXTENDING UNDER THE TITLES (Catalog & Sensory Underlines)
+       (Strictly under letter baselines: y:110 for L1, y:175 for L2)
+       ============================================================== -->
+
+  <!-- Organic Sensory Underline Flow Line 1 (Directly under "Explore our products.") -->
+  <path d="M 40 108 C 180 118 360 106 520 114 C 620 118 700 106 780 112" 
+        stroke="#F46255" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="14 8" opacity="0.28"/>
+  
+  <!-- Dynamic Hand-Drawn Underline Flourish 2 (Second sweep leading out to the Hammock) -->
+  <path d="M 40 172 C 120 184 260 180 390 170 C 450 166 500 176 560 168" 
+        stroke="#087F7F" stroke-width="2" stroke-linecap="round" opacity="0.32"/>
+
+  <!-- Double Sensory Echo Wave under Title -->
+  <path d="M 46 180 C 130 190 230 186 330 178" 
+        stroke="#F46255" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="4 5" opacity="0.25"/>
+
+  <!-- Swirling Sensory Connector Loop flowing towards the Hammock Pod in Teal -->
+  <g stroke="#087F7F" stroke-width="1.6" stroke-linecap="round" opacity="0.28">
+    <path d="M 560 168 C 620 155 680 185 740 162 C 800 140 850 172 910 148" stroke-dasharray="6 5"/>
+    <path d="M 740 162 C 755 152 765 167 750 177 C 735 187 720 167 740 157"/>
+    <circle cx="752" cy="164" r="2" fill="#F46255" stroke="none" opacity="0.28"/>
+  </g>
+
+  <!-- Calibrated Sensory Vibration Ripple under the Subtitle -->
+  <path d="M 40 250 Q 65 240 90 250 T 140 250 T 190 250 T 240 250 T 290 250 T 340 250 T 390 250 T 440 250 T 490 250 T 540 250 T 590 250" 
+        stroke="#087F7F" stroke-width="1.5" stroke-linecap="round" opacity="0.24"/>
+
+  <!-- Tactile Compression Pillow Knot Sketch (Between Lead text and Hammock) -->
+  <g stroke="#F46255" stroke-width="1.5" stroke-linecap="round" opacity="0.28">
+    <path d="M 690 220 C 680 205 710 205 700 220 C 715 225 715 240 700 240 C 690 240 685 225 690 220 Z"/>
+    <circle cx="700" cy="222" r="2" fill="#087F7F"/>
+  </g>
+
+
+  <!-- ==============================================================
+       ZONE 3: EXTENDING TO AND AROUND PRODUCT CARDS & FILTERS
+       ============================================================== -->
+  
+  <!-- Left Side: Cascading Dotted Trail leading into Card 1 (LIGHTLOOPS) -->
+  <path d="M 60 260 C 45 290 30 315 20 355 C 12 395 24 435 18 475" 
+        stroke="#087F7F" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 6" opacity="0.26"/>
+  
+  <!-- Sketched Corner Frame Accent around Card 1 -->
+  <path d="M 12 345 C 12 328 28 328 48 328" stroke="#F46255" stroke-width="1.9" stroke-linecap="round" opacity="0.30"/>
+  <circle cx="12" cy="328" r="2.4" fill="#F46255" opacity="0.28"/>
+
+  <!-- Wave swooping across the boundary between Card 1 and Card 2 (LumaSwing) -->
+  <path d="M 380 315 C 430 295 480 325 540 305 C 600 285 650 315 700 300" 
+        stroke="#F46255" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.28"/>
+
+  <!-- Right Side: Playful Trails flowing down towards Card 3 (SymphonySense II) -->
+  <path d="M 870 310 C 850 355 825 390 790 425 C 765 450 780 475 760 505" 
+        stroke="#087F7F" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.26"/>
+
+  <path d="M 960 285 C 980 325 1010 365 1040 405 C 1065 440 1055 475 1075 510" 
+        stroke="#F46255" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="5 5" opacity="0.26"/>
+
+  <!-- Subtle Coral & Teal Sparkles near Product Cards -->
+  <g opacity="0.26">
+    <circle cx="440" cy="315" r="2.2" fill="#F46255"/>
+    <circle cx="710" cy="308" r="2" fill="#087F7F"/>
+    <circle cx="790" cy="405" r="2.2" fill="#F46255"/>
+    <circle cx="1025" cy="400" r="2.2" fill="#087F7F"/>
+    <circle cx="28" cy="445" r="1.8" fill="#087F7F"/>
+    <circle cx="1090" cy="490" r="2" fill="#F46255"/>
+  </g>
+</svg>

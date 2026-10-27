@@ -26,12 +26,23 @@ export default function ContactSection() {
     <section id="contact" className="contact-section board-section board-rule">
       <div className="keller-container">
         <div className="board-together">
-          <div>
+          <div className="section-graffitos-header">
+            <div className="section-graffitos-bg" aria-hidden="true">
+              <Image
+                src="/assets/bg/contact-graffitos.svg"
+                alt=""
+                fill
+                sizes="(max-width: 900px) 100vw, 1100px"
+                className="section-graffitos-img"
+              />
+            </div>
+            <p className="board-kicker">Get In Touch</p>
             <h2 className="board-title board-title-stack">
               <span>Let’s build</span>
               <span>more inclusive spaces</span>
               <span>Together</span>
             </h2>
+            <div className="mission-title-bar" aria-hidden="true" />
             <p className="board-lead">
               A therapy clinic, a special school, a hospital, an airport, or a parent with a specific child in mind. Tell us the space. We will help shape it.
             </p>

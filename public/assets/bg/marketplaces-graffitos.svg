@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="100%" height="100%" fill="none">
+  <!-- Left: Express delivery parcel with little wings -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.45">
+    <rect x="75" y="85" width="48" height="38" rx="6" stroke="#F46255" stroke-dasharray="8 4"/>
+    <path d="M 99 85 L 99 123"/>
+    <path d="M 75 104 L 123 104"/>
+    <!-- Little winged flight curves -->
+    <path d="M 68 95 C 50 85 45 105 65 108" stroke="#E9B949"/>
+    <path d="M 130 95 C 148 85 153 105 133 108" stroke="#E9B949"/>
+  </g>
+
+  <!-- Center: Shopping tote bag with heart & starbursts -->
+  <g stroke="#F46255" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.42">
+    <!-- Shopping bag handle -->
+    <path d="M 525 80 C 525 60 555 60 555 80"/>
+    <!-- Bag body -->
+    <rect x="510" y="80" width="60" height="55" rx="8" stroke="#087F7F" stroke-dasharray="10 5"/>
+    <circle cx="540" cy="108" r="8" fill="#E9B949" stroke="none"/>
+  </g>
+
+  <!-- Right: Unboxing joy ribbons and sparkles -->
+  <g stroke="#087F7F" stroke-width="1.7" stroke-linecap="round" opacity="0.45">
+    <path d="M 870 125 C 885 95 915 95 930 125 C 945 155 975 155 990 125" stroke="#F46255" stroke-dasharray="6 4"/>
+    <circle cx="930" cy="80" r="3" fill="#E9B949" stroke="none"/>
+    <circle cx="985" cy="95" r="2" fill="#087F7F" stroke="none"/>
+  </g>
+</svg>

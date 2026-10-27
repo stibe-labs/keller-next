@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" width="100%" height="100%" fill="none">
+  <!-- ==============================================================
+       KELLER BRAND PALETTE WITH SOFT, LOW OPACITY
+       Colors: Keller Coral (#F46255) & Keller Teal (#087F7F)
+       Opacities: Soft, gentle watermark range (0.20 - 0.32)
+       ============================================================== -->
+
+  <!-- ==============================================================
+       ZONE 1: HIGH TOP-RIGHT (The Graffito Giraffe, Balloons & Sun - MOVED UP!)
+       ============================================================== -->
+  
+  <!-- Cheerful Smiling Sun in Keller Coral (High Upper-Right Sky) -->
+  <g stroke="#F46255" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.30">
+    <circle cx="860" cy="55" r="22" stroke-dasharray="135" stroke-dashoffset="10"/>
+    <!-- Organic curved rays -->
+    <path d="M 860 28 C 862 20 858 15 860 8"/>
+    <path d="M 878 37 C 885 31 889 27 896 21"/>
+    <path d="M 885 55 C 894 57 898 53 905 55"/>
+    <path d="M 878 73 C 885 79 889 83 897 88"/>
+    <path d="M 860 81 C 862 89 858 95 860 101"/>
+    <path d="M 842 73 C 835 79 831 83 823 88"/>
+    <path d="M 835 55 C 826 53 822 57 815 55"/>
+    <path d="M 842 37 C 835 31 831 27 824 21"/>
+    <!-- Cheerful face -->
+    <path d="M 852 51 C 854 48 857 48 859 51"/>
+    <path d="M 863 51 C 865 48 868 48 870 51"/>
+    <path d="M 854 62 C 858 67 864 67 868 62"/>
+  </g>
+
+  <!-- Playful Butterfly Fluttering in Keller Teal -->
+  <g stroke="#087F7F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.28">
+    <path d="M 918 42 C 919 50 919 58 918 66"/>
+    <path d="M 918 42 C 916 36 911 34 909 36"/>
+    <path d="M 918 42 C 920 36 925 34 927 36"/>
+    <!-- Wings -->
+    <path d="M 918 46 C 930 34 942 46 918 56 C 938 62 930 76 918 62"/>
+    <path d="M 918 46 C 906 34 894 46 918 56 C 898 62 906 76 918 62"/>
+  </g>
+
+  <!-- Sketched Graffito Giraffe in Keller Teal (Moved up high) -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.32">
+    <!-- Horns with rounded knobs (High up at y:15-28!) -->
+    <path d="M 995 38 C 996 30 997 24 998 18"/>
+    <circle cx="998" cy="16" r="3" fill="#F46255" stroke="none" opacity="0.35"/>
+    <path d="M 1007 40 C 1010 34 1012 28 1013 22"/>
+    <circle cx="1013" cy="20" r="2.6" fill="#087F7F" stroke="none" opacity="0.35"/>
+
+    <!-- Head and cute snout -->
+    <path d="M 986 44 C 978 42 976 48 982 52"/> <!-- Left ear -->
+    <path d="M 1016 44 C 1024 42 1026 48 1020 52"/> <!-- Right ear -->
+    <path d="M 1012 40 C 1020 40 1034 44 1036 54 C 1037 64 1030 71 1020 73 C 1008 75 1000 73 996 68"/> <!-- Snout -->
+    
+    <!-- Cheerful eye & nostril -->
+    <path d="M 1008 50 C 1011 53 1015 53 1017 50" stroke-width="1.6"/> <!-- Smiling eye -->
+    <circle cx="1028" cy="58" r="1.5" fill="#F46255" stroke="none" opacity="0.35"/> <!-- Nostril -->
+
+    <!-- Long graceful neck stretching down -->
+    <path d="M 996 68 C 990 92 982 140 972 195 C 964 240 952 275 940 295"/>
+    <path d="M 974 44 C 968 70 956 130 942 198 C 932 245 915 278 895 298"/>
+
+    <!-- Mane flicks (Playful organic tufts) -->
+    <path d="M 970 66 C 966 63 961 62 963 60"/>
+    <path d="M 964 94 C 960 91 954 90 956 88"/>
+    <path d="M 958 126 C 954 123 947 121 949 119"/>
+    <path d="M 950 160 C 946 157 938 155 940 153"/>
+    <path d="M 942 196 C 938 193 929 191 931 189"/>
+    <path d="M 932 234 C 928 231 918 228 920 226"/>
+
+    <!-- Back and playful legs -->
+    <path d="M 895 298 C 872 304 848 316 820 324"/>
+    <path d="M 820 324 C 806 332 800 344 796 368"/> <!-- Back leg -->
+    <path d="M 940 295 C 938 318 937 342 935 368" stroke-width="1.9"/> <!-- Front leg 1 -->
+    <path d="M 952 290 C 951 315 950 340 948 368" stroke-width="1.3" stroke-dasharray="7 5"/> <!-- Front leg 2 -->
+
+    <!-- Tail with cute tassel -->
+    <path d="M 808 328 C 792 340 786 352 785 366" stroke-dasharray="4 4"/>
+    <circle cx="785" cy="368" r="3" fill="#F46255" stroke="none" opacity="0.32"/>
+  </g>
+
+  <!-- Giraffe Pattern Spots in Keller Coral -->
+  <g stroke="#F46255" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.28">
+    <circle cx="985" cy="115" r="7.5" stroke-dasharray="5 3"/>
+    <path d="M 970 162 C 964 155 954 162 956 173 C 958 180 972 178 970 162"/>
+    <path d="M 952 225 C 956 232 947 242 940 238" stroke-dasharray="4 3"/>
+    <circle cx="865" cy="326" r="8.5" stroke="#087F7F" stroke-dasharray="4 3"/>
+  </g>
+
+  <!-- Floating Therapy Balloons (Coral & Teal with Soft Opacity) -->
+  <g stroke-linecap="round">
+    <!-- Coral balloon -->
+    <g stroke="#F46255" stroke-width="1.6" opacity="0.30">
+      <ellipse cx="1090" cy="70" rx="19" ry="24" fill="none"/>
+      <path d="M 1090 94 L 1086 100 L 1094 100 Z" fill="#F46255" opacity="0.3"/>
+      <path d="M 1090 100 C 1078 126 1102 148 1084 175 C 1074 190 1090 210 1078 235" stroke-dasharray="4 4"/>
+    </g>
+
+    <!-- Teal balloon -->
+    <g stroke="#087F7F" stroke-width="1.6" opacity="0.28">
+      <circle cx="1135" cy="115" r="17" stroke-dasharray="8 4" fill="none"/>
+      <path d="M 1135 132 L 1131 137 L 1139 137 Z" fill="#087F7F" opacity="0.3"/>
+      <path d="M 1135 137 C 1148 160 1122 184 1138 210 C 1146 222 1136 240 1142 258" stroke-dasharray="4 4"/>
+    </g>
+  </g>
+
+  <!-- Sky Sparkles & Twinkles (Soft Coral & Teal Accents) -->
+  <g opacity="0.25">
+    <path d="M 1055 25 L 1057 32 L 1064 34 L 1057 36 L 1055 43 L 1053 36 L 1046 34 L 1053 32 Z" fill="#087F7F"/>
+    <path d="M 1150 48 L 1152 53 L 1157 55 L 1152 57 L 1150 62 L 1148 57 L 1143 55 L 1148 53 Z" fill="#F46255"/>
+    <circle cx="1060" cy="65" r="2" fill="#087F7F"/>
+    <circle cx="1110" cy="35" r="2.2" fill="#F46255"/>
+    <circle cx="1165" cy="95" r="1.8" fill="#087F7F"/>
+    <circle cx="945" cy="25" r="2" fill="#F46255"/>
+  </g>
+
+
+  <!-- ==============================================================
+       ZONE 2: EXTENDING UNDER THE TITLES (Soft Coral & Teal Underlines)
+       ============================================================== -->
+  
+  <!-- Playful Kicker Accent Loop in Keller Coral -->
+  <path d="M 22 28 C 12 36 10 46 20 52 C 30 56 36 46 28 40 C 22 36 16 42 22 48" 
+        stroke="#F46255" stroke-width="1.5" stroke-linecap="round" opacity="0.24"/>
+
+  <!-- Organic Sensory Underline Flow Line 1 (Directly underneath Title Line 1 in Coral) -->
+  <path d="M 40 108 C 180 118 360 105 520 112 C 640 118 720 104 800 110" 
+        stroke="#F46255" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="14 8" opacity="0.28"/>
+  
+  <!-- Dynamic Hand-Drawn Underline Flourish 2 (Directly underneath Title Line 2 in Teal) -->
+  <path d="M 40 178 C 120 190 280 185 420 175 C 500 170 560 182 620 174" 
+        stroke="#087F7F" stroke-width="2" stroke-linecap="round" opacity="0.30"/>
+
+  <!-- Double Sensory Echo Wave under Title in Coral -->
+  <path d="M 46 186 C 140 198 260 192 380 184" 
+        stroke="#F46255" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="4 5" opacity="0.25"/>
+
+  <!-- Swirling Sensory Connector Loop flowing towards Giraffe in Teal -->
+  <g stroke="#087F7F" stroke-width="1.6" stroke-linecap="round" opacity="0.26">
+    <path d="M 620 174 C 680 162 720 190 770 170 C 820 150 860 182 910 160" stroke-dasharray="6 5"/>
+    <path d="M 770 170 C 785 160 795 175 780 185 C 765 195 750 175 770 165"/>
+    <circle cx="782" cy="172" r="2" fill="#F46255" stroke="none" opacity="0.28"/>
+  </g>
+
+  <!-- Tactile Compression Rhythm Lines under Lead Paragraph in Teal -->
+  <path d="M 40 268 Q 65 258 90 268 T 140 268 T 190 268 T 240 268 T 290 268 T 340 268 T 390 268 T 440 268 T 490 268 T 540 268 T 590 268" 
+        stroke="#087F7F" stroke-width="1.5" stroke-linecap="round" opacity="0.22"/>
+
+  <!-- Sensory Handprint Doodle in Keller Coral (Tactile Inclusion) -->
+  <g stroke="#F46255" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.28" fill="none">
+    <path d="M 680 235 C 675 220 700 218 705 235 C 707 248 697 258 687 256 C 680 254 677 245 680 235 Z"/>
+    <path d="M 677 224 C 670 216 667 220 673 228"/>
+    <path d="M 682 216 C 680 205 687 205 689 216"/>
+    <path d="M 692 214 C 692 202 699 202 700 214"/>
+    <path d="M 701 216 C 703 206 709 208 708 218"/>
+    <path d="M 707 226 C 713 222 717 226 711 232"/>
+  </g>
+
+
+  <!-- ==============================================================
+       ZONE 3: EXTENDING TO AND AROUND THE IMAGES (Bento Cards & Photography)
+       ============================================================== -->
+  
+  <!-- Left Side: Cascading Dotted Trail leading into Documentary Photography Card in Teal -->
+  <path d="M 60 275 C 45 305 30 330 20 370 C 12 410 24 450 18 490" 
+        stroke="#087F7F" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 6" opacity="0.25"/>
+  
+  <!-- Playful Sketched Corner Frame Accent around Photography Card in Coral -->
+  <path d="M 12 360 C 12 342 28 342 48 342" stroke="#F46255" stroke-width="1.9" stroke-linecap="round" opacity="0.28"/>
+  <circle cx="12" cy="342" r="2.5" fill="#F46255" opacity="0.25"/>
+
+  <!-- Wave swooping across the boundary between Photography Card and Bento Cards in Coral -->
+  <path d="M 430 310 C 475 295 520 325 570 305 C 620 285 675 315 725 300" 
+        stroke="#F46255" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.26"/>
+
+  <!-- Right Side: Playful Trails flowing down from Giraffe into Bento Cards 01 & 02 -->
+  <path d="M 870 330 C 850 375 825 410 790 445 C 765 470 780 495 760 525" 
+        stroke="#087F7F" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 6" opacity="0.25"/>
+
+  <path d="M 945 330 C 965 370 995 405 1025 440 C 1050 470 1040 500 1060 535" 
+        stroke="#F46255" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 5" opacity="0.25"/>
+
+  <!-- Looping Proprioceptive Sweep around Bento Card 01 Header in Teal -->
+  <path d="M 520 335 C 550 315 580 345 610 325 C 630 310 655 330 675 320" 
+        stroke="#087F7F" stroke-width="1.6" stroke-linecap="round" opacity="0.26"/>
+
+  <!-- Soft Coral & Teal Sparkles near Images & Bento Cards -->
+  <g opacity="0.25">
+    <circle cx="490" cy="318" r="2.4" fill="#F46255"/>
+    <circle cx="735" cy="310" r="2.2" fill="#087F7F"/>
+    <circle cx="810" cy="420" r="2.2" fill="#F46255"/>
+    <circle cx="1010" cy="425" r="2.4" fill="#087F7F"/>
+    <circle cx="28" cy="460" r="1.8" fill="#087F7F"/>
+    <circle cx="1075" cy="510" r="2" fill="#F46255"/>
+  </g>
+</svg>
