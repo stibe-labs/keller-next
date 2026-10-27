@@ -3695,9 +3695,8 @@ html.splash-done .keller-splash {
 
 
 .contact-map-section {
-  margin-top: 52px;
-  padding-top: 48px;
-  border-top: 1px solid rgba(28, 20, 16, 0.08);
+  padding: 90px 0;
+  background: #FFFFFF;
 }
 
 .contact-map-header {

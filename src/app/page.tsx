@@ -15,6 +15,7 @@ import Team from '@/components/Team';
 import InvestorMetrics from '@/components/InvestorMetrics';
 import ContactSection from '@/components/ContactSection';
 import FAQSection from '@/components/FAQSection';
+import LocationMap from '@/components/LocationMap';
 import Footer from '@/components/Footer';
 import Reveal from '@/components/Reveal';
 
@@ -76,13 +77,16 @@ export default function Home() {
         {/* 13. The Execution Team */}
         <Reveal><Team /></Reveal>
 
-        {/* 14. Conversion & Investor/Partner Contact */}
+        {/* 14. Conversion & Contact CTA */}
         <Reveal><ContactSection /></Reveal>
 
         {/* 15. Frequently Asked Questions */}
         <Reveal><FAQSection /></Reveal>
 
-        {/* 16. Footer */}
+        {/* 16. Workshop & Demo Gym Location Map */}
+        <Reveal><LocationMap /></Reveal>
+
+        {/* 17. Footer */}
         <Footer />
       </div>
     </>
