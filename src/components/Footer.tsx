@@ -1,13 +1,20 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
     <footer className="keller-footer">
       <div className="keller-container">
-        <p className="footer-wordmark">
-          Keller
-          <span>Adapt</span>
-        </p>
+        {/* Large Brand Logo replacing old giant text */}
+        <div className="footer-logo-wrapper">
+          <Image
+            src="/assets/logo/keller-logo.png"
+            alt="Keller Adapt - Affectionately Assisting"
+            width={420}
+            height={135}
+            className="footer-logo-img"
+          />
+        </div>
 
         <div className="footer-grid">
           <div>

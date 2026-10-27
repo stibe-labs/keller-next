@@ -3436,44 +3436,65 @@ body:has(.hero-stage) .tcs-header:not(.is-solid):has(.tcs-dropdown-panel) {
 }
 
 .keller-footer {
-  background: var(--color-ink);
-  color: #C9BDB4;
-  padding: 72px 0 28px;
-  border-top: none;
+  background: #000000;
+  color: #9CA3AF;
+  padding: 80px 0 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.footer-wordmark {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: clamp(4.6rem, 14vw, 9.5rem);
-  line-height: 0.78;
-  letter-spacing: -0.045em;
-  color: var(--color-on-ink);
-  margin: 0 0 36px;
-}
-
-.footer-wordmark span {
+.footer-logo-wrapper {
   display: block;
-  color: var(--color-primary-light);
+  margin-bottom: 48px;
+}
+
+.footer-logo-img {
+  width: auto;
+  height: clamp(68px, 9vw, 105px);
+  max-width: min(440px, 90vw);
+  object-fit: contain;
+  display: block;
 }
 
 .footer-grid {
   grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
-  padding-top: 28px;
-  border-top: 1px solid rgba(246, 240, 232, 0.14);
+  gap: 36px;
+  padding-top: 36px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .footer-col-title {
   font-family: var(--font-sans);
-  font-size: 12px;
-  letter-spacing: 0.16em;
-  font-weight: 600;
-  color: #F6F0E8;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+
+.footer-desc {
+  color: #9CA3AF;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.footer-link {
+  color: #9CA3AF;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #F46255;
 }
 
 .footer-bottom {
-  border-top-color: rgba(246, 240, 232, 0.14);
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #71717A;
+  font-size: 13px;
 }
 
 .footer-legal {
@@ -4010,8 +4031,8 @@ body:has(.hero-stage) .tcs-header:not(.is-solid):has(.tcs-dropdown-panel) {
   .form-split {
     grid-template-columns: 1fr;
   }
-  .footer-wordmark {
-    margin-bottom: 24px;
+  .footer-logo-wrapper {
+    margin-bottom: 28px;
   }
 }
 
