@@ -5567,53 +5567,181 @@ body:has(.hero-stage) .tcs-header:not(.is-solid):has(.tcs-dropdown-panel) {
   line-height: 1;
 }
 
-.board-shop-soon {
-  margin: 0 0 8px;
-  text-align: center;
-  color: #fff;
-  background: var(--color-primary);
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 7px 14px;
-  border-radius: 999px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  box-shadow: 0 0 0 4px rgba(226, 75, 50, 0.16);
+/* ==============================================================
+   MARKETPLACES & VERIFIED RETAILERS SECTION
+   ============================================================== */
+.marketplaces-section {
+  padding: 84px 0 96px;
+  background: transparent;
 }
 
-.board-shop-title {
-  text-align: center;
-  color: var(--color-primary);
+.marketplaces-header-wrapper {
+  margin-bottom: 36px;
+  position: relative;
 }
 
-.board-shop-title span {
-  padding: 0 0.2em;
-  color: var(--color-primary);
+.marketplace-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
-.board-shops {
+.marketplace-card {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid rgba(28, 20, 16, 0.08);
+  border-radius: 20px;
+  padding: 26px 22px 22px;
+  box-shadow: 0 1px 3px rgba(28, 20, 16, 0.03), 0 8px 24px rgba(28, 20, 16, 0.04);
+  transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  text-align: left;
+}
+
+.marketplace-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(244, 98, 85, 0.3);
+  box-shadow: 0 14px 32px rgba(244, 98, 85, 0.12), 0 4px 12px rgba(28, 20, 16, 0.04);
+}
+
+.marketplace-card-header {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  gap: 28px 40px;
-  margin-top: 8px;
+  gap: 12px;
+  min-height: 48px;
 }
 
-.board-shop {
+.marketplace-logo-frame {
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: 56px;
-  color: inherit;
+  justify-content: flex-start;
+  height: 40px;
 }
 
-.board-shop img {
+.marketplace-logo-img {
   width: auto;
-  height: 42px;
+  max-height: 38px;
   object-fit: contain;
+}
+
+.marketplace-trust-pill {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.marketplace-trust-pill.is-amber {
+  background: rgba(245, 158, 11, 0.1);
+  color: #D97706;
+}
+
+.marketplace-trust-pill.is-coral {
+  background: rgba(244, 98, 85, 0.1);
+  color: #E24B32;
+}
+
+.marketplace-trust-pill.is-blue {
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563EB;
+}
+
+.marketplace-trust-pill.is-teal {
+  background: rgba(8, 127, 127, 0.1);
+  color: #087F7F;
+}
+
+.marketplace-card-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(28, 20, 16, 0.07);
+  margin: 18px 0 16px;
+}
+
+.marketplace-card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.marketplace-focus-title {
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #1c1410;
+  line-height: 1.4;
+  margin: 0 0 12px;
+}
+
+.marketplace-meta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.marketplace-shipping-text {
+  font-size: 0.82rem;
+  color: #645a53;
+  line-height: 1.4;
+}
+
+.marketplace-rating-tag {
+  font-size: 0.8rem;
+  font-weight: 650;
+  color: #087F7F;
+}
+
+.marketplace-card-footer {
+  margin-top: auto;
+}
+
+.marketplace-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: #FAF7F2;
+  border: 1px solid rgba(28, 20, 16, 0.08);
+  color: #1c1410;
+  font-size: 0.88rem;
+  font-weight: 650;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.marketplace-cta-btn:hover {
+  background: #F46255;
+  border-color: #F46255;
+  color: #FFFFFF;
+}
+
+.marketplace-cta-arrow {
+  font-size: 1rem;
+  transition: transform 0.25s ease;
+}
+
+.marketplace-cta-btn:hover .marketplace-cta-arrow {
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 1080px) {
+  .marketplace-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .marketplace-cards-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .board-map {

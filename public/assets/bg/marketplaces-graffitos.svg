@@ -1,27 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="100%" height="100%" fill="none">
-  <!-- Left: Express delivery parcel with little wings -->
-  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.45">
-    <rect x="75" y="85" width="48" height="38" rx="6" stroke="#F46255" stroke-dasharray="8 4"/>
-    <path d="M 99 85 L 99 123"/>
-    <path d="M 75 104 L 123 104"/>
-    <!-- Little winged flight curves -->
-    <path d="M 68 95 C 50 85 45 105 65 108" stroke="#E9B949"/>
-    <path d="M 130 95 C 148 85 153 105 133 108" stroke="#E9B949"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 240" width="100%" height="100%" fill="none">
+  <!-- Confined strictly to top-right (x: 820 to 1080) to never overlap text -->
+  
+  <!-- Right: Express delivery parcel with winged flight loops -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.32">
+    <rect x="880" y="45" width="48" height="38" rx="6" stroke="#F46255" stroke-dasharray="8 4"/>
+    <path d="M 904 45 L 904 83"/>
+    <path d="M 880 64 L 928 64"/>
+    <!-- Winged flight curves -->
+    <path d="M 873 55 C 855 45 850 65 870 68" stroke="#F46255"/>
+    <path d="M 935 55 C 953 45 958 65 938 68" stroke="#087F7F"/>
   </g>
 
-  <!-- Center: Shopping tote bag with heart & starbursts -->
-  <g stroke="#F46255" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.42">
-    <!-- Shopping bag handle -->
-    <path d="M 525 80 C 525 60 555 60 555 80"/>
-    <!-- Bag body -->
-    <rect x="510" y="80" width="60" height="55" rx="8" stroke="#087F7F" stroke-dasharray="10 5"/>
-    <circle cx="540" cy="108" r="8" fill="#E9B949" stroke="none"/>
+  <!-- Far Right: Shopping tote & starburst sparkles -->
+  <g stroke="#087F7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.28">
+    <path d="M 995 40 C 995 24 1020 24 1020 40"/>
+    <rect x="980" y="40" width="55" height="50" rx="8" stroke="#087F7F" stroke-dasharray="8 4"/>
+    <circle cx="1007" cy="65" r="7" fill="#F46255" opacity="0.4" stroke="none"/>
   </g>
 
-  <!-- Right: Unboxing joy ribbons and sparkles -->
-  <g stroke="#087F7F" stroke-width="1.7" stroke-linecap="round" opacity="0.45">
-    <path d="M 870 125 C 885 95 915 95 930 125 C 945 155 975 155 990 125" stroke="#F46255" stroke-dasharray="6 4"/>
-    <circle cx="930" cy="80" r="3" fill="#E9B949" stroke="none"/>
-    <circle cx="985" cy="95" r="2" fill="#087F7F" stroke="none"/>
+  <!-- Sparkle Stars -->
+  <g opacity="0.30">
+    <path d="M 955 25 L 956.5 29 L 961 30.5 L 956.5 32 L 955 36 L 953.5 32 L 949 30.5 L 953.5 29 Z" fill="#F46255"/>
+    <circle cx="1045" cy="50" r="2.5" fill="#087F7F"/>
+    <circle cx="865" cy="80" r="2" fill="#F46255"/>
   </g>
 </svg>
