@@ -131,6 +131,11 @@ export default function Navbar() {
       lastY = y;
       setScrolled(y > 12);
 
+      if (mobileMenuOpen) {
+        setHidden(false);
+        return;
+      }
+
       if (y <= 16) {
         accum = 0;
         setHidden(false);
@@ -155,18 +160,25 @@ export default function Navbar() {
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [mobileMenuOpen]);
 
   // Close menus on outside click
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
         setActiveMenu(null);
+        setMobileMenuOpen(false);
       }
     }
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
+
+  const [expandedSection, setExpandedSection] = useState<string | null>('products');
+
+  const toggleSection = (id: string) => {
+    setExpandedSection(prev => (prev === id ? null : id));
+  };
 
   const handleMenuClick = (menuId: string) => {
     setActiveMenu(activeMenu === menuId ? null : menuId);
@@ -252,8 +264,9 @@ export default function Navbar() {
           {/* Mobile Hamburger Button */}
           <button
             type="button"
-            className="tcs-hamburger"
-            aria-label="Open mobile menu"
+            className={`tcs-hamburger ${mobileMenuOpen ? 'is-active' : ''}`}
+            aria-label={mobileMenuOpen ? 'Close mobile menu' : 'Open mobile menu'}
+            aria-expanded={mobileMenuOpen}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             <span></span>
@@ -460,88 +473,173 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="tcs-mobile-drawer">
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-            {/* Mobile Store Strip */}
-            <div style={{ background: '#1E1E1E', padding: '16px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.1)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
-                <span style={{ fontSize: '15px', fontWeight: 700, color: '#FFFFFF' }}>Store</span>
-                <span style={{ background: 'rgba(226, 75, 50, 0.22)', color: '#F6E4DC', fontSize: '11px', fontWeight: 700, padding: '4px 10px', borderRadius: '9999px', border: '1px solid rgba(226, 75, 50, 0.55)' }}>
-                  Store opening soon
-                </span>
-              </div>
-              <p style={{ fontSize: '12px', color: '#F6E4DC', fontWeight: 700, marginBottom: '12px' }}>
-                Currently available on these
-              </p>
-              <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-                <a href="https://www.amazon.in/Keller-ADAPT-Processing-Occupational-Equipment/dp/B09TW84X2P?th=1" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', background: '#FFFFFF', padding: '2px 3px', borderRadius: '6px', textDecoration: 'none' }}>
-                  <div style={{ position: 'relative', width: '78px', height: '28px' }}>
-                    <Image src="/assets/logo/mark-amazon.png" alt="Amazon" fill style={{ objectFit: 'contain' }} />
-                  </div>
-                </a>
-                <a href="https://www.etsy.com/listing/4519472296/sensory-compression-hammock-propriotex" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', background: '#FFFFFF', padding: '2px 3px', borderRadius: '6px', textDecoration: 'none' }}>
-                  <div style={{ position: 'relative', width: '56px', height: '28px' }}>
-                    <Image src="/assets/logo/mark-etsy.png" alt="Etsy" fill style={{ objectFit: 'contain' }} />
-                  </div>
-                </a>
-                <a href="https://www.flipkart.com/keller-adapt-deep-pressure-memory-foam-sensory-input-occupational-therapy-aid-autism-sleeping-bag/p/itme587d611de753" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', background: '#FFFFFF', padding: '2px 3px', borderRadius: '6px', textDecoration: 'none' }}>
-                  <div style={{ position: 'relative', width: '99px', height: '28px' }}>
-                    <Image src="/assets/logo/mark-flipkart.png" alt="Flipkart" fill style={{ objectFit: 'contain' }} />
-                  </div>
-                </a>
-                <div style={{ display: 'inline-flex', alignItems: 'center', background: '#FFFFFF', padding: '2px 3px', borderRadius: '6px', gap: '6px' }}>
-                  <div style={{ position: 'relative', width: '106px', height: '28px' }}>
-                    <Image src="/assets/logo/mark-walmart.png" alt="Walmart" fill style={{ objectFit: 'contain' }} />
-                  </div>
-                  <span style={{ fontSize: '9px', fontWeight: 800, color: '#0071CE' }}>INVITATION</span>
+        <div className="tcs-mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+          {/* Quick-Jump Horizontal Pills */}
+          <div className="tcs-mob-quickpills">
+            <a href="#products" onClick={closeAll} className="tcs-mob-pill">
+              Products
+            </a>
+            <a href="/create/sensory-rooms" onClick={closeAll} className="tcs-mob-pill tcs-mob-pill-featured">
+              3D Rooms ✨
+            </a>
+            <a href="#about" onClick={closeAll} className="tcs-mob-pill">
+              Who We Are
+            </a>
+            <a href="#impact" onClick={closeAll} className="tcs-mob-pill">
+              Clinical Evidence
+            </a>
+            <a href="#faq" onClick={closeAll} className="tcs-mob-pill">
+              FAQ
+            </a>
+            <a href="#location" onClick={closeAll} className="tcs-mob-pill">
+              Workshop
+            </a>
+          </div>
+
+          {/* Interactive 3D Sensory Room Spotlight Banner */}
+          <a
+            href="/create/sensory-rooms"
+            onClick={closeAll}
+            className="tcs-mob-spotlight-card"
+          >
+            <div className="tcs-mob-spotlight-badge">
+              <span>Interactive 3D Builder</span>
+              <span className="tcs-mob-sparkle">✨</span>
+            </div>
+            <div className="tcs-mob-spotlight-title">Sensory Room Configurator</div>
+            <p className="tcs-mob-spotlight-desc">
+              Custom clinic, school & pediatric hospital therapy architecture designed in Kerala.
+            </p>
+            <span className="tcs-mob-spotlight-link">Launch 3D Studio →</span>
+          </a>
+
+          {/* Expandable Accordion Menu Sections */}
+          <div className="tcs-mob-accordion-list">
+            {MENU_SECTIONS.filter((s) => s.id !== 'store').map((sec) => {
+              const isOpen = expandedSection === sec.id;
+              return (
+                <div key={sec.id} className={`tcs-mob-accordion-item ${isOpen ? 'is-open' : ''}`}>
+                  <button
+                    type="button"
+                    className="tcs-mob-accordion-trigger"
+                    onClick={() => toggleSection(sec.id)}
+                    aria-expanded={isOpen}
+                  >
+                    <span className="tcs-mob-sec-label">{sec.label}</span>
+                    <span className={`tcs-mob-chevron ${isOpen ? 'is-rotated' : ''}`}>
+                      <svg width="12" height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </span>
+                  </button>
+
+                  {isOpen && (
+                    <div className="tcs-mob-accordion-content">
+                      <p className="tcs-mob-sec-desc">{sec.description}</p>
+                      <div className="tcs-mob-subitems">
+                        {sec.items.map((subItem, idx) => (
+                          <a
+                            key={idx}
+                            href={subItem.href}
+                            onClick={closeAll}
+                            className="tcs-mob-sublink"
+                          >
+                            <span className="tcs-mob-sublink-bullet"></span>
+                            <span>{subItem.label}</span>
+                          </a>
+                        ))}
+                      </div>
+                      <a
+                        href={sec.ctaLink}
+                        onClick={closeAll}
+                        className="tcs-mob-sec-cta"
+                      >
+                        {sec.ctaText} →
+                      </a>
+                    </div>
+                  )}
                 </div>
+              );
+            })}
+          </div>
+
+          {/* Official Stores Card */}
+          <div className="tcs-mob-stores-card">
+            <div className="tcs-mob-stores-header">
+              <span className="tcs-mob-stores-title">Official Keller Stores</span>
+              <span className="tcs-mob-stores-pill">Store opening soon</span>
+            </div>
+            <p className="tcs-mob-stores-sub">Currently available on verified marketplaces:</p>
+            <div className="tcs-mob-stores-grid">
+              <a
+                href="https://www.amazon.in/Keller-ADAPT-Processing-Occupational-Equipment/dp/B09TW84X2P?th=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="tcs-mob-store-btn"
+                aria-label="Shop on Amazon"
+              >
+                <div className="tcs-mob-store-img-wrap">
+                  <Image src="/assets/logo/mark-amazon.png" alt="Amazon" fill style={{ objectFit: 'contain' }} />
+                </div>
+              </a>
+              <a
+                href="https://www.etsy.com/listing/4519472296/sensory-compression-hammock-propriotex"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="tcs-mob-store-btn"
+                aria-label="Shop on Etsy"
+              >
+                <div className="tcs-mob-store-img-wrap">
+                  <Image src="/assets/logo/mark-etsy.png" alt="Etsy Star Seller" fill style={{ objectFit: 'contain' }} />
+                </div>
+              </a>
+              <a
+                href="https://www.flipkart.com/keller-adapt-deep-pressure-memory-foam-sensory-input-occupational-therapy-aid-autism-sleeping-bag/p/itme587d611de753"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="tcs-mob-store-btn"
+                aria-label="Shop on Flipkart"
+              >
+                <div className="tcs-mob-store-img-wrap">
+                  <Image src="/assets/logo/mark-flipkart.png" alt="Flipkart" fill style={{ objectFit: 'contain' }} />
+                </div>
+              </a>
+              <div className="tcs-mob-store-btn tcs-mob-store-invite" aria-label="Walmart Partner by Invitation">
+                <div className="tcs-mob-store-img-wrap">
+                  <Image src="/assets/logo/mark-walmart.png" alt="Walmart" fill style={{ objectFit: 'contain' }} />
+                </div>
+                <span className="tcs-mob-walmart-badge">INVITE ONLY</span>
               </div>
             </div>
+          </div>
 
-            {MENU_SECTIONS.filter(s => s.id !== 'store').map((sec) => (
-              <div key={sec.id} style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '14px' }}>
-                <a
-                  href={sec.ctaLink}
-                  onClick={closeAll}
-                  style={{
-                    fontSize: '17px',
-                    fontWeight: 700,
-                    color: '#FFFFFF',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    marginBottom: '8px',
-                    textDecoration: 'none',
-                  }}
-                >
-                  <span>{sec.label}</span>
-                  <span style={{ color: '#EA5338' }}>→</span>
-                </a>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', paddingLeft: '10px' }}>
-                  {sec.items.slice(0, 3).map((subItem, idx) => (
-                    <a
-                      key={idx}
-                      href={subItem.href}
-                      onClick={closeAll}
-                      style={{ fontSize: '13.5px', color: '#94A3B8', textDecoration: 'none' }}
-                    >
-                      • {subItem.label}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            ))}
+          {/* Quick Contact & Quote Action Footer */}
+          <div className="tcs-mob-drawer-footer">
+            <a
+              href="#contact"
+              onClick={closeAll}
+              className="btn btn-primary tcs-mob-cta-btn"
+            >
+              Request a Clinic Quote →
+            </a>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '10px' }}>
+            <div className="tcs-mob-direct-contact">
+              <a href="tel:+917736630683" className="tcs-mob-contact-link">
+                <span>📞 +91 77366 30683</span>
+              </a>
               <a
-                href="#contact"
-                onClick={closeAll}
-                className="btn btn-primary"
-                style={{ textAlign: 'center', textDecoration: 'none', padding: '12px 24px' }}
+                href="https://wa.me/917736630683?text=Hi%20Keller%20Adapt%2C%20I%20would%20like%20to%20inquire%20about%20sensory%20equipment"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="tcs-mob-contact-link tcs-mob-whatsapp-link"
               >
-                Request a quote
+                <span>💬 WhatsApp Us</span>
               </a>
             </div>
+
+            <a href="#location" onClick={closeAll} className="tcs-mob-location-tag">
+              📍 Kakkanad, Kochi, Kerala — 682030 (Global Express Dispatch)
+            </a>
           </div>
         </div>
       )}
