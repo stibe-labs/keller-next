@@ -1,0 +1,406 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 3000" width="100%" height="100%" fill="none">
+  <!-- ==============================================================
+       KELLER CONTINUOUS SENSORY CONNECTED TRACK
+       Theme: Fully connected unbroken line, tactile OT tracing paths,
+              blooming flowers, fluttering butterflies, sensory dots & calibration marks
+       Colors: Keller Coral (#F46255), Keller Teal (#087F7F), Warm Gold (#E9B949)
+       ============================================================== -->
+
+  <!-- ==============================================================
+       1. THE MASTER CONTINUOUS SENSORY RIBBON (UNBROKEN FROM TOP TO BOTTOM)
+       ============================================================== -->
+  <path
+    d="M 320 120
+       C 480 120, 720 140, 920 210
+       C 1060 260, 1120 340, 1060 410
+       C 1000 480, 850 490, 680 520
+       C 450 560, 220 590, 140 660
+       C 60 730, 90 820, 220 860
+       C 380 910, 640 920, 840 950
+       C 1020 980, 1120 1050, 1070 1130
+       C 1020 1210, 840 1230, 650 1260
+       C 420 1300, 210 1330, 150 1400
+       C 90 1470, 110 1560, 250 1600
+       C 420 1650, 680 1660, 870 1690
+       C 1040 1720, 1120 1790, 1070 1870
+       C 1010 1950, 820 1970, 620 2000
+       C 390 2040, 190 2070, 140 2140
+       C 80 2210, 110 2300, 260 2340
+       C 440 2390, 700 2400, 890 2430
+       C 1050 2460, 1120 2530, 1070 2610
+       C 1010 2690, 810 2710, 640 2750
+       C 440 2800, 260 2830, 210 2900
+       C 160 2970, 320 2990, 600 2980"
+    stroke="#F46255"
+    stroke-width="2.6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.45"
+  />
+
+  <!-- Parallel Tactile Sensory Trace Path (Dashed Guide Line) -->
+  <path
+    d="M 330 135
+       C 490 135, 730 155, 930 225
+       C 1070 275, 1130 355, 1070 425
+       C 1010 495, 860 505, 690 535
+       C 460 575, 230 605, 150 675
+       C 70 745, 100 835, 230 875
+       C 390 925, 650 935, 850 965
+       C 1030 995, 1130 1065, 1080 1145
+       C 1030 1225, 850 1245, 660 1275
+       C 430 1315, 220 1345, 160 1415
+       C 100 1485, 120 1575, 260 1615
+       C 430 1665, 690 1675, 880 1705
+       C 1050 1735, 1130 1805, 1080 1885
+       C 1020 1965, 830 1985, 630 2015
+       C 400 2055, 200 2085, 150 2155
+       C 90 2225, 120 2315, 270 2355
+       C 450 2405, 710 2415, 900 2445
+       C 1060 2475, 1130 2545, 1080 2625
+       C 1020 2705, 820 2725, 650 2765
+       C 450 2815, 270 2845, 220 2915
+       C 170 2985, 330 3005, 610 2995"
+    stroke="#087F7F"
+    stroke-width="1.6"
+    stroke-linecap="round"
+    stroke-dasharray="7 7"
+    opacity="0.38"
+  />
+
+  <!-- ==============================================================
+       ZONE 1: HEADER & START (y: 60 - 240)
+       Flower + Butterfly + Sensory Concentric Radar Rings
+       ============================================================== -->
+  <g transform="translate(300, 90)">
+    <!-- Concentric Sensory Tracking Rings -->
+    <circle cx="20" cy="30" r="12" stroke="#E9B949" stroke-width="1.4" opacity="0.4"/>
+    <circle cx="20" cy="30" r="24" stroke="#087F7F" stroke-width="1.2" stroke-dasharray="3 4" opacity="0.35"/>
+    <circle cx="20" cy="30" r="36" stroke="#F46255" stroke-width="1.2" stroke-dasharray="4 6" opacity="0.3"/>
+    <!-- Center tactile button -->
+    <circle cx="20" cy="30" r="5" fill="#E9B949" opacity="0.6"/>
+  </g>
+
+  <!-- Cheerful Blooming Daisy at (920, 200) -->
+  <g transform="translate(900, 160)" stroke="#F46255" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.5">
+    <circle cx="40" cy="40" r="10" fill="#E9B949" stroke="#E9B949"/>
+    <!-- Petals -->
+    <path d="M 40 30 C 40 18 48 18 48 30 Z" fill="#FFF0ED"/>
+    <path d="M 48 34 C 58 26 64 32 54 40 Z" fill="#FFF0ED"/>
+    <path d="M 50 44 C 62 48 60 56 48 50 Z" fill="#FFF0ED"/>
+    <path d="M 44 50 C 44 62 36 62 36 50 Z" fill="#FFF0ED"/>
+    <path d="M 32 46 C 20 52 16 44 26 38 Z" fill="#FFF0ED"/>
+    <path d="M 30 36 C 20 28 26 20 34 30 Z" fill="#FFF0ED"/>
+    <!-- Stem & Leaf -->
+    <path d="M 40 50 C 42 70 38 85 45 100" stroke="#087F7F" stroke-width="2"/>
+    <path d="M 42 75 C 55 70 65 78 50 85 Z" fill="#087F7F" opacity="0.4"/>
+  </g>
+
+  <!-- Sketched Butterfly 1 near Start (y: 110) -->
+  <g transform="translate(760, 90)" stroke="#087F7F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.5">
+    <!-- Body & Antennae -->
+    <path d="M 20 18 L 22 36" stroke-width="2"/>
+    <path d="M 20 18 C 16 12 12 12 10 14"/>
+    <path d="M 20 18 C 24 12 28 12 30 14"/>
+    <!-- Wings with sensory dot patterns -->
+    <path d="M 20 22 C 38 8 50 24 22 30 C 46 36 34 50 21 34" fill="#FFF0ED"/>
+    <path d="M 20 22 C 2 8 -10 24 18 30 C -6 36 6 50 19 34" fill="#FFF0ED"/>
+    <circle cx="32" cy="20" r="2.5" fill="#F46255" stroke="none"/>
+    <circle cx="8" cy="20" r="2.5" fill="#F46255" stroke="none"/>
+  </g>
+
+  <!-- ==============================================================
+       ZONE 2: LOOP 1 - RIGHT SIDE OF ROW 0 (y: 320 - 480)
+       Flower cluster, Autism tactile connecting dots, Butterfly 2
+       ============================================================== -->
+  <!-- Tactile Connected Dot Track: 1-2-3-4 OT tracing line -->
+  <g transform="translate(980, 280)" opacity="0.48">
+    <line x1="10" y1="20" x2="90" y2="20" stroke="#087F7F" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <!-- Sensory beads -->
+    <circle cx="10" cy="20" r="5" fill="#087F7F"/>
+    <circle cx="35" cy="20" r="4" fill="#F46255"/>
+    <circle cx="60" cy="20" r="5" fill="#E9B949"/>
+    <circle cx="85" cy="20" r="4" fill="#087F7F"/>
+    <!-- Connecting curves -->
+    <path d="M 85 20 C 105 20 115 45 100 65 C 85 85 55 75 40 95" stroke="#F46255" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Butterfly 2 at (1080, 380) -->
+  <g transform="translate(1040, 360)" stroke="#F46255" stroke-width="1.6" stroke-linecap="round" opacity="0.55">
+    <path d="M 24 15 L 25 32"/>
+    <path d="M 24 15 C 20 8 16 10 14 12"/>
+    <path d="M 24 15 C 28 8 32 10 34 12"/>
+    <path d="M 24 18 C 42 6 52 22 26 26 C 48 32 36 46 25 30" fill="#FFF5F2"/>
+    <path d="M 24 18 C 6 6 -4 22 22 26 C 0 32 12 46 23 30" fill="#FFF5F2"/>
+  </g>
+
+  <!-- Sensory Botanical Blossom at (1020, 440) -->
+  <g transform="translate(980, 420)" stroke="#087F7F" stroke-width="1.8" opacity="0.45">
+    <path d="M 50 60 C 50 40 40 30 25 25" fill="none"/>
+    <circle cx="22" cy="24" r="8" fill="#F46255" stroke="#F46255"/>
+    <circle cx="22" cy="24" r="3" fill="#FFF" stroke="none"/>
+    <!-- Radiating sensory cilia / tick marks -->
+    <line x1="22" y1="12" x2="22" y2="6" stroke="#E9B949" stroke-width="2"/>
+    <line x1="32" y1="18" x2="38" y2="14" stroke="#E9B949" stroke-width="2"/>
+    <line x1="32" y1="30" x2="38" y2="34" stroke="#E9B949" stroke-width="2"/>
+    <line x1="12" y1="18" x2="6" y2="14" stroke="#E9B949" stroke-width="2"/>
+    <line x1="12" y1="30" x2="6" y2="34" stroke="#E9B949" stroke-width="2"/>
+  </g>
+
+  <!-- ==============================================================
+       ZONE 3: LOOP 2 - LEFT SIDE OF ROW 1 (y: 650 - 850)
+       Tactile finger maze, tulip flower, Butterfly 3
+       ============================================================== -->
+  <!-- Sensory Spiral Finger-Trace at (90, 680) -->
+  <g transform="translate(60, 660)" stroke="#087F7F" stroke-width="1.8" opacity="0.45" fill="none">
+    <path d="M 60 60 C 60 30 90 30 90 60 C 90 85 45 85 45 55 C 45 35 75 35 75 55 C 75 70 55 70 55 60"/>
+    <circle cx="55" cy="60" r="3" fill="#E9B949" stroke="none"/>
+  </g>
+
+  <!-- Tulip Flower blooming on sensory track at (140, 750) -->
+  <g transform="translate(100, 720)" stroke="#F46255" stroke-width="1.8" opacity="0.5">
+    <!-- Tulip Cup -->
+    <path d="M 30 20 C 15 20 15 45 30 50 C 45 45 45 20 30 20 Z" fill="#FFF0ED"/>
+    <path d="M 22 25 L 30 35 L 38 25"/>
+    <!-- Stem and leaves -->
+    <path d="M 30 50 C 30 75 25 90 35 110" stroke="#087F7F" stroke-width="2" fill="none"/>
+    <path d="M 30 75 C 10 70 5 85 28 85" stroke="#087F7F" fill="#087F7F" opacity="0.3"/>
+  </g>
+
+  <!-- Butterfly 3 at (200, 780) -->
+  <g transform="translate(180, 760)" stroke="#087F7F" stroke-width="1.6" opacity="0.5">
+    <path d="M 20 18 L 22 34"/>
+    <path d="M 20 18 C 16 12 12 14 10 16"/>
+    <path d="M 20 18 C 24 12 28 14 30 16"/>
+    <path d="M 20 20 C 38 8 48 24 22 28 C 44 34 32 46 21 32" fill="#E9B949" opacity="0.4"/>
+    <path d="M 20 20 C 2 8 -8 24 18 28 C -4 34 8 46 19 32" fill="#E9B949" opacity="0.4"/>
+  </g>
+
+  <!-- Autism OT Calibration Ticks along crossing path (y: 890 - 940) -->
+  <g stroke="#E9B949" stroke-width="1.8" opacity="0.45">
+    <line x1="420" y1="910" x2="420" y2="925"/>
+    <line x1="450" y1="915" x2="450" y2="930"/>
+    <line x1="480" y1="918" x2="480" y2="933"/>
+    <line x1="510" y1="920" x2="510" y2="935"/>
+    <line x1="540" y1="922" x2="540" y2="937"/>
+    <line x1="570" y1="925" x2="570" y2="940"/>
+  </g>
+
+  <!-- ==============================================================
+       ZONE 4: LOOP 3 - RIGHT SIDE OF ROW 2 (y: 1000 - 1200)
+       Sun-flower, sensory radar dots, Butterfly 4
+       ============================================================== -->
+  <!-- Cheerful Daisy with stem connection at (1040, 1060) -->
+  <g transform="translate(1000, 1020)" stroke="#F46255" stroke-width="1.8" opacity="0.5">
+    <circle cx="35" cy="35" r="10" fill="#E9B949" stroke="#E9B949"/>
+    <!-- 8 Petals -->
+    <path d="M 35 25 C 35 15 42 15 42 25 Z" fill="#FFF0ED"/>
+    <path d="M 42 28 C 50 20 56 26 48 33 Z" fill="#FFF0ED"/>
+    <path d="M 45 35 C 55 35 55 42 45 42 Z" fill="#FFF0ED"/>
+    <path d="M 42 42 C 50 50 44 56 37 48 Z" fill="#FFF0ED"/>
+    <path d="M 35 45 C 35 55 28 55 28 45 Z" fill="#FFF0ED"/>
+    <path d="M 28 42 C 20 50 14 44 22 37 Z" fill="#FFF0ED"/>
+    <path d="M 25 35 C 15 35 15 28 25 28 Z" fill="#FFF0ED"/>
+    <path d="M 28 28 C 20 20 26 14 33 22 Z" fill="#FFF0ED"/>
+  </g>
+
+  <!-- Butterfly 4 at (1070, 1140) -->
+  <g transform="translate(1050, 1120)" stroke="#087F7F" stroke-width="1.6" opacity="0.5">
+    <path d="M 20 16 L 21 32"/>
+    <path d="M 20 16 C 16 10 12 12 10 14"/>
+    <path d="M 20 16 C 24 10 28 12 30 14"/>
+    <path d="M 20 18 C 36 6 46 20 22 24 C 42 30 30 42 21 28" fill="#FFF0ED"/>
+    <path d="M 20 18 C 4 6 -6 20 18 24 C -2 30 10 42 19 28" fill="#FFF0ED"/>
+  </g>
+
+  <!-- Sensory Target Rings at (960, 1180) -->
+  <g transform="translate(940, 1160)" stroke="#087F7F" stroke-width="1.4" opacity="0.4">
+    <circle cx="25" cy="25" r="8" fill="#F46255" opacity="0.5"/>
+    <circle cx="25" cy="25" r="16" stroke-dasharray="3 3"/>
+    <circle cx="25" cy="25" r="26" stroke-dasharray="4 4" stroke="#E9B949"/>
+  </g>
+
+  <!-- ==============================================================
+       ZONE 5: LOOP 4 - LEFT SIDE OF ROW 3 (y: 1350 - 1550)
+       Sensory maze bridge, blooming buds, Butterfly 5
+       ============================================================== -->
+  <!-- Sensory Wave Track at (110, 1370) -->
+  <path
+    d="M 60 1380 C 80 1360 100 1400 120 1380 C 140 1360 160 1400 180 1380 C 200 1360 220 1400 240 1380"
+    stroke="#E9B949"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.45"
+  />
+
+  <!-- Flower Sprig with Buds at (100, 1440) -->
+  <g transform="translate(80, 1410)" stroke="#F46255" stroke-width="1.8" opacity="0.5">
+    <path d="M 40 70 C 40 40 50 30 70 20" fill="none"/>
+    <!-- Bud 1 -->
+    <circle cx="70" cy="20" r="7" fill="#F46255"/>
+    <path d="M 65 14 L 75 14 L 70 24 Z" fill="#FFF"/>
+    <!-- Bud 2 -->
+    <path d="M 45 50 C 35 45 30 35 25 30" fill="none"/>
+    <circle cx="25" cy="30" r="6" fill="#087F7F" stroke="#087F7F"/>
+  </g>
+
+  <!-- Butterfly 5 at (180, 1490) -->
+  <g transform="translate(160, 1470)" stroke="#087F7F" stroke-width="1.6" opacity="0.52">
+    <path d="M 22 16 L 23 32"/>
+    <path d="M 22 16 C 18 10 14 12 12 14"/>
+    <path d="M 22 16 C 26 10 30 12 32 14"/>
+    <path d="M 22 18 C 40 6 50 22 24 26 C 46 32 34 44 23 30" fill="#FFF0ED"/>
+    <path d="M 22 18 C 4 6 -6 22 20 26 C -2 32 10 44 21 30" fill="#FFF0ED"/>
+    <circle cx="34" cy="18" r="2" fill="#E9B949" stroke="none"/>
+    <circle cx="10" cy="18" r="2" fill="#E9B949" stroke="none"/>
+  </g>
+
+  <!-- ==============================================================
+       ZONE 6: LOOP 5 - RIGHT SIDE OF ROW 4 (y: 1650 - 1850)
+       Blooming Daisy, Tactile Number Track (1 to 5), Butterfly 6
+       ============================================================== -->
+  <!-- Sensory Numbered Trace Track: ① ② ③ ④ ⑤ -->
+  <g transform="translate(970, 1640)" opacity="0.48">
+    <path d="M 10 30 C 30 10 70 50 90 30 C 110 10 130 50 150 30" stroke="#087F7F" stroke-width="1.6" stroke-dasharray="4 4" fill="none"/>
+    <circle cx="10" cy="30" r="6" fill="#F46255"/>
+    <circle cx="50" cy="22" r="5" fill="#E9B949"/>
+    <circle cx="90" cy="30" r="6" fill="#087F7F"/>
+    <circle cx="125" cy="35" r="5" fill="#F46255"/>
+    <circle cx="150" cy="30" r="6" fill="#E9B949"/>
+  </g>
+
+  <!-- Large Floral Bloom at (1040, 1750) -->
+  <g transform="translate(1010, 1720)" stroke="#F46255" stroke-width="1.8" opacity="0.5">
+    <circle cx="30" cy="30" r="9" fill="#E9B949" stroke="#E9B949"/>
+    <path d="M 30 21 C 30 10 38 10 38 21 Z" fill="#FFF5F2"/>
+    <path d="M 38 24 C 48 16 54 22 44 30 Z" fill="#FFF5F2"/>
+    <path d="M 39 33 C 50 36 48 46 38 40 Z" fill="#FFF5F2"/>
+    <path d="M 33 39 C 33 50 25 50 25 39 Z" fill="#FFF5F2"/>
+    <path d="M 23 35 C 13 41 8 33 18 27 Z" fill="#FFF5F2"/>
+    <path d="M 21 27 C 11 19 19 11 27 21 Z" fill="#FFF5F2"/>
+  </g>
+
+  <!-- Butterfly 6 at (1060, 1830) -->
+  <g transform="translate(1040, 1810)" stroke="#087F7F" stroke-width="1.6" opacity="0.52">
+    <path d="M 20 15 L 21 32"/>
+    <path d="M 20 15 C 16 8 12 10 10 12"/>
+    <path d="M 20 15 C 24 8 28 10 30 12"/>
+    <path d="M 20 18 C 38 6 48 22 22 26 C 44 32 32 44 21 30" fill="#FFF0ED"/>
+    <path d="M 20 18 C 2 6 -8 22 18 26 C -4 32 8 44 19 30" fill="#FFF0ED"/>
+  </g>
+
+  <!-- ==============================================================
+       ZONE 7: LOOP 6 - LEFT SIDE OF ROW 5 (y: 2000 - 2200)
+       Tactile Concentric Maze, Daisy, Butterfly 7
+       ============================================================== -->
+  <!-- Concentric OT Finger Maze at (110, 2060) -->
+  <g transform="translate(80, 2040)" stroke="#087F7F" stroke-width="1.6" opacity="0.45" fill="none">
+    <circle cx="40" cy="40" r="14" stroke="#F46255" stroke-width="2"/>
+    <circle cx="40" cy="40" r="26" stroke-dasharray="4 4"/>
+    <circle cx="40" cy="40" r="38" stroke="#E9B949" stroke-dasharray="5 5"/>
+    <circle cx="40" cy="40" r="6" fill="#087F7F" stroke="none"/>
+  </g>
+
+  <!-- Flower stem rising from sensory track at (150, 2180) -->
+  <g transform="translate(120, 2150)" stroke="#F46255" stroke-width="1.8" opacity="0.5">
+    <path d="M 25 70 C 25 45 40 35 40 20" fill="none"/>
+    <circle cx="40" cy="18" r="8" fill="#E9B949" stroke="#E9B949"/>
+    <!-- Petals -->
+    <circle cx="40" cy="6" r="4" fill="#FFF0ED"/>
+    <circle cx="50" cy="12" r="4" fill="#FFF0ED"/>
+    <circle cx="50" cy="24" r="4" fill="#FFF0ED"/>
+    <circle cx="40" cy="30" r="4" fill="#FFF0ED"/>
+    <circle cx="30" cy="24" r="4" fill="#FFF0ED"/>
+    <circle cx="30" cy="12" r="4" fill="#FFF0ED"/>
+  </g>
+
+  <!-- Butterfly 7 at (210, 2220) -->
+  <g transform="translate(190, 2200)" stroke="#087F7F" stroke-width="1.6" opacity="0.52">
+    <path d="M 20 16 L 21 32"/>
+    <path d="M 20 16 C 16 10 12 12 10 14"/>
+    <path d="M 20 16 C 24 10 28 12 30 14"/>
+    <path d="M 20 18 C 36 6 46 20 22 24 C 42 30 30 42 21 28" fill="#FFF5F2"/>
+    <path d="M 20 18 C 4 6 -6 20 18 24 C -2 30 10 42 19 28" fill="#FFF5F2"/>
+  </g>
+
+  <!-- ==============================================================
+       ZONE 8: LOOP 7 - RIGHT SIDE OF ROW 6 (y: 2380 - 2580)
+       Double blooming flowers, sensory wave, Butterfly 8
+       ============================================================== -->
+  <g transform="translate(1000, 2410)" stroke="#F46255" stroke-width="1.8" opacity="0.5">
+    <circle cx="35" cy="35" r="9" fill="#E9B949" stroke="#E9B949"/>
+    <path d="M 35 26 C 35 15 42 15 42 26 Z" fill="#FFF0ED"/>
+    <path d="M 42 29 C 50 21 56 27 48 34 Z" fill="#FFF0ED"/>
+    <path d="M 44 35 C 55 35 55 42 44 42 Z" fill="#FFF0ED"/>
+    <path d="M 42 41 C 50 49 44 55 37 47 Z" fill="#FFF0ED"/>
+    <path d="M 35 44 C 35 55 28 55 28 44 Z" fill="#FFF0ED"/>
+    <path d="M 28 41 C 20 49 14 43 22 36 Z" fill="#FFF0ED"/>
+    <path d="M 26 35 C 15 35 15 28 26 28 Z" fill="#FFF0ED"/>
+    <path d="M 28 29 C 20 21 26 15 33 23 Z" fill="#FFF0ED"/>
+  </g>
+
+  <!-- Butterfly 8 at (1070, 2520) -->
+  <g transform="translate(1050, 2500)" stroke="#087F7F" stroke-width="1.6" opacity="0.52">
+    <path d="M 22 15 L 23 32"/>
+    <path d="M 22 15 C 18 8 14 10 12 12"/>
+    <path d="M 22 15 C 26 8 30 10 32 12"/>
+    <path d="M 22 18 C 40 6 50 22 24 26 C 46 32 34 44 23 30" fill="#E9B949" opacity="0.4"/>
+    <path d="M 22 18 C 4 6 -6 22 20 26 C -2 32 10 44 21 30" fill="#E9B949" opacity="0.4"/>
+  </g>
+
+  <!-- Tactile Dash Tracks at (920, 2560) -->
+  <g stroke="#087F7F" stroke-width="2" stroke-linecap="round" opacity="0.42">
+    <line x1="10" y1="2560" x2="30" y2="2560"/>
+    <line x1="45" y1="2560" x2="65" y2="2560"/>
+    <line x1="80" y1="2560" x2="100" y2="2560"/>
+    <circle cx="120" cy="2560" r="5" fill="#E9B949" stroke="none"/>
+  </g>
+
+  <!-- ==============================================================
+       ZONE 9: LOOP 8 - LEFT SIDE OF ROW 7 (y: 2700 - 2900)
+       Daisy bloom, sensory tracking spiral, Butterfly 9
+       ============================================================== -->
+  <g transform="translate(120, 2730)" stroke="#F46255" stroke-width="1.8" opacity="0.5">
+    <circle cx="30" cy="30" r="8" fill="#E9B949" stroke="#E9B949"/>
+    <path d="M 30 22 C 30 12 38 12 38 22 Z" fill="#FFF0ED"/>
+    <path d="M 38 25 C 48 17 54 23 44 31 Z" fill="#FFF0ED"/>
+    <path d="M 38 34 C 48 37 46 47 36 41 Z" fill="#FFF0ED"/>
+    <path d="M 33 38 C 33 48 25 48 25 38 Z" fill="#FFF0ED"/>
+    <path d="M 24 34 C 14 40 10 32 20 26 Z" fill="#FFF0ED"/>
+    <path d="M 22 26 C 12 18 20 10 28 20 Z" fill="#FFF0ED"/>
+  </g>
+
+  <!-- Butterfly 9 at (180, 2810) -->
+  <g transform="translate(160, 2790)" stroke="#087F7F" stroke-width="1.6" opacity="0.52">
+    <path d="M 20 15 L 21 32"/>
+    <path d="M 20 15 C 16 8 12 10 10 12"/>
+    <path d="M 20 15 C 24 8 28 10 30 12"/>
+    <path d="M 20 18 C 36 6 46 20 22 24 C 42 30 30 42 21 28" fill="#FFF0ED"/>
+    <path d="M 20 18 C 4 6 -6 20 18 24 C -2 30 10 42 19 28" fill="#FFF0ED"/>
+  </g>
+
+  <!-- ==============================================================
+       ZONE 10: BOTTOM FINALE (y: 2880 - 3000)
+       Celebratory blooming floral node, tactile connecting loops
+       ============================================================== -->
+  <g transform="translate(560, 2920)" stroke="#F46255" stroke-width="2" opacity="0.55">
+    <circle cx="40" cy="40" r="14" fill="#E9B949" stroke="#E9B949"/>
+    <!-- Smiling flower face -->
+    <path d="M 34 36 C 36 34 38 34 40 36" stroke="#1c1410" stroke-width="1.5"/>
+    <path d="M 42 36 C 44 34 46 34 48 36" stroke="#1c1410" stroke-width="1.5"/>
+    <path d="M 36 44 C 38 48 42 48 44 44" stroke="#1c1410" stroke-width="1.5"/>
+    <!-- Blooming radiant petals -->
+    <circle cx="40" cy="18" r="7" fill="#FFF0ED"/>
+    <circle cx="56" cy="24" r="7" fill="#FFF0ED"/>
+    <circle cx="62" cy="40" r="7" fill="#FFF0ED"/>
+    <circle cx="56" cy="56" r="7" fill="#FFF0ED"/>
+    <circle cx="40" cy="62" r="7" fill="#FFF0ED"/>
+    <circle cx="24" cy="56" r="7" fill="#FFF0ED"/>
+    <circle cx="18" cy="40" r="7" fill="#FFF0ED"/>
+    <circle cx="24" cy="24" r="7" fill="#FFF0ED"/>
+  </g>
+
+  <!-- Final pair of little sparkles -->
+  <path d="M 520 2930 L 522 2936 L 528 2938 L 522 2940 L 520 2946 L 518 2940 L 512 2938 L 518 2936 Z" fill="#E9B949" stroke="none" opacity="0.6"/>
+  <path d="M 680 2940 L 682 2946 L 688 2948 L 682 2950 L 680 2956 L 678 2950 L 672 2948 L 678 2946 Z" fill="#087F7F" stroke="none" opacity="0.6"/>
+</svg>
