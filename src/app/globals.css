@@ -5850,9 +5850,59 @@ body:has(.hero-stage) .tcs-header:not(.is-solid):has(.tcs-dropdown-panel) {
   position: relative;
 }
 
+.marketplaces-header-layout {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
 .marketplaces-minimal-header {
-  margin-bottom: 36px;
-  max-width: 720px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 620px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.marketplaces-logistics-graffito {
+  flex: 1;
+  min-width: 320px;
+  max-width: 500px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.marketplaces-graffito-svg {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.marketplaces-section:hover .marketplaces-graffito-svg {
+  transform: translateY(-3px) scale(1.02);
+}
+
+@media (max-width: 900px) {
+  .marketplaces-header-layout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .marketplaces-logistics-graffito {
+    width: 100%;
+    max-width: 440px;
+    margin: 16px auto 0;
+    justify-content: center;
+  }
 }
 
 /* Flagship Store: Launching Soon Banner */

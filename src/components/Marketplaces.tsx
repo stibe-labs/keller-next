@@ -135,14 +135,28 @@ export default function Marketplaces() {
       <div id="global" className="scroll-anchor" />
 
       <div className="keller-container">
-        {/* Combined Section Header */}
-        <div className="marketplaces-minimal-header">
-          <p className="board-kicker">Where To Buy & Global Logistics</p>
-          <h2 className="board-title">Worldwide Express Delivery & Verified Stores</h2>
-          <div className="mission-title-bar" aria-hidden="true" />
-          <p className="board-lead">
-            Handcrafted in our Kochi workshop with 9-day express dispatch to the USA, Europe, and Australia. Available through verified global retailers or direct via our upcoming flagship store.
-          </p>
+        {/* Combined Section Header with Express Transport Vector Graffito */}
+        <div className="marketplaces-header-layout">
+          <div className="marketplaces-minimal-header">
+            <p className="board-kicker">Where To Buy & Global Logistics</p>
+            <h2 className="board-title">Worldwide Express Delivery & Verified Stores</h2>
+            <div className="mission-title-bar" aria-hidden="true" />
+            <p className="board-lead">
+              Handcrafted in our Kochi workshop with 9-day express dispatch to the USA, Europe, and Australia. Available through verified global retailers or direct via our upcoming flagship store.
+            </p>
+          </div>
+
+          {/* Express Logistics Vector Graffito (Flight, Van, Kochi Workshop, Global Routes) */}
+          <div className="marketplaces-logistics-graffito" aria-hidden="true">
+            <Image
+              src="/assets/bg/marketplaces-logistics-graffitos.svg"
+              alt=""
+              width={540}
+              height={220}
+              className="marketplaces-graffito-svg"
+              priority
+            />
+          </div>
         </div>
 
         {/* Flagship Store: Launching Soon Banner */}
