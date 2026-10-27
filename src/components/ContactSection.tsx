@@ -79,7 +79,7 @@ export default function ContactSection() {
                 <ClayIcon name="pin" size={44} />
                 <div>
                   <span className="contact-channel-label">Manufacturing & R&D Hub</span>
-                  <p className="contact-channel-val">Kochi, Kerala, India — 682021</p>
+                  <p className="contact-channel-val">Kakkanad, Kochi, Kerala, India — 682030</p>
                 </div>
               </div>
 

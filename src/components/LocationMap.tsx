@@ -7,19 +7,19 @@ export default function LocationMap() {
     <section id="location" className="contact-map-section board-section board-rule">
       <div className="keller-container">
         <div className="contact-map-header">
-          <p className="board-kicker">Find Us in Kochi</p>
+          <p className="board-kicker">Find Us in Kakkanad, Kochi</p>
           <h2 className="board-title">Keller Adapt Workshop & Experience Hub</h2>
           <div className="mission-title-bar" aria-hidden="true" />
           <p className="board-lead">
-            Our clinical consultation office, R&D workshop, and sensory demo gym are based in Kochi, Kerala. Visits for therapy clinics, hospital teams, and families are welcome by appointment.
+            Our clinical consultation office, R&D workshop, and sensory demo gym are based in Kakkanad, Kochi, Kerala. Visits for therapy clinics, hospital teams, and families are welcome by appointment.
           </p>
         </div>
 
         <div className="contact-map-card">
           <div className="map-embed-wrapper">
             <iframe
-              title="Keller Adapt Kochi Location Map"
-              src="https://maps.google.com/maps?q=Kochi,+Kerala,+India&t=&z=12&ie=UTF8&iwloc=&output=embed"
+              title="Keller Adapt Kakkanad, Kochi Location Map"
+              src="https://maps.google.com/maps?q=Kakkanad,+Kochi,+Kerala,+India&t=&z=14&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -37,10 +37,10 @@ export default function LocationMap() {
               <div className="pin-text">
                 <strong>Keller Adapt</strong>
                 <span>R&D & Sensory Workshop</span>
-                <span className="pin-coords">Kochi, Kerala, India — 682021</span>
+                <span className="pin-coords">Kakkanad, Kochi, Kerala, India — 682030</span>
               </div>
               <a
-                href="https://maps.google.com/?q=Kochi,+Kerala,+India"
+                href="https://maps.google.com/?q=Kakkanad,+Kochi,+Kerala,+India"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="pin-directions-link"
@@ -54,7 +54,7 @@ export default function LocationMap() {
           <div className="map-info-strip">
             <div className="map-info-col">
               <span className="map-info-label">Manufacturing & R&D Hub</span>
-              <span className="map-info-val">Kochi, Kerala, India — 682021</span>
+              <span className="map-info-val">Kakkanad, Kochi, Kerala, India — 682030</span>
             </div>
             <div className="map-info-col">
               <span className="map-info-label">Visiting Hours</span>

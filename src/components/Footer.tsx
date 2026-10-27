@@ -47,7 +47,7 @@ export default function Footer() {
             <ul className="footer-links">
               <li><a href="mailto:hello@kelleradapt.com" className="footer-link">hello@kelleradapt.com</a></li>
               <li><a href="tel:+917736630683" className="footer-link">+91 77366 30683</a></li>
-              <li><span className="footer-link">Kochi, Kerala, India — 682021</span></li>
+              <li><span className="footer-link">Kakkanad, Kochi, Kerala, India — 682030</span></li>
             </ul>
           </div>
 
