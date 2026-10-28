@@ -65,10 +65,11 @@ export default function Home() {
         {/* 08. Traction, Key Metrics & Growth Roadmap */}
         <Reveal><InvestorMetrics /></Reveal>
 
-        {/* 09. Clinical Advisory & Early Medical Adopters */}
-        <Reveal><ClinicalImpact /></Reveal>
+        {/* 09. Clinical Advisory & Early Medical Adopters (Hidden) */}
+        {/* <Reveal><ClinicalImpact /></Reveal> */}
 
         {/* 10. Social Proof & Verified Customer Reviews */}
+        <div id="impact" />
         <Reveal><Reviews /></Reveal>
 
         {/* 11. Where To Buy & Global Logistics (Combined) */}
